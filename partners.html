@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexGen Dubai Partners & Programs — Explore our partner universities in Canada, UAE, Hungary, Albania and more. Find your perfect program." />
+  <title>Partners &amp; Programs — NexGen Dubai</title>
+  <link rel="stylesheet" href="partners.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971000000000?text=Hello%20NexGen%20Dubai!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="study-abroad.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link active">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="study-abroad.html" class="btn btn-blue"><i class="fa-solid fa-graduation-cap"></i> Apply Now</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="pp-hero">
+  <div class="pp-hero-bg"></div>
+  <div class="pp-hero-glow"></div>
+  <div class="pp-hero-grid"></div>
+  <div class="pp-hero-content">
+    <div>
+      <div class="pp-hero-eyebrow">
+        <div class="pp-hero-eyebrow-line"></div>
+        <span>Global University Network</span>
+      </div>
+      <h1 class="pp-hero-title">
+        <span class="line"><span class="word">Partners</span></span>
+        <span class="line"><span class="word">&amp;</span>&nbsp;<span class="word accent">Programs</span></span>
+      </h1>
+      <p class="pp-hero-sub">Explore our curated network of world-class universities across 5+ countries. Find the program that fits your ambitions — we will handle everything else.</p>
+      <div class="pp-hero-actions">
+        <a href="#pp-universities" class="btn btn-blue"><i class="fa-solid fa-building-columns"></i> Browse Universities</a>
+        <a href="study-abroad.html" class="btn-white-outline"><i class="fa-solid fa-paper-plane"></i> Apply Free</a>
+      </div>
+    </div>
+    <div class="pp-hero-visual">
+      <div class="pp-stat-card">
+        <div class="pp-stat-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="pp-stat-card-num" data-counter="5">0</div>
+        <div class="pp-stat-card-label">Partner Universities</div>
+      </div>
+      <div class="pp-stat-card">
+        <div class="pp-stat-card-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <div class="pp-stat-card-num" data-counter="5">0</div>
+        <div class="pp-stat-card-label">Countries</div>
+      </div>
+      <div class="pp-stat-card">
+        <div class="pp-stat-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="pp-stat-card-num" data-counter="80">0</div>+
+        <div class="pp-stat-card-label">Degree Programs</div>
+      </div>
+      <div class="pp-stat-card">
+        <div class="pp-stat-card-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="pp-stat-card-num" data-counter="500">0</div>+
+        <div class="pp-stat-card-label">Students Placed</div>
+      </div>
+    </div>
+  </div>
+  <div class="pp-hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ══ BREADCRUMB ═════════════════════════════════════════════ -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <a href="education.html">Education</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>Partners &amp; Programs</span>
+  </div>
+</div>
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Algoma University — Canada</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Univ. of West London — UAE</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>John von Neumann — Hungary</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Qadri International — UAE</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Shargan Consulting — Albania</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Business &amp; Finance</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Medicine &amp; Health</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Computer Science &amp; Engineering</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Law &amp; Social Sciences</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ INTRO ══════════════════════════════════════════════════ -->
+<section id="pp-intro">
+  <div class="container">
+    <div class="pp-intro-inner">
+      <div class="reveal-left">
+        <div class="tag">Our Network</div>
+        <h2 class="heading-lg">Hand-Picked Universities<br/><span class="blue-gradient-soft">for Every Ambition</span></h2>
+        <p class="pp-intro-text" style="font-size:.95rem;color:var(--text-secondary);line-height:1.82;margin:1.2rem 0 1.6rem;">Every institution in our network has been carefully vetted for academic quality, student support, and global recognition. We only partner with universities we genuinely believe in — so you can focus on choosing the right fit for your goals.</p>
+        <div class="pp-intro-pills">
+          <span class="pp-intro-pill"><i class="fa-solid fa-check"></i> Quality Vetted</span>
+          <span class="pp-intro-pill"><i class="fa-solid fa-check"></i> Scholarship Available</span>
+          <span class="pp-intro-pill"><i class="fa-solid fa-check"></i> Visa Success Support</span>
+          <span class="pp-intro-pill"><i class="fa-solid fa-check"></i> Free for Students</span>
+          <span class="pp-intro-pill"><i class="fa-solid fa-check"></i> Globally Recognized</span>
+        </div>
+      </div>
+      <div class="pp-intro-img reveal-right">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&auto=format&fit=crop&q=80" alt="University campus" />
+        <div class="pp-intro-badge">
+          <div style="font-size:1.6rem;">&#127891;</div>
+          <div>
+            <div class="pp-intro-badge-num">100%</div>
+            <div class="pp-intro-badge-label">Free advisory for students</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ UNIVERSITIES ═══════════════════════════════════════════ -->
+<section id="pp-universities">
+  <div class="container">
+    <div class="pp-filter-bar reveal">
+      <h2>Explore Universities</h2>
+      <div class="pp-filter-tabs">
+        <button class="pp-filter-tab active" data-filter="all">All</button>
+        <button class="pp-filter-tab" data-filter="canada">Canada</button>
+        <button class="pp-filter-tab" data-filter="uae">UAE</button>
+        <button class="pp-filter-tab" data-filter="europe">Europe</button>
+      </div>
+    </div>
+
+    <div class="pp-uni-list">
+
+      <!-- ════════════════════════════════════════
+           1. ALGOMA UNIVERSITY — CANADA
+      ════════════════════════════════════════ -->
+      <div class="pp-uni-card reveal" data-region="canada">
+        <!-- Header -->
+        <div class="pp-uni-header">
+          <div class="pp-uni-logo">
+            <img src="assets/Algoma_University_wordmark.svg.png" alt="Algoma University"
+                 onerror="this.style.display='none';this.parentElement.innerHTML+='<span class=pp-uni-logo-text>Algoma<br>University</span>';" />
+          </div>
+          <div class="pp-uni-meta">
+            <div class="pp-uni-name">Algoma University</div>
+            <div class="pp-uni-location"><i class="fa-solid fa-location-dot"></i> Ontario, Canada</div>
+            <div class="pp-uni-tags">
+              <span class="pp-uni-tag">Business</span>
+              <span class="pp-uni-tag">Computer Science</span>
+              <span class="pp-uni-tag">Sciences</span>
+              <span class="pp-uni-tag">Social Work</span>
+              <span class="pp-uni-tag">Humanities</span>
+            </div>
+          </div>
+          <div class="pp-uni-right">
+            <a href="study-abroad.html" class="pp-uni-cta" onclick="event.stopPropagation()">
+              Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="pp-uni-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <!-- Body -->
+        <div class="pp-uni-body">
+          <div class="pp-uni-body-inner">
+            <p class="pp-uni-desc">
+              Algoma University is a public university in Ontario, Canada, with campuses in Sault Ste. Marie, Brampton, and Timmins. Established in 1965 and gaining independence in 2008, it offers over 30 academic programs across liberal arts, sciences, business, and technology. Known for its small class sizes and personalized learning, Algoma emphasizes cross-cultural education — particularly fostering understanding between Indigenous and non-Indigenous communities.
+            </p>
+
+            <!-- Program tabs -->
+            <div class="pp-programs-header">
+              <h3><i class="fa-solid fa-graduation-cap" style="color:var(--blue);margin-right:.4rem;"></i> Programs Offered</h3>
+              <div class="pp-prog-tabs">
+                <button class="pp-prog-tab pp-active" data-target="algoma-ug">Undergraduate</button>
+                <button class="pp-prog-tab" data-target="algoma-pg">Postgraduate</button>
+              </div>
+            </div>
+
+            <div id="algoma-ug" class="pp-prog-panel pp-active">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-chart-line"></i> Faculty of Business &amp; Economics</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Bachelor of Business Administration (BBA) — Marketing, Accounting, HR, Esports</div>
+                    <div class="pp-program">Bachelor of Commerce (B.Com) — E-Supply Chain Management</div>
+                    <div class="pp-program">Bachelor of Arts (BA) — Accounting, Economics, Finance &amp; Economics</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-flask"></i> Faculty of Science</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Bachelor of Science (BSc) — Biology</div>
+                    <div class="pp-program">Bachelor of Science (BSc) — Environmental Science</div>
+                    <div class="pp-program">Bachelor of Science (BSc) — Psychology</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-laptop-code"></i> Faculty of Computer Science &amp; Technology</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">BCS — Mobile Software Engineering</div>
+                    <div class="pp-program">BCS — Computer Game Technology</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-book-open"></i> Faculty of Humanities &amp; Social Sciences</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">BA — English</div>
+                    <div class="pp-program">BA — History</div>
+                    <div class="pp-program">BA — Law &amp; Justice</div>
+                    <div class="pp-program">BA — Political Science</div>
+                    <div class="pp-program">BA — Sociology</div>
+                    <div class="pp-program">BA — Visual Arts</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-hands-holding-child"></i> Faculty of Social Work</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Bachelor of Social Work (BSW) — Multicultural focus, Indigenous &amp; Franco-Ontarian communities</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="algoma-pg" class="pp-prog-panel">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-user-graduate"></i> Graduate Programs</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Master of Global Business and Economy (MGBE)</div>
+                    <div class="pp-program">Master of Science in Business Analytics (MSBA)</div>
+                    <div class="pp-program">Master of Science in Computer Science (MScCS)</div>
+                    <div class="pp-program">Master of Computer Science (Course-Based)</div>
+                    <div class="pp-program">Master of Science in Biology</div>
+                    <div class="pp-program">Master of Social Work (MSW)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pp-requirements" style="margin-top:1.5rem;">
+              <div class="pp-req-title"><i class="fa-solid fa-clipboard-check"></i> Entry Requirements</div>
+              <div class="pp-req-list">
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> High school diploma or equivalent (12 years of education)</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> English proficiency — IELTS 6.5+ or equivalent</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Relevant subject grades based on chosen program</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Valid passport and identification documents</div>
+              </div>
+            </div>
+
+            <div class="pp-uni-footer">
+              <a href="study-abroad.html" class="pp-apply-btn"><i class="fa-solid fa-paper-plane"></i> Apply Now — Free</a>
+              <a href="https://algomau.ca/" target="_blank" rel="noopener" class="pp-visit-btn">Visit Official Website <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════════
+           2. UNIVERSITY OF WEST LONDON — UAE
+      ════════════════════════════════════════ -->
+      <div class="pp-uni-card reveal" data-region="uae">
+        <div class="pp-uni-header">
+          <div class="pp-uni-logo">
+            <img src="assets/UWL-Logo.png" alt="University of West London"
+                 onerror="this.style.display='none';this.parentElement.innerHTML+='<span class=pp-uni-logo-text>UWL<br>UAE</span>';" />
+          </div>
+          <div class="pp-uni-meta">
+            <div class="pp-uni-name">University of West London RAK</div>
+            <div class="pp-uni-location"><i class="fa-solid fa-location-dot"></i> Ras Al Khaimah, UAE</div>
+            <div class="pp-uni-tags">
+              <span class="pp-uni-tag">Business</span>
+              <span class="pp-uni-tag">Cyber Security</span>
+              <span class="pp-uni-tag">AI</span>
+              <span class="pp-uni-tag">Engineering</span>
+              <span class="pp-uni-tag">British Degree</span>
+            </div>
+          </div>
+          <div class="pp-uni-right">
+            <a href="study-abroad.html" class="pp-uni-cta" onclick="event.stopPropagation()">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="pp-uni-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <div class="pp-uni-body">
+          <div class="pp-uni-body-inner">
+            <p class="pp-uni-desc">
+              The University of West London (UWL) Ras Al Khaimah Branch Campus offers students in the UAE a unique opportunity to earn a prestigious British degree while studying in a dynamic and affordable environment. Established in 2017 within the RAKEZ Academic Zone, UWL RAK mirrors the academic excellence of its UK counterpart, providing career-focused programs in Business, Finance, Computing, and Engineering.
+            </p>
+
+            <div class="pp-programs-header">
+              <h3><i class="fa-solid fa-graduation-cap" style="color:var(--blue);margin-right:.4rem;"></i> Programs Offered</h3>
+              <div class="pp-prog-tabs">
+                <button class="pp-prog-tab pp-active" data-target="uwl-ug">Undergraduate</button>
+                <button class="pp-prog-tab" data-target="uwl-pg">Postgraduate</button>
+              </div>
+            </div>
+
+            <div id="uwl-ug" class="pp-prog-panel pp-active">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-briefcase"></i> Business &amp; Computing</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">BA (Hons) Accounting and Finance</div>
+                    <div class="pp-program">BA (Hons) Business Studies</div>
+                    <div class="pp-program">BSc (Hons) Computer Science</div>
+                    <div class="pp-program">BSc (Hons) Cyber Security</div>
+                    <div class="pp-program">BEng (Hons) Electrical &amp; Electronic Engineering</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="uwl-pg" class="pp-prog-panel">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-user-graduate"></i> Postgraduate Programs</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Master of Business Administration (MBA)</div>
+                    <div class="pp-program">MSc Cyber Security</div>
+                    <div class="pp-program">MSc Artificial Intelligence</div>
+                    <div class="pp-program">Executive MSc in Air Transport Operations Management</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pp-requirements" style="margin-top:1.5rem;">
+              <div class="pp-req-title"><i class="fa-solid fa-clipboard-check"></i> Entry Requirements</div>
+              <div class="pp-req-list">
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> High school certificate (A-Levels, IB, American Diploma, or equivalent)</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> English proficiency — IELTS 6.0+ or equivalent</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Relevant academic background for chosen program</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Valid Emirates ID or passport</div>
+              </div>
+            </div>
+
+            <div class="pp-uni-footer">
+              <a href="study-abroad.html" class="pp-apply-btn"><i class="fa-solid fa-paper-plane"></i> Apply Now — Free</a>
+              <a href="https://uwl.ac.ae/" target="_blank" rel="noopener" class="pp-visit-btn">Visit Official Website <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════════
+           3. JOHN VON NEUMANN UNIVERSITY — HUNGARY
+      ════════════════════════════════════════ -->
+      <div class="pp-uni-card reveal" data-region="europe">
+        <div class="pp-uni-header">
+          <div class="pp-uni-logo">
+            <img src="assets/nje.png" alt="John von Neumann University"
+                 onerror="this.style.display='none';this.parentElement.innerHTML+='<span class=pp-uni-logo-text>JvNU<br>Hungary</span>';" />
+          </div>
+          <div class="pp-uni-meta">
+            <div class="pp-uni-name">John von Neumann University</div>
+            <div class="pp-uni-location"><i class="fa-solid fa-location-dot"></i> Kecskemét, Hungary</div>
+            <div class="pp-uni-tags">
+              <span class="pp-uni-tag">Engineering</span>
+              <span class="pp-uni-tag">Computer Science</span>
+              <span class="pp-uni-tag">Horticulture</span>
+              <span class="pp-uni-tag">EU Degree</span>
+            </div>
+          </div>
+          <div class="pp-uni-right">
+            <a href="study-abroad.html" class="pp-uni-cta" onclick="event.stopPropagation()">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="pp-uni-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <div class="pp-uni-body">
+          <div class="pp-uni-body-inner">
+            <p class="pp-uni-desc">
+              John von Neumann University, located in Kecskemét, Hungary, is a dynamic institution offering a blend of academic excellence and practical training. Named after the renowned Hungarian-American scientist John von Neumann, the university has become a significant educational, scientific, and cultural center in the Southern Great Plain Region. It offers EU-recognized degrees at highly competitive tuition fees.
+            </p>
+
+            <div class="pp-programs-header">
+              <h3><i class="fa-solid fa-graduation-cap" style="color:var(--blue);margin-right:.4rem;"></i> Programs Offered</h3>
+              <div class="pp-prog-tabs">
+                <button class="pp-prog-tab pp-active" data-target="jvnu-ug">Undergraduate</button>
+              </div>
+            </div>
+
+            <div id="jvnu-ug" class="pp-prog-panel pp-active">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-gear"></i> Faculty of Engineering &amp; Computer Science (GAMF)</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Vehicle Engineering BSc</div>
+                    <div class="pp-program">Computer Science Engineering BSc</div>
+                    <div class="pp-program">Mechanical Engineering BSc</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-seedling"></i> Faculty of Horticulture &amp; Rural Development (KVK)</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Horticultural Engineering BSc</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pp-requirements" style="margin-top:1.5rem;">
+              <div class="pp-req-title"><i class="fa-solid fa-clipboard-check"></i> Entry Requirements</div>
+              <div class="pp-req-list">
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> High school diploma or equivalent — 12 years of education</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Satisfactory grades in relevant sciences (Maths, Physics, Chemistry)</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> English language proficiency (B2 level or above)</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Valid passport</div>
+              </div>
+            </div>
+
+            <div class="pp-uni-footer">
+              <a href="study-abroad.html" class="pp-apply-btn"><i class="fa-solid fa-paper-plane"></i> Apply Now — Free</a>
+              <a href="https://nje.hu/en" target="_blank" rel="noopener" class="pp-visit-btn">Visit Official Website <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════════
+           4. QADRI INTERNATIONAL — UAE
+      ════════════════════════════════════════ -->
+      <div class="pp-uni-card reveal" data-region="uae">
+        <div class="pp-uni-header">
+          <div class="pp-uni-logo">
+            <img src="assets/Qadri-logo.webp" alt="Qadri International"
+                 onerror="this.style.display='none';this.parentElement.innerHTML+='<span class=pp-uni-logo-text>Qadri<br>UAE</span>';" />
+          </div>
+          <div class="pp-uni-meta">
+            <div class="pp-uni-name">Qadri International Educational Consultancy</div>
+            <div class="pp-uni-location"><i class="fa-solid fa-location-dot"></i> Dubai, UAE</div>
+            <div class="pp-uni-tags">
+              <span class="pp-uni-tag">Medicine</span>
+              <span class="pp-uni-tag">Dentistry</span>
+              <span class="pp-uni-tag">Nursing</span>
+              <span class="pp-uni-tag">Pharmacy</span>
+              <span class="pp-uni-tag">Health Sciences</span>
+            </div>
+          </div>
+          <div class="pp-uni-right">
+            <a href="study-abroad.html" class="pp-uni-cta" onclick="event.stopPropagation()">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="pp-uni-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <div class="pp-uni-body">
+          <div class="pp-uni-body-inner">
+            <p class="pp-uni-desc">
+              Qadri International Educational Consultancy, established in 1986, is one of the UAE's most experienced and trusted student counseling firms, headquartered in Dubai's Business Bay. With over 39 years of expertise, the consultancy has guided more than 550,000 students and facilitated the overseas education of over 70,000 individuals, maintaining a 98% success rate. They specialize in placing students in medical and health science programs across Europe.
+            </p>
+
+            <div class="pp-programs-header">
+              <h3><i class="fa-solid fa-graduation-cap" style="color:var(--blue);margin-right:.4rem;"></i> Medical &amp; Health Programs</h3>
+              <div class="pp-prog-tabs">
+                <button class="pp-prog-tab pp-active" data-target="qadri-ug">Undergraduate</button>
+                <button class="pp-prog-tab" data-target="qadri-req">Requirements</button>
+              </div>
+            </div>
+
+            <div id="qadri-ug" class="pp-prog-panel pp-active">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-stethoscope"></i> Medical &amp; Health Sciences Programs</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">General Medicine (5–6 years)</div>
+                    <div class="pp-program">Dentistry (5–6 years)</div>
+                    <div class="pp-program">MEDTEC (6 years)</div>
+                    <div class="pp-program">Radiology (3 years)</div>
+                    <div class="pp-program">Physiotherapy (3–4 years)</div>
+                    <div class="pp-program">Pharmacy (4–5 years)</div>
+                    <div class="pp-program">Public Health (4 years)</div>
+                    <div class="pp-program">Nursing (3–4 years)</div>
+                    <div class="pp-program">Medical Imaging (3 years)</div>
+                    <div class="pp-program">Veterinary Medicine (5–6 years)</div>
+                    <div class="pp-program">Psychology (4 years)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="qadri-req" class="pp-prog-panel">
+              <div class="pp-requirements">
+                <div class="pp-req-title"><i class="fa-solid fa-clipboard-check"></i> Entry Requirements for Medical Programs</div>
+                <div class="pp-req-list">
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> A Level, IB, American Diploma, CBSE or equivalent — 12 years of education</div>
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Strong grades in Chemistry, Biology, Mathematics or Physics</div>
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> University entrance exams in Biology, Chemistry, Maths or Physics (varies by institution)</div>
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Interview to demonstrate motivation for a medical career</div>
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Short MMI interviews assessing ethical judgment, critical thinking &amp; communication</div>
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Letter of recommendation or personal statement</div>
+                  <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Valid passport and identification documents</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pp-uni-footer">
+              <a href="study-abroad.html" class="pp-apply-btn"><i class="fa-solid fa-paper-plane"></i> Apply Now — Free</a>
+              <a href="https://www.qadri-international.com/" target="_blank" rel="noopener" class="pp-visit-btn">Visit Official Website <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════════
+           5. SHARGAN CONSULTING — ALBANIA
+      ════════════════════════════════════════ -->
+      <div class="pp-uni-card reveal" data-region="europe">
+        <div class="pp-uni-header">
+          <div class="pp-uni-logo">
+            <img src="assets/shargan.png" alt="Shargan Consulting"
+                 onerror="this.style.display='none';this.parentElement.innerHTML+='<span class=pp-uni-logo-text>Shargan<br>Albania</span>';" />
+          </div>
+          <div class="pp-uni-meta">
+            <div class="pp-uni-name">Shargan Consulting</div>
+            <div class="pp-uni-location"><i class="fa-solid fa-location-dot"></i> Tirana, Albania</div>
+            <div class="pp-uni-tags">
+              <span class="pp-uni-tag">Economics</span>
+              <span class="pp-uni-tag">Engineering</span>
+              <span class="pp-uni-tag">Law</span>
+              <span class="pp-uni-tag">Architecture</span>
+              <span class="pp-uni-tag">Software</span>
+            </div>
+          </div>
+          <div class="pp-uni-right">
+            <a href="study-abroad.html" class="pp-uni-cta" onclick="event.stopPropagation()">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="pp-uni-toggle"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </div>
+        <div class="pp-uni-body">
+          <div class="pp-uni-body-inner">
+            <p class="pp-uni-desc">
+              Shargan Consulting is a professional services and university placement firm based in Tirana, Albania. It connects international students with top Albanian universities offering EU-standard education at very competitive costs. Albania has become an increasingly popular destination for students seeking European degrees in medicine, engineering, law, and business — with full recognition across the EU.
+            </p>
+
+            <div class="pp-programs-header">
+              <h3><i class="fa-solid fa-graduation-cap" style="color:var(--blue);margin-right:.4rem;"></i> Programs Offered</h3>
+              <div class="pp-prog-tabs">
+                <button class="pp-prog-tab pp-active" data-target="shargan-ug">Undergraduate</button>
+                <button class="pp-prog-tab" data-target="shargan-pg">Postgraduate</button>
+              </div>
+            </div>
+
+            <div id="shargan-ug" class="pp-prog-panel pp-active">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-chart-line"></i> Faculty of Economics &amp; Administrative Sciences</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Bachelor in Banking and Finance</div>
+                    <div class="pp-program">Bachelor in Business Administration</div>
+                    <div class="pp-program">Bachelor in Economics</div>
+                    <div class="pp-program">Bachelor in Business Informatics</div>
+                    <div class="pp-program">Bachelor in International Marketing &amp; Logistics Management</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-building"></i> Faculty of Architecture &amp; Engineering</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Bachelor in Computer Engineering</div>
+                    <div class="pp-program">Integrated Program in Architecture</div>
+                    <div class="pp-program">Bachelor in Civil Engineering</div>
+                    <div class="pp-program">Bachelor in Electronic &amp; Digital Communication Engineering</div>
+                    <div class="pp-program">Bachelor in Software Engineering</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-scale-balanced"></i> Faculty of Law &amp; Social Sciences</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Bachelor in Political Science &amp; International Relations</div>
+                    <div class="pp-program">Integrated Second Cycle Program in Law</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="shargan-pg" class="pp-prog-panel">
+              <div class="pp-faculties">
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-chart-line"></i> Faculty of Economics &amp; Administrative Sciences</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">MSc in Banking and Finance</div>
+                    <div class="pp-program">MSc in Business Administration</div>
+                    <div class="pp-program">Professional Master in Economics</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-building"></i> Faculty of Architecture &amp; Engineering</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">MSc in Architecture</div>
+                    <div class="pp-program">Professional Master in Civil Engineering</div>
+                    <div class="pp-program">MSc in Computer Engineering</div>
+                    <div class="pp-program">MSc in Civil Engineering</div>
+                    <div class="pp-program">MSc in Electronic &amp; Communication Engineering</div>
+                  </div>
+                </div>
+                <div class="pp-faculty">
+                  <div class="pp-faculty-name"><i class="fa-solid fa-scale-balanced"></i> Faculty of Law &amp; Social Sciences</div>
+                  <div class="pp-programs-list">
+                    <div class="pp-program">Professional Master in Political Science &amp; International Relations</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pp-requirements" style="margin-top:1.5rem;">
+              <div class="pp-req-title"><i class="fa-solid fa-clipboard-check"></i> Entry Requirements</div>
+              <div class="pp-req-list">
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> High school diploma or equivalent (12 years of education)</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Proficiency in English (B2 level or above preferred)</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Relevant academic background for chosen faculty</div>
+                <div class="pp-req-item"><i class="fa-solid fa-check-circle"></i> Valid passport and supporting identification documents</div>
+              </div>
+            </div>
+
+            <div class="pp-uni-footer">
+              <a href="study-abroad.html" class="pp-apply-btn"><i class="fa-solid fa-paper-plane"></i> Apply Now — Free</a>
+              <a href="https://sharganconsulting.com/" target="_blank" rel="noopener" class="pp-visit-btn">Visit Official Website <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /pp-uni-list -->
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section id="pp-cta">
+  <div class="container">
+    <div class="pp-cta-box reveal">
+      <div class="tag" style="display:inline-block;background:rgba(61,184,232,.15);border-color:rgba(61,184,232,.4);color:var(--blue-light);">Ready to Apply?</div>
+      <h2 class="pp-cta-title">Not Sure Which University<br/><span class="blue-gradient-soft">Is Right for You?</span></h2>
+      <p class="pp-cta-desc">Book a free one-to-one consultation with our education advisors. We'll review your profile and recommend the best-fit institution and program — completely free of charge.</p>
+      <div class="pp-cta-actions">
+        <a href="study-abroad.html" class="btn btn-white"><i class="fa-solid fa-paper-plane"></i> Apply for Free</a>
+        <a href="education.html" class="btn-cta-outline"><i class="fa-solid fa-graduation-cap"></i> Back to Education</a>
+        <a href="contact.html" class="btn-cta-outline"><i class="fa-solid fa-headset"></i> Talk to an Advisor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Education</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Overview</a></li>
+          <li><a href="partners.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Partners &amp; Programs</a></li>
+          <li><a href="study-abroad.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Study Abroad</a></li>
+          <li><a href="join-network.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Network</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Other Services</h4>
+        <ul class="footer-links">
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Events</a></li>
+          <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="partners.js"></script>
+</body>
+</html>

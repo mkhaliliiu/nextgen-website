@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join NexGen Dubai's Educational Network — Partner with us to expand your reach, recruit students, co-host events, and grow across the UAE and beyond." />
+  <title>Join Our Educational Network — NexGen Dubai</title>
+  <link rel="stylesheet" href="join-network.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<!-- WhatsApp -->
+<a id="whatsapp-btn" href="https://wa.me/971000000000?text=Hello%20NexGen%20Dubai%2C%20I%20want%20to%20join%20your%20educational%20network!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="#jn-form-wrap" class="btn btn-blue" onclick="window.closeMobileNav()"><i class="fa-solid fa-network-wired"></i> Join Now</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link active">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="education.html" class="btn btn-blue"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════
+     FULL-PAGE NAVY SPLIT LAYOUT
+══════════════════════════════════════════════════════════ -->
+<div class="jn-page">
+  <div class="jn-bg-grid"></div>
+  <div class="jn-blob-1"></div>
+  <div class="jn-blob-2"></div>
+
+  <div class="jn-layout container">
+
+    <!-- ══════════ LEFT PANEL ══════════ -->
+    <div class="jn-left">
+
+      <div class="jn-eyebrow">
+        <div class="jn-eyebrow-line"></div>
+        <span>For Institutions &amp; Partners</span>
+      </div>
+
+      <h1 class="jn-title">
+        <span class="line"><span class="word">Join Our</span></span>
+        <span class="line"><span class="word">Educational</span></span>
+        <span class="line"><span class="word accent">Network</span></span>
+      </h1>
+
+      <p class="jn-sub">
+        Be part of a growing community of global learners, institutions, and changemakers.
+        We connect students, educators, and partners to trusted opportunities across borders.
+      </p>
+
+      <!-- What to Expect -->
+      <div class="jn-expects">
+        <div class="jn-expect">
+          <div class="jn-expect-icon"><i class="fa-solid fa-users"></i></div>
+          <div>
+            <div class="jn-expect-title">International Student Recruitment</div>
+            <div class="jn-expect-desc">Collaborate on targeted recruitment campaigns reaching MENA students actively seeking programs abroad.</div>
+          </div>
+        </div>
+        <div class="jn-expect">
+          <div class="jn-expect-icon"><i class="fa-solid fa-calendar-star"></i></div>
+          <div>
+            <div class="jn-expect-title">Host or Join Student Development Events</div>
+            <div class="jn-expect-desc">Co-host university fairs, workshops, and education expos across the UAE and internationally.</div>
+          </div>
+        </div>
+        <div class="jn-expect">
+          <div class="jn-expect-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div>
+            <div class="jn-expect-title">Tailored Marketing &amp; Branding Support</div>
+            <div class="jn-expect-desc">Gain access to NexGen's media, PR, and digital marketing resources to amplify your institution's brand.</div>
+          </div>
+        </div>
+        <div class="jn-expect">
+          <div class="jn-expect-icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <div>
+            <div class="jn-expect-title">Expand Across the UAE &amp; Beyond</div>
+            <div class="jn-expect-desc">Tap into our established network across the Gulf, Africa, and South Asia to reach new student markets.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Who Can Join -->
+      <div class="jn-who-label">Who Can Join?</div>
+      <div class="jn-who-grid">
+        <div class="jn-who-card"><i class="fa-solid fa-university"></i><span>Universities</span></div>
+        <div class="jn-who-card"><i class="fa-solid fa-school"></i><span>Schools &amp; Colleges</span></div>
+        <div class="jn-who-card"><i class="fa-solid fa-person-chalkboard"></i><span>Counselors</span></div>
+        <div class="jn-who-card"><i class="fa-solid fa-laptop"></i><span>E-Learning Providers</span></div>
+        <div class="jn-who-card"><i class="fa-solid fa-language"></i><span>Language Institutes</span></div>
+        <div class="jn-who-card"><i class="fa-solid fa-briefcase"></i><span>Education Agencies</span></div>
+      </div>
+
+      <!-- Stats -->
+      <div class="jn-stats">
+        <div class="jn-stat">
+          <div class="jn-stat-num" data-counter="9">0</div>+
+          <div class="jn-stat-label">Current Partners</div>
+        </div>
+        <div class="jn-stat">
+          <div class="jn-stat-num" data-counter="12">0</div>+
+          <div class="jn-stat-label">Countries Reached</div>
+        </div>
+        <div class="jn-stat">
+          <div class="jn-stat-num" data-counter="500">0</div>+
+          <div class="jn-stat-label">Students Placed</div>
+        </div>
+      </div>
+
+    </div><!-- /jn-left -->
+
+    <!-- ══════════ RIGHT PANEL: FORM ══════════ -->
+    <div class="jn-right">
+      <div class="jn-form-card">
+
+        <!-- Form Header -->
+        <div class="jn-form-header">
+          <div class="jn-form-header-badge">
+            <i class="fa-solid fa-network-wired"></i> Partner Application
+          </div>
+          <h2 class="jn-form-title">Partner with NexGen Dubai</h2>
+          <p class="jn-form-subtitle">Tell us about your institution — we will be in touch shortly</p>
+
+          <!-- Step indicator -->
+          <div class="jn-form-steps">
+            <div class="jn-step-item active" id="jn-si-1">
+              <div class="jn-step-dot">1</div>
+              <span>Contact Info</span>
+            </div>
+            <div class="jn-step-line"></div>
+            <div class="jn-step-item" id="jn-si-2">
+              <div class="jn-step-dot">2</div>
+              <span>Partnership Details</span>
+            </div>
+            <div class="jn-step-line"></div>
+            <div class="jn-step-item" id="jn-si-3">
+              <div class="jn-step-dot">3</div>
+              <span>Goals &amp; Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Body -->
+        <div class="jn-form-body">
+          <div id="jn-form-wrap">
+            <form id="jn-form" novalidate>
+
+              <!-- ══ STEP 1: Contact Info ══ -->
+              <div id="jn-step-1" class="jn-step-panel active">
+                <div class="jn-step-title">
+                  <i class="fa-solid fa-id-card"></i> Contact Information
+                </div>
+                <div class="jn-field-grid">
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Full Name <span class="req">*</span></label>
+                    <div class="jn-input-wrap">
+                      <i class="fa-solid fa-user field-icon"></i>
+                      <input type="text" class="jn-input" placeholder="e.g. Dr. Sarah Al Mansoori" required />
+                    </div>
+                    <span class="jn-error-msg">Please enter your full name</span>
+                  </div>
+
+                  <div class="jn-field">
+                    <label class="jn-label">Email Address <span class="req">*</span></label>
+                    <div class="jn-input-wrap">
+                      <i class="fa-solid fa-envelope field-icon"></i>
+                      <input type="email" class="jn-input" placeholder="you@institution.edu" required />
+                    </div>
+                    <span class="jn-error-msg">Please enter a valid email</span>
+                  </div>
+
+                  <div class="jn-field">
+                    <label class="jn-label">Phone Number <span class="req">*</span></label>
+                    <div class="jn-input-wrap">
+                      <i class="fa-solid fa-phone field-icon"></i>
+                      <input type="tel" class="jn-input" placeholder="+971 XX XXX XXXX" required />
+                    </div>
+                    <span class="jn-error-msg">Please enter your phone number</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Institution / Organisation Name <span class="req">*</span></label>
+                    <div class="jn-input-wrap">
+                      <i class="fa-solid fa-building-columns field-icon"></i>
+                      <input type="text" class="jn-input" placeholder="e.g. Horizon International University" required />
+                    </div>
+                    <span class="jn-error-msg">Please enter your institution name</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Designation / Role <span class="req">*</span></label>
+                    <div class="jn-select-wrap">
+                      <select class="jn-select" required>
+                        <option value="" disabled selected>Select your role</option>
+                        <option>Vice Chancellor / President</option>
+                        <option>Dean / Faculty Head</option>
+                        <option>Admissions Director</option>
+                        <option>International Partnerships Manager</option>
+                        <option>Recruitment Officer</option>
+                        <option>Education Counselor</option>
+                        <option>School Principal</option>
+                        <option>Marketing Manager</option>
+                        <option>Business Development Manager</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="jn-error-msg">Please select your designation</span>
+                  </div>
+
+                </div><!-- /field-grid -->
+
+                <div class="jn-step-nav">
+                  <span></span>
+                  <button type="button" class="jn-btn-next">
+                    Continue <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div><!-- /step 1 -->
+
+
+              <!-- ══ STEP 2: Partnership Details ══ -->
+              <div id="jn-step-2" class="jn-step-panel">
+                <div class="jn-step-title">
+                  <i class="fa-solid fa-handshake"></i> Partnership Details
+                </div>
+                <div class="jn-field-grid">
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Type of Partnership Interested In <span class="req">*</span></label>
+                    <div class="jn-select-wrap">
+                      <select class="jn-select" required>
+                        <option value="" disabled selected>Select partnership type</option>
+                        <option>Student Recruitment &amp; Referrals</option>
+                        <option>University Fair Participation</option>
+                        <option>Institutional Representation in UAE</option>
+                        <option>Student Development Programs</option>
+                        <option>Co-hosted Events &amp; Workshops</option>
+                        <option>Marketing &amp; Branding Collaboration</option>
+                        <option>Full Education Partnership</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="jn-error-msg">Please select a partnership type</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Area of Expertise or Interest <span class="req">*</span></label>
+                    <div class="jn-select-wrap">
+                      <select class="jn-select" required>
+                        <option value="" disabled selected>Select area</option>
+                        <option>Higher Education</option>
+                        <option>Vocational Training</option>
+                        <option>K-12 Schools</option>
+                        <option>Language Learning Programs</option>
+                        <option>E-Learning &amp; Online Courses</option>
+                        <option>Medical &amp; Health Sciences</option>
+                        <option>Engineering &amp; Technology</option>
+                        <option>Business &amp; Management</option>
+                        <option>Arts &amp; Humanities</option>
+                        <option>Other (Specify in Details)</option>
+                      </select>
+                    </div>
+                    <span class="jn-error-msg">Please select an area of expertise</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Target Regions Through the Partnership <span class="req">*</span></label>
+                    <div class="jn-select-wrap">
+                      <select class="jn-select" required>
+                        <option value="" disabled selected>Select primary region</option>
+                        <option>UAE — Dubai &amp; Northern Emirates</option>
+                        <option>UAE — Abu Dhabi &amp; Al Ain</option>
+                        <option>GCC — Saudi Arabia, Qatar, Kuwait, Bahrain, Oman</option>
+                        <option>South Asia — India, Pakistan, Bangladesh, Sri Lanka</option>
+                        <option>East Africa — Kenya, Nigeria, Egypt, Ethiopia</option>
+                        <option>Southeast Asia — Malaysia, Philippines, Indonesia</option>
+                        <option>All of the above</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="jn-error-msg">Please select a target region</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Estimated Number of Students / Participants <span class="req">*</span></label>
+                    <div class="jn-select-wrap">
+                      <select class="jn-select" required>
+                        <option value="" disabled selected>Select estimated range</option>
+                        <option>1 – 50</option>
+                        <option>50 – 100</option>
+                        <option>100 – 500</option>
+                        <option>500 – 1,000</option>
+                        <option>1,000+</option>
+                        <option>Not Sure Yet</option>
+                      </select>
+                    </div>
+                    <span class="jn-error-msg">Please select an estimated number</span>
+                  </div>
+
+                </div>
+
+                <div class="jn-step-nav">
+                  <button type="button" class="jn-btn-prev">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                  </button>
+                  <button type="button" class="jn-btn-next">
+                    Continue <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div><!-- /step 2 -->
+
+
+              <!-- ══ STEP 3: Goals & Vision ══ -->
+              <div id="jn-step-3" class="jn-step-panel">
+                <div class="jn-step-title">
+                  <i class="fa-solid fa-bullseye"></i> Goals &amp; Vision
+                </div>
+                <div class="jn-field-grid">
+
+                  <div class="jn-field full">
+                    <label class="jn-label">What do you hope to achieve through this collaboration? <span class="req">*</span></label>
+                    <div class="jn-select-wrap">
+                      <select class="jn-select" required>
+                        <option value="" disabled selected>Select primary goal</option>
+                        <option>Increase international student enrolments</option>
+                        <option>Strengthen brand presence in the UAE/GCC</option>
+                        <option>Access NexGen's existing student network</option>
+                        <option>Co-develop student support programs</option>
+                        <option>Participate in education fairs &amp; events</option>
+                        <option>Expand online/e-learning reach in MENA</option>
+                        <option>Multiple objectives — describe below</option>
+                      </select>
+                    </div>
+                    <span class="jn-error-msg">Please select your primary goal</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Tell us more about your institution and vision for collaboration <span class="opt">(optional)</span></label>
+                    <textarea
+                      id="jn-vision"
+                      class="jn-textarea"
+                      placeholder="Share your institution's background, current international presence, and what makes this partnership a great fit for both parties..."
+                      maxlength="600"
+                    ></textarea>
+                    <span style="font-size:.7rem;color:var(--text-dim);text-align:right;display:block;margin-top:.2rem;" id="jn-vision-count">0/600</span>
+                  </div>
+
+                  <div class="jn-field full">
+                    <label class="jn-label">Would you like to schedule a meeting with our education specialists?</label>
+                    <div class="jn-radio-group">
+                      <label class="jn-radio-opt">
+                        <input type="radio" name="jn-meeting" value="yes" />
+                        <i class="fa-solid fa-calendar-check"></i> Yes, book a meeting
+                      </label>
+                      <label class="jn-radio-opt">
+                        <input type="radio" name="jn-meeting" value="no" />
+                        <i class="fa-solid fa-envelope"></i> Email me first
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="jn-step-nav">
+                  <button type="button" class="jn-btn-prev">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                  </button>
+                </div>
+
+                <button type="submit" class="jn-btn-submit">
+                  <i class="fa-solid fa-network-wired"></i> Submit Partnership Request
+                </button>
+                <p class="jn-form-note">
+                  <i class="fa-solid fa-lock"></i>
+                  Your information is confidential and will only be used to facilitate your partnership.
+                </p>
+
+              </div><!-- /step 3 -->
+
+            </form>
+          </div><!-- /jn-form-wrap -->
+
+          <!-- ── Success State ── -->
+          <div id="jn-success" class="jn-success">
+            <div class="jn-success-icon">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Request Received! &#127881;</h3>
+            <p>
+              Thank you for your interest in joining the NexGen Dubai Educational Network.
+              Our partnerships team will review your application and reach out within
+              <strong>48 hours</strong> to discuss next steps and schedule your introductory meeting.
+            </p>
+            <div class="jn-success-actions">
+              <a href="education.html" class="btn btn-blue">
+                <i class="fa-solid fa-graduation-cap"></i> Back to Education
+              </a>
+              <a href="partners.html" class="btn btn-outline">
+                <i class="fa-solid fa-building-columns"></i> View Our Partner Universities
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /jn-form-body -->
+      </div><!-- /jn-form-card -->
+    </div><!-- /jn-right -->
+
+  </div><!-- /jn-layout -->
+</div><!-- /jn-page -->
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Universities</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Colleges &amp; Schools</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Education Counselors</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Student Recruitment</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>University Fairs</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UAE &amp; GCC Network</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Branding Support</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>9+ Current Partners</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>12+ Countries</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Education</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Overview</a></li>
+          <li><a href="partners.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Partners &amp; Programs</a></li>
+          <li><a href="study-abroad.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Study Abroad</a></li>
+          <li><a href="join-network.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Network</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Other Services</h4>
+        <ul class="footer-links">
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Events</a></li>
+          <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="join-network.js"></script>
+</body>
+</html>

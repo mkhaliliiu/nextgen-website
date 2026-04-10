@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Study Abroad with NexGen Dubai — Get a free one-to-one session with our professionals and find the best course, university, and scholarships for you." />
+  <title>Study Abroad — NexGen Dubai</title>
+  <link rel="stylesheet" href="study-abroad.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<!-- WhatsApp -->
+<a id="whatsapp-btn" href="https://wa.me/971000000000?text=Hello%20NexGen%20Dubai%2C%20I%20want%20to%20study%20abroad!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="#sa-form-wrap" class="btn btn-blue" onclick="window.closeMobileNav()"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link active">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="partners.html" class="btn btn-blue"><i class="fa-solid fa-building-columns"></i> Browse Universities</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════════
+     MAIN SPLIT LAYOUT — dark navy page, left text, right form
+══════════════════════════════════════════════════════════════ -->
+<div class="sa-page">
+  <div class="sa-bg-grid"></div>
+  <div class="sa-bg-blob-1"></div>
+  <div class="sa-bg-blob-2"></div>
+
+  <div class="sa-layout container">
+
+    <!-- ═══════════════ LEFT PANEL ═══════════════ -->
+    <div class="sa-left">
+
+      <div class="sa-eyebrow">
+        <div class="sa-eyebrow-line"></div>
+        <span>Free One-to-One Advisory</span>
+      </div>
+
+      <h1 class="sa-title">
+        <span class="line"><span class="word">Start Your</span></span>
+        <span class="line"><span class="word">Studies</span>&nbsp;<span class="word accent">Abroad</span></span>
+      </h1>
+
+      <p class="sa-sub">
+        Get a free one-to-one session with our professionals by entering your information —
+        we will help you find the best course, nation, university, and even scholarships!
+      </p>
+
+      <!-- Perks -->
+      <div class="sa-perks">
+        <div class="sa-perk">
+          <div class="sa-perk-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <div class="sa-perk-title">100% Free for Students</div>
+            <div class="sa-perk-desc">No hidden fees. Our advisory is completely free — universities pay us, not you.</div>
+          </div>
+        </div>
+        <div class="sa-perk">
+          <div class="sa-perk-icon"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <div class="sa-perk-title">Response Within 24 Hours</div>
+            <div class="sa-perk-desc">Our advisors will reach out quickly to schedule your personal consultation session.</div>
+          </div>
+        </div>
+        <div class="sa-perk">
+          <div class="sa-perk-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div>
+            <div class="sa-perk-title">9+ Partner Universities</div>
+            <div class="sa-perk-desc">Access exclusive programs across Canada, UK, Hungary, Malaysia, Netherlands &amp; more.</div>
+          </div>
+        </div>
+        <div class="sa-perk">
+          <div class="sa-perk-icon"><i class="fa-solid fa-passport"></i></div>
+          <div>
+            <div class="sa-perk-title">Full Visa &amp; Application Support</div>
+            <div class="sa-perk-desc">End-to-end help from program selection all the way to your visa approval.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="sa-stats">
+        <div class="sa-stat">
+          <div class="sa-stat-num" data-counter="500">0</div>+
+          <div class="sa-stat-label">Students Placed</div>
+        </div>
+        <div class="sa-stat">
+          <div class="sa-stat-num" data-counter="9">0</div>+
+          <div class="sa-stat-label">Partner Universities</div>
+        </div>
+        <div class="sa-stat">
+          <div class="sa-stat-num" data-counter="12">0</div>+
+          <div class="sa-stat-label">Countries</div>
+        </div>
+        <div class="sa-stat">
+          <div class="sa-stat-num" data-counter="100">0</div>%
+          <div class="sa-stat-label">Visa Success Rate</div>
+        </div>
+      </div>
+
+      <!-- Why NexGen quick bullets -->
+      <div class="sa-why">
+        <div class="sa-why-title">Why Students Choose NexGen Dubai</div>
+        <div class="sa-why-items">
+          <div class="sa-why-item"><i class="fa-solid fa-check-circle"></i> Personalised university shortlist</div>
+          <div class="sa-why-item"><i class="fa-solid fa-check-circle"></i> Scholarship matching &amp; guidance</div>
+          <div class="sa-why-item"><i class="fa-solid fa-check-circle"></i> Document &amp; essay preparation</div>
+          <div class="sa-why-item"><i class="fa-solid fa-check-circle"></i> Visa interview coaching</div>
+          <div class="sa-why-item"><i class="fa-solid fa-check-circle"></i> Pre-departure orientation</div>
+          <div class="sa-why-item"><i class="fa-solid fa-check-circle"></i> UAE-based, globally connected</div>
+        </div>
+      </div>
+
+    </div><!-- /sa-left -->
+
+    <!-- ═══════════════ RIGHT PANEL: FORM ═══════════════ -->
+    <div class="sa-right">
+      <div class="sa-form-card">
+
+        <!-- Form header with step indicator -->
+        <div class="sa-form-header">
+          <div class="sa-form-header-badge">
+            <i class="fa-solid fa-star"></i> Free Consultation
+          </div>
+          <h2 class="sa-form-title">Book Your Free Session</h2>
+          <p class="sa-form-subtitle">Fill in your details — our team responds within 24 hours</p>
+
+          <!-- Step indicator -->
+          <div class="sa-form-steps">
+            <div class="sa-form-step-item active" id="sa-si-1">
+              <div class="sa-form-step-dot">1</div>
+              <span>Personal Info</span>
+            </div>
+            <div class="sa-form-step-line"></div>
+            <div class="sa-form-step-item" id="sa-si-2">
+              <div class="sa-form-step-dot">2</div>
+              <span>Academic Info</span>
+            </div>
+            <div class="sa-form-step-line"></div>
+            <div class="sa-form-step-item" id="sa-si-3">
+              <div class="sa-form-step-dot">3</div>
+              <span>Preferences</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form body -->
+        <div class="sa-form-body">
+          <div id="sa-form-wrap">
+            <form id="sa-form" novalidate>
+
+              <!-- ═══ STEP 1: Personal Info ═══ -->
+              <div id="sa-step-1" class="sa-step-panel active">
+                <div class="sa-step-title">
+                  <i class="fa-solid fa-user"></i> Personal Information
+                </div>
+                <div class="sa-field-grid">
+
+                  <div class="sa-field full">
+                    <label class="sa-label">Full Name <span class="req">*</span></label>
+                    <div class="sa-input-icon">
+                      <i class="fa-solid fa-user"></i>
+                      <input type="text" class="sa-input" placeholder="e.g. Ahmed Al Rashidi" required />
+                    </div>
+                    <span class="sa-error-msg">Please enter your full name</span>
+                  </div>
+
+                  <div class="sa-field">
+                    <label class="sa-label">Email Address <span class="req">*</span></label>
+                    <div class="sa-input-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input type="email" class="sa-input" placeholder="your@email.com" required />
+                    </div>
+                    <span class="sa-error-msg">Please enter a valid email</span>
+                  </div>
+
+                  <div class="sa-field">
+                    <label class="sa-label">Mobile Number <span class="req">*</span></label>
+                    <div class="sa-input-icon">
+                      <i class="fa-solid fa-phone"></i>
+                      <input type="tel" class="sa-input" placeholder="+971 XX XXX XXXX" required />
+                    </div>
+                    <span class="sa-error-msg">Please enter your mobile number</span>
+                  </div>
+
+                  <div class="sa-field">
+                    <label class="sa-label">Nationality <span class="req">*</span></label>
+                    <div class="sa-select-wrap">
+                      <select class="sa-select" required>
+                        <option value="" disabled selected>Select nationality</option>
+                        <option>UAE</option>
+                        <option>India</option>
+                        <option>Pakistan</option>
+                        <option>Philippines</option>
+                        <option>Nigeria</option>
+                        <option>Egypt</option>
+                        <option>Kenya</option>
+                        <option>Saudi Arabia</option>
+                        <option>Jordan</option>
+                        <option>Lebanon</option>
+                        <option>Iraq</option>
+                        <option>Bangladesh</option>
+                        <option>Sri Lanka</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="sa-error-msg">Please select your nationality</span>
+                  </div>
+
+                  <div class="sa-field">
+                    <label class="sa-label">How Did You Hear About Us? <span class="req">*</span></label>
+                    <div class="sa-select-wrap">
+                      <select class="sa-select" required>
+                        <option value="" disabled selected>Select source</option>
+                        <option>Instagram</option>
+                        <option>Facebook</option>
+                        <option>Google Search</option>
+                        <option>YouTube</option>
+                        <option>Friend or Family</option>
+                        <option>School Seminar</option>
+                        <option>Email Campaign</option>
+                        <option>WhatsApp</option>
+                        <option>QIEC</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="sa-error-msg">Please select an option</span>
+                  </div>
+
+                </div><!-- /sa-field-grid -->
+
+                <div class="sa-step-nav">
+                  <span></span><!-- empty left side -->
+                  <button type="button" class="sa-btn-next">
+                    Continue <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div><!-- /step 1 -->
+
+
+              <!-- ═══ STEP 2: Academic Info ═══ -->
+              <div id="sa-step-2" class="sa-step-panel">
+                <div class="sa-step-title">
+                  <i class="fa-solid fa-graduation-cap"></i> Academic Background
+                </div>
+                <div class="sa-field-grid">
+
+                  <div class="sa-field">
+                    <label class="sa-label">Current Academic Level <span class="req">*</span></label>
+                    <div class="sa-select-wrap">
+                      <select class="sa-select" required>
+                        <option value="" disabled selected>Select your level</option>
+                        <option>High School</option>
+                        <option>A-Levels / IB</option>
+                        <option>Bachelor's Degree</option>
+                        <option>Diploma</option>
+                        <option>Master's Degree</option>
+                        <option>PhD</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="sa-error-msg">Please select your academic level</span>
+                  </div>
+
+                  <div class="sa-field">
+                    <label class="sa-label">Intended Intake Year <span class="req">*</span></label>
+                    <div class="sa-select-wrap">
+                      <select class="sa-select" required>
+                        <option value="" disabled selected>Select intake year</option>
+                        <option>2025</option>
+                        <option>2026</option>
+                        <option>2027</option>
+                        <option>2028</option>
+                        <option>Not Sure Yet</option>
+                      </select>
+                    </div>
+                    <span class="sa-error-msg">Please select your intended intake year</span>
+                  </div>
+
+                  <div class="sa-field full">
+                    <label class="sa-label">Name of Current Institution <span class="opt">(optional)</span></label>
+                    <div class="sa-input-icon">
+                      <i class="fa-solid fa-school"></i>
+                      <input type="text" class="sa-input" placeholder="e.g. American University of Dubai" />
+                    </div>
+                  </div>
+
+                  <div class="sa-field full">
+                    <label class="sa-label">Interested Program / Major <span class="req">*</span></label>
+                    <div class="sa-input-icon">
+                      <i class="fa-solid fa-book-open"></i>
+                      <input type="text" class="sa-input" placeholder="e.g. Business Administration, Computer Science, Medicine..." required />
+                    </div>
+                    <span class="sa-error-msg">Please enter your preferred program or major</span>
+                  </div>
+
+                </div>
+
+                <div class="sa-step-nav">
+                  <button type="button" class="sa-btn-prev">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                  </button>
+                  <button type="button" class="sa-btn-next">
+                    Continue <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div><!-- /step 2 -->
+
+
+              <!-- ═══ STEP 3: Destination & Preferences ═══ -->
+              <div id="sa-step-3" class="sa-step-panel">
+                <div class="sa-step-title">
+                  <i class="fa-solid fa-earth-americas"></i> Destination &amp; Preferences
+                </div>
+                <div class="sa-field-grid">
+
+                  <div class="sa-field full">
+                    <label class="sa-label">Preferred Study Destination <span class="req">*</span></label>
+                    <div class="sa-select-wrap">
+                      <select class="sa-select" required>
+                        <option value="" disabled selected>Select your preferred country</option>
+                        <option>Canada</option>
+                        <option>UK</option>
+                        <option>UAE</option>
+                        <option>Hungary</option>
+                        <option>Malaysia</option>
+                        <option>Netherlands</option>
+                        <option>Albania</option>
+                        <option>Guyana</option>
+                        <option>Australia</option>
+                        <option>USA</option>
+                        <option>Germany</option>
+                        <option>Other</option>
+                        <option>Open to Suggestions</option>
+                      </select>
+                    </div>
+                    <span class="sa-error-msg">Please select a preferred destination</span>
+                  </div>
+
+                  <div class="sa-field full">
+                    <label class="sa-label">
+                      Any Questions or Comments?
+                      <span class="opt">(optional)</span>
+                    </label>
+                    <textarea
+                      id="sa-comments"
+                      class="sa-textarea"
+                      placeholder="Tell us anything that will help us assist you better — e.g. budget range, scholarship interest, specific universities..."
+                      maxlength="500"
+                    ></textarea>
+                    <span style="font-size:.7rem;color:var(--text-dim);text-align:right;display:block;margin-top:.2rem;" id="sa-char-count">0/500</span>
+                  </div>
+
+                  <div class="sa-field full">
+                    <label class="sa-label">Subscribe to our Study Abroad Newsletter?</label>
+                    <div class="sa-radio-group">
+                      <label class="sa-radio-option">
+                        <input type="radio" name="newsletter" value="yes" />
+                        <i class="fa-solid fa-check-circle"></i> Yes, keep me updated!
+                      </label>
+                      <label class="sa-radio-option">
+                        <input type="radio" name="newsletter" value="no" />
+                        <i class="fa-solid fa-times-circle"></i> No thanks
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="sa-step-nav">
+                  <button type="button" class="sa-btn-prev">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                  </button>
+                </div>
+
+                <button type="submit" class="sa-btn-submit">
+                  <i class="fa-solid fa-paper-plane"></i> Submit My Application
+                </button>
+                <p class="sa-form-note">
+                  <i class="fa-solid fa-lock"></i>
+                  Your information is secure and will never be shared with third parties.
+                </p>
+
+              </div><!-- /step 3 -->
+
+            </form>
+          </div><!-- /sa-form-wrap -->
+
+          <!-- ── Success State ── -->
+          <div id="sa-success" class="sa-success">
+            <div class="sa-success-icon">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3>Application Received! &#10024;</h3>
+            <p>
+              Thank you for reaching out to NexGen Dubai. Our education advisors will
+              contact you within <strong>24 hours</strong> to schedule your free one-to-one
+              consultation session and help you take the next step toward studying abroad.
+            </p>
+            <div class="sa-success-actions">
+              <a href="partners.html" class="btn btn-blue">
+                <i class="fa-solid fa-building-columns"></i> Browse Our Partner Universities
+              </a>
+              <a href="education.html" class="btn btn-outline">
+                <i class="fa-solid fa-graduation-cap"></i> Back to Education
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /sa-form-body -->
+      </div><!-- /sa-form-card -->
+    </div><!-- /sa-right -->
+
+  </div><!-- /sa-layout -->
+</div><!-- /sa-page -->
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Canada</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UK</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Hungary</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Malaysia</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Netherlands</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Albania</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UAE</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>100% Free Advisory</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Scholarship Guidance</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Visa Support</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>9+ Universities</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>500+ Students Placed</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Education</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Overview</a></li>
+          <li><a href="partners.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Partners &amp; Programs</a></li>
+          <li><a href="study-abroad.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Study Abroad</a></li>
+          <li><a href="join-network.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Network</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Other Services</h4>
+        <ul class="footer-links">
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Events</a></li>
+          <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="study-abroad.js"></script>
+</body>
+</html>

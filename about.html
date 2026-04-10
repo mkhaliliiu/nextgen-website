@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About NexGen Dubai — We blend creativity, strategy, and execution to redefine what's possible in media, education, and events. Dubai-based, globally connected." />
+  <title>About Us — NexGen Dubai</title>
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971000000000?text=Hello%20NexGen%20Dubai!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Say hello!</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link active">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="ab-hero">
+  <div class="ab-hero-glow-1"></div>
+  <div class="ab-hero-glow-2"></div>
+  <div class="ab-hero-grid"></div>
+
+  <div class="ab-hero-content container">
+
+    <!-- Left: big headline -->
+    <div class="ab-hero-text">
+      <div class="ab-hero-label">
+        <div class="ab-hero-label-line"></div>
+        <span>About NexGen Dubai</span>
+      </div>
+      <h1 class="ab-hero-title">
+        <span class="line"><span class="word">Who</span>&nbsp;<span class="word w2">Are</span></span>
+        <span class="line"><span class="word w3 accent">We?</span></span>
+      </h1>
+      <p class="ab-hero-sub">
+        At NexGen Dubai, we blend creativity, strategy, and execution to redefine what's possible
+        in media, education, and events. We inspire growth and drive success across industries
+        through bold ideas and dynamic partnerships.
+      </p>
+      <div class="ab-hero-actions">
+        <a href="#ab-intro" class="btn btn-blue"><i class="fa-solid fa-arrow-down"></i> Our Story</a>
+        <a href="contact.html" class="btn-cta-outline"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Right: 3 value cards -->
+    <div class="ab-hero-values">
+      <div class="ab-value-card">
+        <div class="ab-value-icon">&#128161;</div>
+        <div class="ab-value-title">Innovation</div>
+        <div class="ab-value-desc">We embrace fresh, bold ideas to deliver unparalleled results that keep our clients ahead of the curve in a rapidly evolving world.</div>
+      </div>
+      <div class="ab-value-card">
+        <div class="ab-value-icon">&#128273;</div>
+        <div class="ab-value-title">Reliability</div>
+        <div class="ab-value-desc">Trusted by clients across the UAE and beyond for our professionalism, consistency, and unwavering dedication to every project we take on.</div>
+      </div>
+      <div class="ab-value-card">
+        <div class="ab-value-icon">&#127941;</div>
+        <div class="ab-value-title">Excellence</div>
+        <div class="ab-value-desc">An uncompromising commitment to top-quality services in every project — from the first briefing to the final delivery and beyond.</div>
+      </div>
+    </div>
+
+  </div><!-- /ab-hero-content -->
+
+  
+
+  <div class="ab-scroll">
+    <span>Scroll</span>
+    <div class="ab-scroll-line"></div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="ab-hero-stats">
+    <div class="ab-hero-stats-inner container">
+      <div class="ab-stat-item">
+        <div class="ab-stat-num" data-counter="50">0</div>+
+        <div class="ab-stat-label">Events Executed</div>
+      </div>
+      <div class="ab-stat-item">
+        <div class="ab-stat-num" data-counter="9">0</div>+
+        <div class="ab-stat-label">University Partners</div>
+      </div>
+      <div class="ab-stat-item">
+        <div class="ab-stat-num" data-counter="500">0</div>+
+        <div class="ab-stat-label">Students Placed</div>
+      </div>
+      <div class="ab-stat-item">
+        <div class="ab-stat-num" data-counter="12">0</div>+
+        <div class="ab-stat-label">Countries Reached</div>
+      </div>
+      <div class="ab-stat-item">
+        <div class="ab-stat-num" data-counter="100">0</div>%
+        <div class="ab-stat-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BREADCRUMB ═════════════════════════════════════════════ -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>About Us</span>
+  </div>
+</div>
+
+<!-- ══ WHO WE ARE — INTRO ══════════════════════════════════════ -->
+<section id="ab-intro">
+  <div class="container">
+    <div class="ab-intro-grid">
+
+      <!-- Image column -->
+      <div class="ab-intro-img-col reveal-left">
+        <span class="ab-intro-img-tag">&#127968; Founded in Dubai, 2024</span>
+        <img
+          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&auto=format&fit=crop&q=80"
+          alt="NexGen Dubai team in action"
+          class="ab-intro-img"
+        />
+        <div class="ab-intro-badge">
+          <span style="font-size:1.8rem;">&#127760;</span>
+          <div>
+            <div class="ab-intro-badge-num">12+</div>
+            <div class="ab-intro-badge-label">Countries<br/>in our network</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="reveal-right">
+        <div class="tag">Our Story</div>
+        <h2 class="heading-lg">NexGen —<br/><span class="blue-gradient-soft">Your Partner in Success</span></h2>
+        <p class="ab-intro-body ab-intro-dropcap">
+          We are dedicated to understanding and meeting each client's unique needs. By tailoring
+          our media, education, and event solutions to specific goals, we ensure that every project
+          is impactful and aligned with the client's vision.
+        </p>
+        <p class="ab-intro-body">
+          We listen closely, adapt swiftly, and deliver results that make a difference — helping
+          businesses and individuals thrive in a rapidly changing world. Based at the iconic Meydan
+          Grandstand in Dubai, we operate with a global mindset and local expertise, connecting
+          opportunities across borders with precision and purpose.
+        </p>
+        <p class="ab-intro-body">
+          From strategic educational partnerships and world-class media production to flawlessly
+          executed events, NexGen Dubai is the go-to partner for organisations that refuse to
+          settle for anything less than extraordinary.
+        </p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;">
+          <a href="team.html" class="btn btn-blue"><i class="fa-solid fa-users"></i> Meet Our Team</a>
+          <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Connect With Us</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ VISION & MISSION ════════════════════════════════════════ -->
+<section id="ab-vision">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto;">
+      <div class="tag reveal">Purpose &amp; Direction</div>
+      <h2 class="heading-lg reveal delay-1">Our Vision<br/><span class="blue-gradient-soft">&amp; Mission</span></h2>
+    </div>
+    <div class="ab-vm-grid">
+
+      <div class="ab-vm-card ab-vm-card-vision reveal">
+        <div class="ab-vm-icon">&#128304;</div>
+        <div class="ab-vm-label">Our Vision</div>
+        <h3 class="ab-vm-title">The Leading Catalyst<br/>for Transformative Growth</h3>
+        <p class="ab-vm-body">
+          To be the leading catalyst for transformative growth — connecting global opportunities
+          in media, education, and events, and redefining excellence in every interaction.
+          We envision a world where NexGen is synonymous with impact, trust, and innovation
+          across the UAE and the international stage.
+        </p>
+      </div>
+
+      <div class="ab-vm-card ab-vm-card-mission reveal delay-2">
+        <div class="ab-vm-icon">&#127919;</div>
+        <div class="ab-vm-label">Our Mission</div>
+        <h3 class="ab-vm-title">Empowering Individuals<br/>&amp; Organisations Worldwide</h3>
+        <p class="ab-vm-body">
+          To empower individuals and organisations by delivering world-class media solutions,
+          fostering impactful educational partnerships, and crafting extraordinary events that
+          inspire and elevate. We commit to turning every brief into a success story —
+          measurable, meaningful, and lasting.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ THREE PILLARS — SERVICES OVERVIEW ══════════════════════ -->
+<section id="ab-services">
+  <div class="container">
+    <div class="ab-services-header">
+      <div class="tag reveal">What We Do</div>
+      <h2 class="heading-lg reveal delay-1">Three Pillars of<br/><span class="blue-gradient-soft">NexGen Excellence</span></h2>
+      <p class="reveal delay-2">We operate across three interconnected service areas — each one designed to create extraordinary outcomes for the clients and communities we serve.</p>
+    </div>
+    <div class="ab-pillars-grid">
+
+      <!-- Education -->
+      <div class="ab-pillar reveal">
+        <div class="ab-pillar-num">01</div>
+        <div class="ab-pillar-icon">
+          <span style="font-size:1.7rem;">&#127891;</span>
+        </div>
+        <h3 class="ab-pillar-title">Education &amp; Advisory</h3>
+        <p class="ab-pillar-desc">
+          We connect students with world-class universities across Canada, UK, Hungary, Malta,
+          Netherlands, Malaysia, Albania, and Guyana — providing end-to-end advisory services
+          that are completely free for students. From counseling and application support to visa
+          guidance and pre-departure preparation, we open doors to global futures.
+        </p>
+        <a href="education.html" class="ab-pillar-link">Explore Education <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Events -->
+      <div class="ab-pillar reveal delay-2">
+        <div class="ab-pillar-num">02</div>
+        <div class="ab-pillar-icon">
+          <span style="font-size:1.7rem;">&#127881;</span>
+        </div>
+        <h3 class="ab-pillar-title">Events &amp; Experiences</h3>
+        <p class="ab-pillar-desc">
+          We go beyond event planning — we craft immersive brand experiences. From corporate
+          conferences and university fairs to private celebrations and hybrid productions,
+          our end-to-end event management team handles every detail with precision, passion,
+          and an obsessive commitment to excellence.
+        </p>
+        <a href="events.html" class="ab-pillar-link">Explore Events <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Media -->
+      <div class="ab-pillar reveal delay-4">
+        <div class="ab-pillar-num">03</div>
+        <div class="ab-pillar-icon">
+          <span style="font-size:1.7rem;">&#127910;</span>
+        </div>
+        <h3 class="ab-pillar-title">Media &amp; PR</h3>
+        <p class="ab-pillar-desc">
+          Strategic campaigns, immersive storytelling, and comprehensive digital solutions
+          for institutional and corporate clients. We offer photography, videography, social
+          media campaigns, digital marketing, brand storytelling, content creation, web design,
+          and full PR services — all under one creative roof.
+        </p>
+        <a href="media.html" class="ab-pillar-link">Explore Media &amp; PR <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY CHOOSE NEXGEN ═══════════════════════════════════════ -->
+<section id="ab-why">
+  <div class="container">
+    <div class="ab-why-header">
+      <div class="tag reveal">Why NexGen?</div>
+      <h2 class="heading-lg reveal delay-1">Why Choose<br/>NexGen Dubai?</h2>
+      <p class="reveal delay-2">NexGen is the go-to partner for businesses, institutions, and individuals seeking reliability, innovation, and excellence in everything we do.</p>
+    </div>
+    <div class="ab-why-grid">
+
+      <div class="ab-why-card reveal">
+        <div class="ab-why-card-num">01</div>
+        <div class="ab-why-icon">&#128295;</div>
+        <h3 class="ab-why-title">Comprehensive Expertise</h3>
+        <p class="ab-why-desc">We specialise in delivering end-to-end solutions across Media, Education, and Events — bringing unmatched expertise to every single project we take on.</p>
+      </div>
+
+      <div class="ab-why-card reveal delay-1">
+        <div class="ab-why-card-num">02</div>
+        <div class="ab-why-icon">&#127775;</div>
+        <h3 class="ab-why-title">Tailored Solutions</h3>
+        <p class="ab-why-desc">We understand that every client is unique. Our team works closely with you to craft customized strategies that align with your goals and deliver measurable results.</p>
+      </div>
+
+      <div class="ab-why-card reveal delay-2">
+        <div class="ab-why-card-num">03</div>
+        <div class="ab-why-icon">&#127758;</div>
+        <h3 class="ab-why-title">Global Network, Local Insight</h3>
+        <p class="ab-why-desc">With a strong presence in the UAE and connections to world-class institutions globally, we bridge local opportunities with international standards seamlessly.</p>
+      </div>
+
+      <div class="ab-why-card reveal">
+        <div class="ab-why-card-num">04</div>
+        <div class="ab-why-icon">&#129309;</div>
+        <h3 class="ab-why-title">Dedicated, Trusted Team</h3>
+        <p class="ab-why-desc">Our team of passionate professionals is committed to excellence — working tirelessly to turn your vision into reality, on time and on brief.</p>
+      </div>
+
+      <div class="ab-why-card reveal delay-1">
+        <div class="ab-why-card-num">05</div>
+        <div class="ab-why-icon">&#9889;</div>
+        <h3 class="ab-why-title">Innovation at the Core</h3>
+        <p class="ab-why-desc">We leverage the latest trends, tools, and technologies to deliver creative, forward-thinking solutions that set you apart from the competition.</p>
+      </div>
+
+      <div class="ab-why-card reveal delay-2">
+        <div class="ab-why-card-num">06</div>
+        <div class="ab-why-icon">&#127941;</div>
+        <h3 class="ab-why-title">Proven Track Record</h3>
+        <p class="ab-why-desc">From successful educational collaborations to praised media campaigns and flawlessly executed events, NexGen has a history of consistently exceeding expectations.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ LOCATION & CONTACT ══════════════════════════════════════ -->
+<section id="ab-location">
+  <div class="container">
+    <div class="ab-location-grid">
+
+      <div class="reveal-left">
+        <div class="tag">Find Us</div>
+        <h2 class="ab-location-text" style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;color:var(--navy-deep);margin-bottom:1.2rem;line-height:1.1;">Based in the Heart<br/>of <span class="blue-gradient-soft">Dubai, UAE</span></h2>
+        <p style="font-size:.95rem;color:var(--text-secondary);line-height:1.82;margin-bottom:2rem;">
+          Located at the iconic Meydan Grandstand on the 6th floor, NexGen Dubai is perfectly
+          positioned at the intersection of sport, culture, and enterprise in one of the
+          world's most dynamic cities. Come visit us, or reach out — we're always ready to talk.
+        </p>
+        <div class="ab-location-items">
+          <div class="ab-location-item">
+            <div class="ab-location-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="ab-location-item-label">Address</div>
+              <div class="ab-location-item-value">Meydan Grandstand, 6th Floor, Meydan Rd, Nad Al Sheba, Dubai, UAE</div>
+            </div>
+          </div>
+          <div class="ab-location-item">
+            <div class="ab-location-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="ab-location-item-label">Email</div>
+              <div class="ab-location-item-value"><a href="mailto:info@nexgendubai.ae" style="color:var(--blue);">info@nexgendubai.ae</a></div>
+            </div>
+          </div>
+          <div class="ab-location-item">
+            <div class="ab-location-item-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div>
+              <div class="ab-location-item-label">Social Media</div>
+              <div class="ab-location-item-value"><a href="https://www.instagram.com/nexgen_dubai" target="_blank" style="color:var(--blue);">@nexgen_dubai</a></div>
+            </div>
+          </div>
+        </div>
+        <a href="https://maps.app.goo.gl/hfBmtHsvFfum3scp9" target="_blank" rel="noopener" class="btn btn-blue">
+          <i class="fa-solid fa-map-location-dot"></i> Get Directions
+        </a>
+      </div>
+
+      <div class="ab-location-map reveal-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2!2d55.2969!3d25.1521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69e7736e1a4f%3A0x0!2sMeydan+Grandstand%2C+Dubai!5e0!3m2!1sen!2sae!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="NexGen Dubai Location — Meydan Grandstand, 6th Floor"
+        ></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══════════════════════════════════════════════ -->
+<section id="ab-cta">
+  <div class="container">
+    <div class="ab-cta-box reveal">
+      <div class="tag" style="display:inline-block;background:rgba(61,184,232,.15);border-color:rgba(61,184,232,.4);color:var(--blue-light);">Work With Us</div>
+      <h2 class="ab-cta-title">Ready to Partner<br/><span class="blue-gradient-soft">with NexGen Dubai?</span></h2>
+      <p class="ab-cta-desc">Whether you're a student dreaming of studying abroad, an institution looking to expand, a company needing media services, or an organisation planning its next big event — NexGen Dubai is your partner from vision to reality.</p>
+      <div class="ab-cta-actions">
+        <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+        <a href="education.html" class="btn-cta-outline"><i class="fa-solid fa-graduation-cap"></i> Explore Education</a>
+        <a href="events.html" class="btn-cta-outline"><i class="fa-solid fa-calendar-days"></i> Explore Events</a>
+        <a href="media.html" class="btn-cta-outline"><i class="fa-solid fa-photo-film"></i> Media &amp; PR</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Our Team</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Team</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Education</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Events</a></li>
+          <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plan Your Event with NexGen Dubai — Whether corporate or creative, we bring your vision to life. End-to-end event planning, media coverage, PR and more." />
+  <title>Plan Your Event — NexGen Dubai</title>
+  <link rel="stylesheet" href="plan-event.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971000000000?text=Hello%20NexGen%20Dubai%2C%20I%20want%20to%20plan%20an%20event!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Plan your event</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="sponsor.html" class="btn btn-blue"><i class="fa-solid fa-star"></i> Become a Sponsor</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link active">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="events.html" class="btn btn-blue"><i class="fa-solid fa-calendar-days"></i> Events Overview</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════
+     FULL-PAGE SPLIT — dark gold-navy / form card
+══════════════════════════════════════════════════════ -->
+<div class="pe-page">
+  <div class="pe-bg-grid"></div>
+  <div class="pe-blob-1"></div>
+  <div class="pe-blob-2"></div>
+
+  <div class="pe-layout container">
+
+    <!-- ══════════ LEFT PANEL ══════════ -->
+    <div class="pe-left">
+
+      <div class="pe-eyebrow">
+        <div class="pe-eyebrow-line"></div>
+        <span>End-to-End Event Management</span>
+      </div>
+
+      <h1 class="pe-title">
+        <span class="line"><span class="word">Plan Your</span></span>
+        <span class="line"><span class="word">Next</span>&nbsp;<span class="word accent">Event</span></span>
+      </h1>
+
+      <p class="pe-sub">Whether it's corporate or creative, let us bring your vision to life. From concept to execution, NexGen Dubai offers end-to-end support for events of all scales — so you can focus on what matters most: impact.</p>
+
+      <!-- Services we provide -->
+      <div class="pe-services-label">Our Services Include</div>
+      <div class="pe-services">
+
+        <div class="pe-service">
+          <div class="pe-service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <div>
+            <div class="pe-service-title">Event Concept &amp; Planning</div>
+            <div class="pe-service-desc">Full strategic planning from initial brief to final runsheet — tailored to your goals, audience, and vision.</div>
+          </div>
+        </div>
+
+        <div class="pe-service">
+          <div class="pe-service-icon"><i class="fa-solid fa-camera"></i></div>
+          <div>
+            <div class="pe-service-title">Media Coverage — Photography &amp; Videography</div>
+            <div class="pe-service-desc">Professional on-site photographers and videographers capturing every key moment of your event.</div>
+          </div>
+        </div>
+
+        <div class="pe-service">
+          <div class="pe-service-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div>
+            <div class="pe-service-title">Digital &amp; Social Media Marketing</div>
+            <div class="pe-service-desc">Pre-event campaigns, live social coverage, reels, stories, and post-event content to maximise your reach.</div>
+          </div>
+        </div>
+
+        <div class="pe-service">
+          <div class="pe-service-icon"><i class="fa-solid fa-newspaper"></i></div>
+          <div>
+            <div class="pe-service-title">Public Relations &amp; Promotion</div>
+            <div class="pe-service-desc">Press releases, media outreach, influencer partnerships, and post-event PR to amplify your brand story.</div>
+          </div>
+        </div>
+
+        <div class="pe-service">
+          <div class="pe-service-icon"><i class="fa-solid fa-gears"></i></div>
+          <div>
+            <div class="pe-service-title">On-Ground Management &amp; Branding</div>
+            <div class="pe-service-desc">Dedicated on-site team handling logistics, staff, decor, signage, tech support, and guest management.</div>
+          </div>
+        </div>
+
+      </div><!-- /pe-services -->
+
+      <!-- Stats -->
+      <div class="pe-stats">
+        <div class="pe-stat">
+          <div class="pe-stat-num" data-counter="50">0</div>+
+          <div class="pe-stat-label">Events Executed</div>
+        </div>
+        <div class="pe-stat">
+          <div class="pe-stat-num" data-counter="300">0</div>+
+          <div class="pe-stat-label">Avg. Attendees</div>
+        </div>
+        <div class="pe-stat">
+          <div class="pe-stat-num" data-counter="100">0</div>%
+          <div class="pe-stat-label">Satisfaction</div>
+        </div>
+      </div>
+
+    </div><!-- /pe-left -->
+
+    <!-- ══════════ RIGHT PANEL: FORM ══════════ -->
+    <div class="pe-right">
+      <div class="pe-form-card">
+
+        <!-- Form Header -->
+        <div class="pe-form-header">
+          <div class="pe-form-header-badge">
+            <i class="fa-solid fa-calendar-days"></i> Event Brief
+          </div>
+          <h2 class="pe-form-title">Tell Us About Your Event</h2>
+          <p class="pe-form-subtitle">Fill in your details and we'll send a custom proposal within 24 hours</p>
+
+          <!-- Step indicator -->
+          <div class="pe-form-steps">
+            <div class="pe-step-item active" id="pe-si-1">
+              <div class="pe-step-dot">1</div>
+              <span>Contact</span>
+            </div>
+            <div class="pe-step-line"></div>
+            <div class="pe-step-item" id="pe-si-2">
+              <div class="pe-step-dot">2</div>
+              <span>Event Details</span>
+            </div>
+            <div class="pe-step-line"></div>
+            <div class="pe-step-item" id="pe-si-3">
+              <div class="pe-step-dot">3</div>
+              <span>Services &amp; Vision</span>
+            </div>
+          </div>
+        </div><!-- /form header -->
+
+        <div class="pe-form-body">
+          <div id="pe-form-wrap">
+            <form id="pe-form" novalidate>
+
+              <!-- ══ STEP 1: Contact Info ══ -->
+              <div id="pe-step-1" class="pe-step-panel active">
+                <div class="pe-step-title">
+                  <i class="fa-solid fa-id-card"></i> Your Contact Details
+                </div>
+                <div class="pe-field-grid">
+
+                  <div class="pe-field full">
+                    <label class="pe-label">Full Name <span class="req">*</span></label>
+                    <div class="pe-input-wrap">
+                      <i class="fa-solid fa-user fi"></i>
+                      <input type="text" class="pe-input" placeholder="e.g. Khalid Al Marzooqi" required />
+                    </div>
+                    <span class="pe-error-msg">Please enter your full name</span>
+                  </div>
+
+                  <div class="pe-field">
+                    <label class="pe-label">Email Address <span class="req">*</span></label>
+                    <div class="pe-input-wrap">
+                      <i class="fa-solid fa-envelope fi"></i>
+                      <input type="email" class="pe-input" placeholder="you@company.com" required />
+                    </div>
+                    <span class="pe-error-msg">Please enter a valid email</span>
+                  </div>
+
+                  <div class="pe-field">
+                    <label class="pe-label">Phone Number <span class="req">*</span></label>
+                    <div class="pe-input-wrap">
+                      <i class="fa-solid fa-phone fi"></i>
+                      <input type="tel" class="pe-input" placeholder="+971 XX XXX XXXX" required />
+                    </div>
+                    <span class="pe-error-msg">Please enter your phone number</span>
+                  </div>
+
+                  <div class="pe-field full">
+                    <label class="pe-label">Company / Organisation Name <span class="opt">(optional)</span></label>
+                    <div class="pe-input-wrap">
+                      <i class="fa-solid fa-building fi"></i>
+                      <input type="text" class="pe-input" placeholder="e.g. Emirates Business Council" />
+                    </div>
+                  </div>
+
+                  <div class="pe-field full">
+                    <label class="pe-label">Preferred Contact Method <span class="req">*</span></label>
+                    <div class="pe-radio-group">
+                      <label class="pe-radio-opt">
+                        <input type="radio" name="pe-contact-method" value="email" />
+                        <i class="fa-solid fa-envelope"></i> Email
+                      </label>
+                      <label class="pe-radio-opt">
+                        <input type="radio" name="pe-contact-method" value="phone" />
+                        <i class="fa-solid fa-phone"></i> Phone Call
+                      </label>
+                      <label class="pe-radio-opt">
+                        <input type="radio" name="pe-contact-method" value="whatsapp" />
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="pe-step-nav">
+                  <span></span>
+                  <button type="button" class="pe-btn-next">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div><!-- /step 1 -->
+
+
+              <!-- ══ STEP 2: Event Details ══ -->
+              <div id="pe-step-2" class="pe-step-panel">
+                <div class="pe-step-title">
+                  <i class="fa-solid fa-calendar-days"></i> Event Details
+                </div>
+                <div class="pe-field-grid">
+
+                  <div class="pe-field full">
+                    <label class="pe-label">Type of Event <span class="req">*</span></label>
+                    <div class="pe-select-wrap">
+                      <select class="pe-select" required>
+                        <option value="" disabled selected>Select event type</option>
+                        <option>Corporate Conference / Summit</option>
+                        <option>Annual General Meeting (AGM)</option>
+                        <option>Product Launch</option>
+                        <option>Educational Fair / Workshop</option>
+                        <option>Brand Activation / Exhibition</option>
+                        <option>Gala Dinner / Awards Night</option>
+                        <option>Team Building / Corporate Retreat</option>
+                        <option>Hybrid / Virtual Event</option>
+                        <option>Private Celebration (Wedding, Birthday, etc.)</option>
+                        <option>University Fair / Open Day</option>
+                        <option>Press Conference</option>
+                        <option>Other (Please Specify)</option>
+                      </select>
+                    </div>
+                    <span class="pe-error-msg">Please select an event type</span>
+                  </div>
+
+                  <div class="pe-field">
+                    <label class="pe-label">Event Date <span class="req">*</span></label>
+                    <div class="pe-input-wrap">
+                      <i class="fa-solid fa-calendar fi"></i>
+                      <input type="date" class="pe-input" required />
+                    </div>
+                    <span class="pe-error-msg">Please select the event date</span>
+                  </div>
+
+                  <div class="pe-field">
+                    <label class="pe-label">Event Location <span class="req">*</span></label>
+                    <div class="pe-input-wrap">
+                      <i class="fa-solid fa-location-dot fi"></i>
+                      <input type="text" class="pe-input" placeholder="e.g. Dubai, Hotel TBD" required />
+                    </div>
+                    <span class="pe-error-msg">Please enter the event location</span>
+                  </div>
+
+                  <div class="pe-field">
+                    <label class="pe-label">Estimated Number of Guests <span class="req">*</span></label>
+                    <div class="pe-select-wrap">
+                      <select class="pe-select" required>
+                        <option value="" disabled selected>Select guest range</option>
+                        <option>Under 50</option>
+                        <option>50 – 100</option>
+                        <option>100 – 200</option>
+                        <option>200 – 500</option>
+                        <option>500 – 1,000</option>
+                        <option>1,000+</option>
+                        <option>Not Sure Yet</option>
+                      </select>
+                    </div>
+                    <span class="pe-error-msg">Please select an estimated guest count</span>
+                  </div>
+
+                  <div class="pe-field">
+                    <label class="pe-label">Event Duration <span class="req">*</span></label>
+                    <div class="pe-select-wrap">
+                      <select class="pe-select" required>
+                        <option value="" disabled selected>Select duration</option>
+                        <option>Half Day (up to 4 hours)</option>
+                        <option>Full Day (up to 8 hours)</option>
+                        <option>2 Days</option>
+                        <option>3+ Days</option>
+                        <option>Multiple Sessions (recurring)</option>
+                        <option>Not Sure Yet</option>
+                      </select>
+                    </div>
+                    <span class="pe-error-msg">Please select the event duration</span>
+                  </div>
+
+                  <!-- Budget visual cards -->
+                  <div class="pe-field full" style="margin-top:.2rem;">
+                    <label class="pe-label">Estimated Budget Range <span class="req">*</span></label>
+                    <div class="pe-budget-grid">
+                      <label class="pe-budget-opt">
+                        <input type="radio" name="pe-budget" value="under10k" />
+                        <div class="pe-budget-opt-amount">Under<br/>AED 10K</div>
+                        <div class="pe-budget-opt-label">Starter</div>
+                      </label>
+                      <label class="pe-budget-opt">
+                        <input type="radio" name="pe-budget" value="10k-25k" />
+                        <div class="pe-budget-opt-amount">AED 10K<br/>– 25K</div>
+                        <div class="pe-budget-opt-label">Growth</div>
+                      </label>
+                      <label class="pe-budget-opt">
+                        <input type="radio" name="pe-budget" value="25k-50k" />
+                        <div class="pe-budget-opt-amount">AED 25K<br/>– 50K</div>
+                        <div class="pe-budget-opt-label">Premium</div>
+                      </label>
+                      <label class="pe-budget-opt">
+                        <input type="radio" name="pe-budget" value="over50k" />
+                        <div class="pe-budget-opt-amount">Over<br/>AED 50K</div>
+                        <div class="pe-budget-opt-label">Enterprise</div>
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="pe-step-nav">
+                  <button type="button" class="pe-btn-prev"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                  <button type="button" class="pe-btn-next">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div><!-- /step 2 -->
+
+
+              <!-- ══ STEP 3: Services & Vision ══ -->
+              <div id="pe-step-3" class="pe-step-panel">
+                <div class="pe-step-title">
+                  <i class="fa-solid fa-sparkles"></i> Services &amp; Vision
+                </div>
+                <div class="pe-field-grid">
+
+                  <div class="pe-field full">
+                    <label class="pe-label">Services Required <span class="opt">(select all that apply)</span></label>
+                    <div class="pe-check-grid">
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-lightbulb si"></i> Concept &amp; Planning</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-camera si"></i> Photography</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-video si"></i> Videography</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-brands fa-instagram si"></i> Social Media</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-newspaper si"></i> PR &amp; Press</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-palette si"></i> Branding &amp; Signage</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-laptop si"></i> Tech &amp; AV Production</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-users si"></i> Staffing &amp; Registration</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-broadcast-tower si"></i> Live Streaming</label>
+                      <label class="pe-check-opt"><input type="checkbox" /><div class="pe-chk-box"></div><i class="fa-solid fa-truck si"></i> Vendor Management</label>
+                    </div>
+                  </div>
+
+                  <div class="pe-field full">
+                    <label class="pe-label">
+                      Tell Us More About Your Event Vision &amp; Goals <span class="req">*</span>
+                    </label>
+                    <textarea
+                      id="pe-vision"
+                      class="pe-textarea"
+                      placeholder="Describe your event concept, theme, key objectives, audience profile, and any specific requirements or ideas you have in mind..."
+                      maxlength="700"
+                      required
+                      style="min-height:110px;"
+                    ></textarea>
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.2rem;">
+                      <span class="pe-error-msg" style="margin:0;">Please describe your event vision</span>
+                      <span style="font-size:.7rem;color:var(--text-dim);" id="pe-vision-count">0/700</span>
+                    </div>
+                  </div>
+
+                  <div class="pe-field full">
+                    <label class="pe-label">Would You Like to Schedule a Call With Our Event Specialist?</label>
+                    <div class="pe-radio-group">
+                      <label class="pe-radio-opt">
+                        <input type="radio" name="pe-schedule" value="yes" />
+                        <i class="fa-solid fa-phone-volume"></i> Yes, schedule a call
+                      </label>
+                      <label class="pe-radio-opt">
+                        <input type="radio" name="pe-schedule" value="no" />
+                        <i class="fa-solid fa-envelope"></i> Just send me a proposal
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="pe-step-nav">
+                  <button type="button" class="pe-btn-prev"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                </div>
+
+                <button type="submit" class="pe-btn-submit">
+                  <i class="fa-solid fa-paper-plane"></i> Submit My Event Brief
+                </button>
+                <p class="pe-form-note">
+                  <i class="fa-solid fa-lock"></i>
+                  Your event brief is confidential. We'll respond with a custom proposal within 24 hours.
+                </p>
+
+              </div><!-- /step 3 -->
+
+            </form>
+          </div><!-- /pe-form-wrap -->
+
+          <!-- Success State -->
+          <div id="pe-success" class="pe-success">
+            <div class="pe-success-icon">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3>Event Brief Received! &#127881;</h3>
+            <p>
+              Thank you for reaching out to NexGen Dubai. Our event specialists will review
+              your brief and get back to you within <strong>24 hours</strong> with a customised
+              proposal tailored to your vision, budget, and goals.
+            </p>
+            <div class="pe-success-actions">
+              <a href="events.html" class="btn btn-blue">
+                <i class="fa-solid fa-calendar-days"></i> Back to Events
+              </a>
+              <a href="sponsor.html" class="btn btn-outline">
+                <i class="fa-solid fa-star"></i> Become a Sponsor
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /pe-form-body -->
+      </div><!-- /pe-form-card -->
+    </div><!-- /pe-right -->
+
+  </div><!-- /pe-layout -->
+</div><!-- /pe-page -->
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Corporate Events</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Brand Activations</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>University Fairs</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Product Launches</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Photography &amp; Video</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Social Media Marketing</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>PR &amp; Press Coverage</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>On-Ground Management</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>50+ Events Executed</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Dubai &amp; UAE-wide</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Events</h4>
+        <ul class="footer-links">
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Overview</a></li>
+          <li><a href="plan-event.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Plan Your Event</a></li>
+          <li><a href="sponsor.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Become a Sponsor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Other Services</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Education</a></li>
+          <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="plan-event.js"></script>
+</body>
+</html>

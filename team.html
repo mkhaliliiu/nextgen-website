@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the NexGen Dubai Team — The passionate people behind our media, education, and events services. Chief Operations Executive and Marketing Executive." />
+  <title>Our Team — NexGen Dubai</title>
+  <link rel="stylesheet" href="team.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Chat with us</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media-services.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="careers.html" class="btn btn-blue"><i class="fa-solid fa-briefcase"></i> Join Our Team</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media-services.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link active">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="careers.html" class="btn btn-blue"><i class="fa-solid fa-briefcase"></i> Join Our Team</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="tm-hero">
+  <div class="tm-hero-glow-1"></div>
+  <div class="tm-hero-glow-2"></div>
+  <div class="tm-hero-grid"></div>
+  <div class="container tm-hero-inner">
+    <div class="tm-hero-label">
+      <div class="tm-hero-label-line"></div>
+      <span>NexGen Dubai</span>
+      <div class="tm-hero-label-line"></div>
+    </div>
+    <h1 class="tm-hero-title">
+      <span class="line"><span class="word">Meet Our</span></span>
+      <span class="line"><span class="word w2 accent">Team</span></span>
+    </h1>
+    <p class="tm-hero-sub">
+      The passionate people behind NexGen Dubai — driven by purpose, fueled by ambition,
+      and united by a commitment to delivering extraordinary results across media,
+      education, and events.
+    </p>
+  </div>
+</section>
+
+<!-- ══ BREADCRUMB ═════════════════════════════════════════════ -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <a href="about.html">About Us</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>Our Team</span>
+  </div>
+</div>
+
+<!-- ══ TEAM CARDS ══════════════════════════════════════════════ -->
+<section id="tm-team">
+  <div class="container">
+    <div class="tm-team-header reveal">
+      <div class="tag">The Faces Behind NexGen</div>
+      <h2>The People Who Make It <span class="blue-gradient-soft">Happen</span></h2>
+      <p>A small, dedicated team with big ambitions — combining expertise in operations, marketing, education, events, and media to deliver results that exceed expectations every time.</p>
+    </div>
+
+    <div class="tm-cards-wrap">
+
+      <!-- ══ CARD 1: Muhammad Abubakar Imtiaz ══ -->
+      <div class="tm-card">
+        <div class="tm-card-strip"></div>
+        <div class="tm-card-photo-wrap">
+          <!-- Real photo from the NexGen website -->
+          <img
+            src="assets/abubakarpfp.png"
+            alt="Muhammad Abubakar Imtiaz — Chief Operations Executive"
+            class="tm-card-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <!-- Fallback placeholder if image fails -->
+          <div class="tm-card-photo-placeholder" style="display:none;">
+            <div class="ph-icon"><i class="fa-solid fa-user"></i></div>
+            <div class="ph-initials">MAI</div>
+          </div>
+          <div class="tm-card-photo-overlay"></div>
+          <div class="tm-card-role-badge">
+            <div class="tm-card-role-badge-icon"><i class="fa-solid fa-gear"></i></div>
+            <span class="tm-card-role-badge-text">Chief Operations Executive</span>
+          </div>
+        </div>
+        <div class="tm-card-info">
+          <h3 class="tm-card-name">Muhammad Abubakar Imtiaz</h3>
+          <div class="tm-card-position">Chief Operations Executive</div>
+          <div class="tm-card-actions">
+            <a
+              href="https://www.linkedin.com/in/abubakar-imtiaz-38731bab/?originalSubdomain=ae"
+              target="_blank"
+              rel="noopener"
+              class="tm-card-action tm-action-linkedin"
+            >
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a
+              href="https://wa.me/971529747995"
+              target="_blank"
+              rel="noopener"
+              class="tm-card-action tm-action-whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ CARD 2: Huda Imran ══ -->
+      <div class="tm-card">
+        <div class="tm-card-strip"></div>
+        <div class="tm-card-photo-wrap">
+          <!-- Real photo from the NexGen website -->
+          <img
+            src="assets/hudapfp.png"
+            alt="Huda Imran — Marketing Executive"
+            class="tm-card-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <!-- Fallback placeholder -->
+          <div class="tm-card-photo-placeholder" style="display:none;">
+            <div class="ph-icon"><i class="fa-solid fa-user"></i></div>
+            <div class="ph-initials">HI</div>
+          </div>
+          <div class="tm-card-photo-overlay"></div>
+          <div class="tm-card-role-badge">
+            <div class="tm-card-role-badge-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <span class="tm-card-role-badge-text">Marketing Executive</span>
+          </div>
+        </div>
+        <div class="tm-card-info">
+          <h3 class="tm-card-name">Huda Imran</h3>
+          <div class="tm-card-position">Marketing Executive</div>
+          <div class="tm-card-actions">
+            <a
+              href="https://www.linkedin.com/in/hudairr/"
+              target="_blank"
+              rel="noopener"
+              class="tm-card-action tm-action-linkedin"
+            >
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a
+              href="https://wa.me/971589845883"
+              target="_blank"
+              rel="noopener"
+              class="tm-card-action tm-action-whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tm-cards-wrap -->
+  </div>
+</section>
+
+<!-- ══ JOIN THE TEAM CTA ════════════════════════════════════════ -->
+<section id="tm-join">
+  <div class="container">
+    <div class="tm-join-box reveal">
+      <span class="tm-join-emoji">&#127775;</span>
+      <h2 class="tm-join-title">Want to Join<br/><span class="blue-gradient-soft">Our Growing Team?</span></h2>
+      <p class="tm-join-desc">
+        We're always on the lookout for talented, passionate individuals who share our commitment
+        to excellence in media, education, and events. If you think you have what it takes to
+        be part of NexGen Dubai — we'd love to hear from you.
+      </p>
+      <div class="tm-join-actions">
+        <a href="careers.html" class="btn btn-blue"><i class="fa-solid fa-briefcase"></i> View Open Positions</a>
+        <a href="about.html" class="btn-cta-outline"><i class="fa-solid fa-building"></i> About NexGen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Our Team</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Team</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Education</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Events</a></li>
+          <li><a href="media-services.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="team.js"></script>
+</body>
+</html>

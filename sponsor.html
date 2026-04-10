@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sponsor NexGen Dubai Events — Put your brand at the heart of unforgettable experiences. Platinum, Gold, Silver and Custom sponsorship tiers available." />
+  <title>Sponsor Us — NexGen Dubai</title>
+  <link rel="stylesheet" href="sponsor.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971000000000?text=Hello%20NexGen%20Dubai%2C%20I%27m%20interested%20in%20sponsoring%20your%20events!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip">Discuss sponsorship</span>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu" onclick="window.closeMobileNav()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-photo-film fa-fw"></i> Our Media Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="plan-event.html" class="btn btn-blue"><i class="fa-solid fa-calendar-days"></i> Plan an Event</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:info@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> info@nexgendubai.ae</a>
+      <a href="tel:+971000000000"><i class="fa-solid fa-phone"></i> +971 XX XXX XXXX</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <div class="nav-item">
+        <span class="nav-link">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+          <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+          <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link active">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+          <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+          <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Media &amp; PR <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="media.html"><i class="fa-solid fa-photo-film fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Media Services</a>
+          <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="events.html" class="btn btn-blue"><i class="fa-solid fa-calendar-days"></i> Events</a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" onclick="window.openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════
+     FULL-PAGE GOLD-NAVY SPLIT LAYOUT
+══════════════════════════════════════════════════════ -->
+<div class="sp-page">
+  <div class="sp-bg-grid"></div>
+  <div class="sp-blob-1"></div>
+  <div class="sp-blob-2"></div>
+
+  <div class="sp-layout container">
+
+    <!-- ══════════ LEFT PANEL ══════════ -->
+    <div class="sp-left">
+
+      <div class="sp-eyebrow">
+        <div class="sp-eyebrow-line"></div>
+        <span>Become a Sponsor</span>
+      </div>
+
+      <h1 class="sp-title">
+        <span class="line"><span class="word">Sponsor</span></span>
+        <span class="line"><span class="word">Our</span>&nbsp;<span class="word accent">Events</span></span>
+      </h1>
+
+      <p class="sp-sub">
+        Partner with NexGen Dubai and put your brand at the heart of unforgettable experiences.
+        We host impactful student-centred, professional, and cultural events across the UAE and beyond.
+      </p>
+
+      <!-- Why Sponsor -->
+      <div class="sp-why-label">Why Sponsor Us?</div>
+      <div class="sp-benefits">
+
+        <div class="sp-benefit">
+          <div class="sp-benefit-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div>
+            <div class="sp-benefit-title">Targeted Brand Exposure</div>
+            <div class="sp-benefit-desc">Reach engaged audiences of youth, families, and professionals who are actively interested in your sector.</div>
+          </div>
+        </div>
+
+        <div class="sp-benefit">
+          <div class="sp-benefit-icon"><i class="fa-solid fa-camera"></i></div>
+          <div>
+            <div class="sp-benefit-title">Media &amp; Branding Across All Platforms</div>
+            <div class="sp-benefit-desc">Your brand featured in photography, videography, social media, press releases, and digital campaigns.</div>
+          </div>
+        </div>
+
+        <div class="sp-benefit">
+          <div class="sp-benefit-icon"><i class="fa-solid fa-store"></i></div>
+          <div>
+            <div class="sp-benefit-title">On-Site Booth &amp; Display Options</div>
+            <div class="sp-benefit-desc">Premium on-ground presence with branded booth space, banners, and direct access to event attendees.</div>
+          </div>
+        </div>
+
+        <div class="sp-benefit">
+          <div class="sp-benefit-icon"><i class="fa-solid fa-newspaper"></i></div>
+          <div>
+            <div class="sp-benefit-title">Inclusion in Event PR &amp; Promotions</div>
+            <div class="sp-benefit-desc">Logo placement on all event collateral, email campaigns, press materials, and sponsor-specific mentions.</div>
+          </div>
+        </div>
+
+        <div class="sp-benefit">
+          <div class="sp-benefit-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div>
+            <div class="sp-benefit-title">Long-Term Relationship &amp; Future Collaborations</div>
+            <div class="sp-benefit-desc">Join our trusted sponsor roster for access to all future NexGen events and partner institution collaborations.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sponsorship Tiers preview -->
+      <div class="sp-tiers-label">Sponsorship Tiers</div>
+      <div class="sp-tiers">
+        <div class="sp-tier sp-tier-platinum">
+          <span class="sp-tier-badge">Platinum</span>
+          <span class="sp-tier-desc">Headline exposure, logo on all materials &amp; keynote opportunity</span>
+        </div>
+        <div class="sp-tier sp-tier-gold">
+          <span class="sp-tier-badge">Gold</span>
+          <span class="sp-tier-desc">Logo, booth space and event mentions across all channels</span>
+        </div>
+        <div class="sp-tier sp-tier-silver">
+          <span class="sp-tier-badge">Silver</span>
+          <span class="sp-tier-desc">Logo and mentions in select promotional materials</span>
+        </div>
+        <div class="sp-tier sp-tier-custom">
+          <span class="sp-tier-badge">Custom</span>
+          <span class="sp-tier-desc">Fully tailored package designed around your brand goals</span>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="sp-stats">
+        <div class="sp-stat">
+          <div class="sp-stat-num" data-counter="50">0</div>+
+          <div class="sp-stat-label">Events Hosted</div>
+        </div>
+        <div class="sp-stat">
+          <div class="sp-stat-num" data-counter="300">0</div>+
+          <div class="sp-stat-label">Avg. Attendees</div>
+        </div>
+        <div class="sp-stat">
+          <div class="sp-stat-num" data-counter="12">0</div>+
+          <div class="sp-stat-label">Countries Reached</div>
+        </div>
+      </div>
+
+    </div><!-- /sp-left -->
+
+    <!-- ══════════ RIGHT PANEL: FORM ══════════ -->
+    <div class="sp-right">
+      <div class="sp-form-card">
+
+        <!-- Form Header -->
+        <div class="sp-form-header">
+          <div class="sp-form-header-badge">
+            <i class="fa-solid fa-star"></i> Sponsorship Application
+          </div>
+          <h2 class="sp-form-title">Become a NexGen Sponsor</h2>
+          <p class="sp-form-subtitle">Tell us about your brand — we'll craft the perfect partnership</p>
+
+          <!-- Step indicator -->
+          <div class="sp-form-steps">
+            <div class="sp-step-item active" id="sp-si-1">
+              <div class="sp-step-dot">1</div>
+              <span>Contact</span>
+            </div>
+            <div class="sp-step-line"></div>
+            <div class="sp-step-item" id="sp-si-2">
+              <div class="sp-step-dot">2</div>
+              <span>Sponsorship</span>
+            </div>
+            <div class="sp-step-line"></div>
+            <div class="sp-step-item" id="sp-si-3">
+              <div class="sp-step-dot">3</div>
+              <span>Goals &amp; Vision</span>
+            </div>
+          </div>
+        </div><!-- /form header -->
+
+        <div class="sp-form-body">
+          <div id="sp-form-wrap">
+            <form id="sp-form" novalidate>
+
+              <!-- ══ STEP 1: Contact Info ══ -->
+              <div id="sp-step-1" class="sp-step-panel active">
+                <div class="sp-step-title">
+                  <i class="fa-solid fa-id-card"></i> Your Contact Information
+                </div>
+                <div class="sp-field-grid">
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Full Name <span class="req">*</span></label>
+                    <div class="sp-input-wrap">
+                      <i class="fa-solid fa-user fi"></i>
+                      <input type="text" class="sp-input" placeholder="e.g. Sara Al Hamdan" required />
+                    </div>
+                    <span class="sp-error-msg">Please enter your full name</span>
+                  </div>
+
+                  <div class="sp-field">
+                    <label class="sp-label">Email Address <span class="req">*</span></label>
+                    <div class="sp-input-wrap">
+                      <i class="fa-solid fa-envelope fi"></i>
+                      <input type="email" class="sp-input" placeholder="you@brand.com" required />
+                    </div>
+                    <span class="sp-error-msg">Please enter a valid email</span>
+                  </div>
+
+                  <div class="sp-field">
+                    <label class="sp-label">Phone Number <span class="req">*</span></label>
+                    <div class="sp-input-wrap">
+                      <i class="fa-solid fa-phone fi"></i>
+                      <input type="tel" class="sp-input" placeholder="+971 XX XXX XXXX" required />
+                    </div>
+                    <span class="sp-error-msg">Please enter your phone number</span>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Company / Organisation Name <span class="req">*</span></label>
+                    <div class="sp-input-wrap">
+                      <i class="fa-solid fa-building fi"></i>
+                      <input type="text" class="sp-input" placeholder="e.g. Al Noor Group UAE" required />
+                    </div>
+                    <span class="sp-error-msg">Please enter your company name</span>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Company Website <span class="req">*</span></label>
+                    <div class="sp-input-wrap">
+                      <i class="fa-solid fa-globe fi"></i>
+                      <input type="url" class="sp-input" placeholder="https://www.yourcompany.com" required />
+                    </div>
+                    <span class="sp-error-msg">Please enter your company website</span>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Industry / Sector <span class="req">*</span></label>
+                    <div class="sp-select-wrap">
+                      <select class="sp-select" required>
+                        <option value="" disabled selected>Select your industry</option>
+                        <option>Education &amp; Training</option>
+                        <option>Technology &amp; IT</option>
+                        <option>Banking &amp; Finance</option>
+                        <option>Healthcare &amp; Pharma</option>
+                        <option>Real Estate &amp; Construction</option>
+                        <option>Retail &amp; Consumer Goods</option>
+                        <option>Food &amp; Beverage</option>
+                        <option>Travel &amp; Hospitality</option>
+                        <option>Media &amp; Entertainment</option>
+                        <option>Government &amp; Public Sector</option>
+                        <option>Non-Profit &amp; NGO</option>
+                        <option>Professional Services</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <span class="sp-error-msg">Please select your industry</span>
+                  </div>
+
+                </div>
+                <div class="sp-step-nav">
+                  <span></span>
+                  <button type="button" class="sp-btn-next">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div><!-- /step 1 -->
+
+
+              <!-- ══ STEP 2: Sponsorship Details ══ -->
+              <div id="sp-step-2" class="sp-step-panel">
+                <div class="sp-step-title">
+                  <i class="fa-solid fa-star"></i> Sponsorship Details
+                </div>
+                <div class="sp-field-grid">
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Which Event Are You Interested in Sponsoring? <span class="req">*</span></label>
+                    <div class="sp-select-wrap">
+                      <select class="sp-select" required>
+                        <option value="" disabled selected>Select event type</option>
+                        <option>Annual Career Fair &amp; Education Expo</option>
+                        <option>Networking Gala &amp; Awards Night</option>
+                        <option>Study Abroad Exhibition</option>
+                        <option>Cultural Celebration &amp; Community Event</option>
+                        <option>Corporate Conference &amp; Summit</option>
+                        <option>University Fair &amp; Open Day</option>
+                        <option>Brand Activation &amp; Product Launch</option>
+                        <option>Multiple Events (Ongoing Sponsorship)</option>
+                        <option>Other (Please Specify)</option>
+                      </select>
+                    </div>
+                    <span class="sp-error-msg">Please select an event</span>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Type of Sponsorship <span class="req">*</span></label>
+                    <div class="sp-select-wrap">
+                      <select class="sp-select" required>
+                        <option value="" disabled selected>Select sponsorship type</option>
+                        <option>Financial Contribution</option>
+                        <option>In-Kind Support (Products / Services)</option>
+                        <option>Catering &amp; F&amp;B Sponsorship</option>
+                        <option>Venue Sponsorship</option>
+                        <option>Media &amp; Promotional Partnership</option>
+                        <option>Technology &amp; AV Sponsorship</option>
+                        <option>Gift &amp; Merchandise Sponsorship</option>
+                        <option>Mixed / Multiple Types</option>
+                        <option>Other (Specify in Details)</option>
+                      </select>
+                    </div>
+                    <span class="sp-error-msg">Please select a sponsorship type</span>
+                  </div>
+
+                  <!-- Tier visual cards -->
+                  <div class="sp-field full">
+                    <label class="sp-label">Select a Sponsorship Tier <span class="req">*</span></label>
+                    <div class="sp-tier-grid">
+
+                      <label class="sp-tier-opt tier-platinum">
+                        <input type="radio" name="sp-tier" value="platinum" />
+                        <div class="sp-tier-opt-check"><i class="fa-solid fa-check"></i></div>
+                        <span class="sp-tier-opt-crown">&#129351;</span>
+                        <div class="sp-tier-opt-name">Platinum</div>
+                        <div class="sp-tier-opt-desc">Headline exposure, logo on all materials, and keynote opportunity</div>
+                      </label>
+
+                      <label class="sp-tier-opt tier-gold">
+                        <input type="radio" name="sp-tier" value="gold" />
+                        <div class="sp-tier-opt-check"><i class="fa-solid fa-check"></i></div>
+                        <span class="sp-tier-opt-crown">&#127941;</span>
+                        <div class="sp-tier-opt-name">Gold</div>
+                        <div class="sp-tier-opt-desc">Logo, booth space, and event mentions across all channels</div>
+                      </label>
+
+                      <label class="sp-tier-opt tier-silver">
+                        <input type="radio" name="sp-tier" value="silver" />
+                        <div class="sp-tier-opt-check"><i class="fa-solid fa-check"></i></div>
+                        <span class="sp-tier-opt-crown">&#129352;</span>
+                        <div class="sp-tier-opt-name">Silver</div>
+                        <div class="sp-tier-opt-desc">Logo and brand mentions in select promotional materials</div>
+                      </label>
+
+                      <label class="sp-tier-opt tier-custom">
+                        <input type="radio" name="sp-tier" value="custom" />
+                        <div class="sp-tier-opt-check"><i class="fa-solid fa-check"></i></div>
+                        <span class="sp-tier-opt-crown">&#10024;</span>
+                        <div class="sp-tier-opt-name">Custom</div>
+                        <div class="sp-tier-opt-desc">Fully tailored sponsorship package designed around your goals</div>
+                      </label>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="sp-step-nav">
+                  <button type="button" class="sp-btn-prev"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                  <button type="button" class="sp-btn-next">Continue <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div><!-- /step 2 -->
+
+
+              <!-- ══ STEP 3: Goals & Vision ══ -->
+              <div id="sp-step-3" class="sp-step-panel">
+                <div class="sp-step-title">
+                  <i class="fa-solid fa-bullseye"></i> Goals &amp; Brand Vision
+                </div>
+                <div class="sp-field-grid">
+
+                  <div class="sp-field full">
+                    <label class="sp-label">What do you hope to achieve through this sponsorship? <span class="req">*</span></label>
+                    <div class="sp-select-wrap">
+                      <select class="sp-select" required>
+                        <option value="" disabled selected>Select your primary goal</option>
+                        <option>Increase brand awareness among UAE youth</option>
+                        <option>Generate leads and direct sales</option>
+                        <option>Strengthen community presence in the UAE</option>
+                        <option>Recruit talent at education &amp; career events</option>
+                        <option>Launch or promote a new product/service</option>
+                        <option>Build long-term partnership with NexGen</option>
+                        <option>CSR and social impact visibility</option>
+                        <option>Multiple objectives — describe below</option>
+                      </select>
+                    </div>
+                    <span class="sp-error-msg">Please select your primary goal</span>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Are there specific ways you'd like your brand highlighted? <span class="req">*</span></label>
+                    <div class="sp-select-wrap">
+                      <select class="sp-select" required>
+                        <option value="" disabled selected>Select preference</option>
+                        <option>Stage / Podium Branding &amp; Mentions</option>
+                        <option>Branded Booth &amp; Display Stand</option>
+                        <option>Social Media Feature Posts &amp; Stories</option>
+                        <option>Logo on All Event Materials &amp; Backdrops</option>
+                        <option>Dedicated Email Blast to Attendees</option>
+                        <option>Product Sampling or Giveaways</option>
+                        <option>Keynote or Panel Speaking Opportunity</option>
+                        <option>Video / Reel Feature in Post-Event Content</option>
+                        <option>Open to NexGen's Recommendation</option>
+                      </select>
+                    </div>
+                    <span class="sp-error-msg">Please select your brand highlight preference</span>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">
+                      Additional Details or Questions
+                      <span class="opt">(optional)</span>
+                    </label>
+                    <textarea
+                      id="sp-details"
+                      class="sp-textarea"
+                      placeholder="Share any specific requirements, budget range, previous sponsorship experience, or questions about our sponsorship packages..."
+                      maxlength="600"
+                      style="min-height:100px;"
+                    ></textarea>
+                    <div style="display:flex;justify-content:flex-end;margin-top:.2rem;">
+                      <span style="font-size:.7rem;color:var(--text-dim);" id="sp-details-count">0/600</span>
+                    </div>
+                  </div>
+
+                  <div class="sp-field full">
+                    <label class="sp-label">Would You Like to Schedule a Meeting With Our Sponsorship Team?</label>
+                    <div class="sp-radio-group">
+                      <label class="sp-radio-opt">
+                        <input type="radio" name="sp-meeting" value="yes" />
+                        <i class="fa-solid fa-calendar-check"></i> Yes, book a meeting
+                      </label>
+                      <label class="sp-radio-opt">
+                        <input type="radio" name="sp-meeting" value="no" />
+                        <i class="fa-solid fa-envelope"></i> Send me details first
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="sp-step-nav">
+                  <button type="button" class="sp-btn-prev"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                </div>
+
+                <button type="submit" class="sp-btn-submit">
+                  <i class="fa-solid fa-star"></i> Submit Sponsorship Application
+                </button>
+                <p class="sp-form-note">
+                  <i class="fa-solid fa-lock"></i>
+                  Your details are confidential. We'll respond within 48 hours with a tailored proposal.
+                </p>
+
+              </div><!-- /step 3 -->
+
+            </form>
+          </div><!-- /sp-form-wrap -->
+
+          <!-- Success State -->
+          <div id="sp-success" class="sp-success">
+            <div class="sp-success-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Application Received! &#127775;</h3>
+            <p>
+              Thank you for your interest in sponsoring NexGen Dubai events! Our sponsorship
+              team will review your application and reach out within
+              <strong>48 hours</strong> with a tailored proposal and sponsorship package details.
+            </p>
+            <div class="sp-success-actions">
+              <a href="events.html" class="btn btn-blue">
+                <i class="fa-solid fa-calendar-days"></i> Back to Events
+              </a>
+              <a href="plan-event.html" class="btn btn-outline">
+                <i class="fa-solid fa-clipboard-list"></i> Plan an Event Instead
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /sp-form-body -->
+      </div><!-- /sp-form-card -->
+    </div><!-- /sp-right -->
+
+  </div><!-- /sp-layout -->
+</div><!-- /sp-page -->
+
+<!-- ══ MARQUEE ════════════════════════════════════════════════ -->
+<div class="marquee-section">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Platinum Sponsorship</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Gold Sponsorship</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Silver Sponsorship</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Custom Packages</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Brand Visibility</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Media Coverage</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Booth &amp; Display</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>50+ Events Hosted</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UAE &amp; International</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>300+ Avg. Attendees</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a>
+        </div>
+        <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Events</h4>
+        <ul class="footer-links">
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Overview</a></li>
+          <li><a href="plan-event.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Plan Your Event</a></li>
+          <li><a href="sponsor.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Become a Sponsor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Other Services</h4>
+        <ul class="footer-links">
+          <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Education</a></li>
+          <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media &amp; PR</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:info@nexgendubai.ae">info@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <p style="font-size:.79rem;color:rgba(210,226,255,.55);margin-bottom:.5rem;">Stay updated with NexGen news.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="sponsor.js"></script>
+</body>
+</html>
