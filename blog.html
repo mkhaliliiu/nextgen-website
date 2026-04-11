@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexGen Dubai Blog — Insights, guides and news on education, digital marketing, events, and study abroad opportunities." />
+  <title>Blog — NexGen Dubai</title>
+  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+<a id="whatsapp-btn" href="https://wa.me/971581720668" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<!-- MOBILE NAV -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" onclick="window.closeMobileNav()"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Education <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Events <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Digital Marketing <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="media.html"><i class="fa-solid fa-chart-line fa-fw"></i> Our Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer"><a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Contact Us</a></div>
+</nav>
+<!-- TOP BAR -->
+<div class="top-bar"><div class="container">
+  <div class="top-bar-left">
+    <a href="mailto:contact@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> contact@nexgendubai.ae</a>
+    <a href="tel:+971581720668"><i class="fa-solid fa-phone"></i> +971 58 172 0668</a>
+    <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai</span>
+  </div>
+  <div class="top-bar-right">
+    <a href="https://www.facebook.com/nexgendubai" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/nexgen_dubai" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://x.com/NexGenDubai" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.youtube.com/@NexGenDubai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</div></div>
+<!-- NAVBAR -->
+<header id="navbar"><div class="nav-inner">
+  <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+  <nav class="nav-menu">
+    <div class="nav-item"><span class="nav-link">Education <i class="fa-solid fa-chevron-down chevron"></i></span>
+      <div class="dropdown">
+        <a href="education.html"><i class="fa-solid fa-graduation-cap fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+        <a href="partners.html"><i class="fa-solid fa-handshake fa-fw" style="color:var(--blue);opacity:.7;"></i> Partners &amp; Programs</a>
+        <a href="study-abroad.html"><i class="fa-solid fa-earth-americas fa-fw" style="color:var(--blue);opacity:.7;"></i> Study Abroad</a>
+        <a href="join-network.html"><i class="fa-solid fa-network-wired fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Network</a>
+      </div>
+    </div>
+    <div class="nav-item"><span class="nav-link">Events <i class="fa-solid fa-chevron-down chevron"></i></span>
+      <div class="dropdown">
+        <a href="events.html"><i class="fa-solid fa-calendar-days fa-fw" style="color:var(--blue);opacity:.7;"></i> Overview</a>
+        <a href="plan-event.html"><i class="fa-solid fa-clipboard-list fa-fw" style="color:var(--blue);opacity:.7;"></i> Plan Your Event</a>
+        <a href="sponsor.html"><i class="fa-solid fa-star fa-fw" style="color:var(--blue);opacity:.7;"></i> Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="nav-item"><span class="nav-link">Digital Marketing <i class="fa-solid fa-chevron-down chevron"></i></span>
+      <div class="dropdown">
+        <a href="media.html"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Services</a>
+        <a href="request-quote.html"><i class="fa-solid fa-file-invoice fa-fw" style="color:var(--blue);opacity:.7;"></i> Request a Quote</a>
+      </div>
+    </div>
+    <div class="nav-item"><span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+      <div class="dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+      </div>
+    </div>
+    <a href="blog.html" class="nav-link active">Blog</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Contact Us</a>
+    <button id="hamburger" class="hamburger" onclick="window.openMobileNav()"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<!-- HERO -->
+<section class="bg-hero">
+  <div class="bg-hero-glow-1"></div><div class="bg-hero-glow-2"></div><div class="bg-hero-grid"></div>
+  <div class="container bg-hero-inner">
+    <div class="bg-hero-label"><div class="bg-hero-label-line"></div><span>NexGen Dubai</span><div class="bg-hero-label-line"></div></div>
+    <h1 class="bg-hero-title">
+      <span class="line"><span class="word">Our</span></span>
+      <span class="line"><span class="word w2 accent">Blog</span></span>
+    </h1>
+    <p class="bg-hero-sub">Insights, guides, and expert advice on study abroad opportunities, digital marketing strategies, events management, and everything in between.</p>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb"><div class="container">
+  <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Blog</span>
+</div></div>
+
+<!-- SEARCH + FILTER -->
+<div class="bg-controls">
+  <div class="container">
+    <div class="bg-search-wrap">
+      <i class="fa-solid fa-magnifying-glass si"></i>
+      <input type="search" id="bg-search" placeholder="Search articles..." autocomplete="off" />
+    </div>
+    <div class="bg-filters">
+      <button class="bg-filter-btn active" data-cat="all"><i class="fa-solid fa-border-all"></i> All</button>
+      <button class="bg-filter-btn" data-cat="education"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+      <button class="bg-filter-btn" data-cat="digital-marketing"><i class="fa-solid fa-chart-line"></i> Digital Marketing</button>
+      <button class="bg-filter-btn" data-cat="events"><i class="fa-solid fa-calendar-days"></i> Events</button>
+      <button class="bg-filter-btn" data-cat="study-abroad"><i class="fa-solid fa-earth-americas"></i> Study Abroad</button>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG GRID -->
+<section class="bg-section">
+  <div class="container">
+    <div class="bg-grid">
+
+      <!-- FEATURED: Canada Article -->
+      <article class="bg-card featured" data-cat="education study-abroad">
+        <div class="bg-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1569681157442-5eabf7fe850e?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Study in Canada" class="bg-card-img" />
+          <div class="bg-card-cat"><span class="tag">Study Abroad</span>&nbsp;<span class="tag">Education</span></div>
+        </div>
+        <div class="bg-card-body">
+          <div class="bg-card-meta">
+            <i class="fa-solid fa-calendar" style="color:var(--blue);font-size:.72rem;"></i> January 4, 2025
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-clock" style="color:var(--blue);font-size:.72rem;"></i> 8 min read
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-user" style="color:var(--blue);font-size:.72rem;"></i> Huda Imran
+          </div>
+          <h2 class="bg-card-title">Study in Canada: Complete Guide for International Students in 2025</h2>
+          <p class="bg-card-excerpt">Canada is one of the most popular destinations for international students. Known for world-class education, multicultural environment, and post-graduation work opportunities — discover why thousands of students choose Canada every year and how you can too.</p>
+          <div class="bg-card-footer">
+            <div class="bg-card-author">
+              <div class="bg-card-author-avatar">HI</div>
+              <span>Huda Imran · Marketing Executive</span>
+            </div>
+            <a href="blog-canada.html" class="bg-card-read">Read More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: Digital Marketing -->
+      <article class="bg-card" data-cat="digital-marketing">
+        <div class="bg-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop&q=80" alt="Digital Marketing in UAE" class="bg-card-img" />
+          <div class="bg-card-cat"><span class="tag">Digital Marketing</span></div>
+        </div>
+        <div class="bg-card-body">
+          <div class="bg-card-meta">
+            <i class="fa-solid fa-calendar" style="color:var(--blue);font-size:.72rem;"></i> March 15, 2025
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-clock" style="color:var(--blue);font-size:.72rem;"></i> 5 min read
+          </div>
+          <h2 class="bg-card-title">Meta Ads vs Google Ads: Which Platform Delivers Better ROI in the UAE?</h2>
+          <p class="bg-card-excerpt">A data-driven comparison of Meta and Google advertising for UAE businesses — covering audience targeting, cost-per-lead, and which platform wins for your industry vertical.</p>
+          <div class="bg-card-footer">
+            <div class="bg-card-author"><div class="bg-card-author-avatar">NG</div><span>NexGen Team</span></div>
+            <span class="bg-card-read" style="color:var(--text-dim);cursor:default;">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3: Events -->
+      <article class="bg-card" data-cat="events">
+        <div class="bg-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&auto=format&fit=crop&q=80" alt="Corporate Events Dubai" class="bg-card-img" />
+          <div class="bg-card-cat"><span class="tag">Events</span></div>
+        </div>
+        <div class="bg-card-body">
+          <div class="bg-card-meta">
+            <i class="fa-solid fa-calendar" style="color:var(--blue);font-size:.72rem;"></i> February 20, 2025
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-clock" style="color:var(--blue);font-size:.72rem;"></i> 6 min read
+          </div>
+          <h2 class="bg-card-title">How to Plan a Successful Corporate Event in Dubai: A Complete Checklist</h2>
+          <p class="bg-card-excerpt">From venue selection and vendor management to media coverage and post-event PR — everything your team needs to plan a flawless corporate event in the UAE.</p>
+          <div class="bg-card-footer">
+            <div class="bg-card-author"><div class="bg-card-author-avatar">NG</div><span>NexGen Team</span></div>
+            <span class="bg-card-read" style="color:var(--text-dim);cursor:default;">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4: Study Abroad -->
+      <article class="bg-card" data-cat="education study-abroad">
+        <div class="bg-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1622115469132-124ec9f88fca?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Study Abroad" class="bg-card-img" />
+          <div class="bg-card-cat"><span class="tag">Study Abroad</span></div>
+        </div>
+        <div class="bg-card-body">
+          <div class="bg-card-meta">
+            <i class="fa-solid fa-calendar" style="color:var(--blue);font-size:.72rem;"></i> April 5, 2025
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-clock" style="color:var(--blue);font-size:.72rem;"></i> 7 min read
+          </div>
+          <h2 class="bg-card-title">Top 5 Reasons UAE Students Are Choosing to Study in Hungary in 2025</h2>
+          <p class="bg-card-excerpt">Affordable tuition, European lifestyle, and quality engineering programs — find out why Hungary has become a top destination for students from the UAE and GCC region.</p>
+          <div class="bg-card-footer">
+            <div class="bg-card-author"><div class="bg-card-author-avatar">NG</div><span>NexGen Team</span></div>
+            <span class="bg-card-read" style="color:var(--text-dim);cursor:default;">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5: Digital Marketing -->
+      <article class="bg-card" data-cat="digital-marketing">
+        <div class="bg-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&auto=format&fit=crop&q=80" alt="LinkedIn Advertising" class="bg-card-img" />
+          <div class="bg-card-cat"><span class="tag">Digital Marketing</span></div>
+        </div>
+        <div class="bg-card-body">
+          <div class="bg-card-meta">
+            <i class="fa-solid fa-calendar" style="color:var(--blue);font-size:.72rem;"></i> April 22, 2025
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-clock" style="color:var(--blue);font-size:.72rem;"></i> 5 min read
+          </div>
+          <h2 class="bg-card-title">LinkedIn Ads for B2B Brands in Dubai: A Beginner's Guide to Lead Generation</h2>
+          <p class="bg-card-excerpt">LinkedIn is the most powerful B2B advertising platform available today. Learn how to set up your first campaign, target decision-makers in the UAE, and generate quality leads at scale.</p>
+          <div class="bg-card-footer">
+            <div class="bg-card-author"><div class="bg-card-author-avatar">NG</div><span>NexGen Team</span></div>
+            <span class="bg-card-read" style="color:var(--text-dim);cursor:default;">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6: Education -->
+      <article class="bg-card" data-cat="education">
+        <div class="bg-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1535982330050-f1c2fb79ff78?w=600&auto=format&fit=crop&q=80" alt="University Partnership" class="bg-card-img" />
+          <div class="bg-card-cat"><span class="tag">Education</span></div>
+        </div>
+        <div class="bg-card-body">
+          <div class="bg-card-meta">
+            <i class="fa-solid fa-calendar" style="color:var(--blue);font-size:.72rem;"></i> May 1, 2025
+            <span class="bg-card-meta-dot"></span>
+            <i class="fa-solid fa-clock" style="color:var(--blue);font-size:.72rem;"></i> 4 min read
+          </div>
+          <h2 class="bg-card-title">How NexGen Dubai Connects Students with Global Universities — For Free</h2>
+          <p class="bg-card-excerpt">Our education advisory service is completely free for students. Here's how we partner with universities across 9+ countries to create life-changing opportunities for UAE-based students.</p>
+          <div class="bg-card-footer">
+            <div class="bg-card-author"><div class="bg-card-author-avatar">NG</div><span>NexGen Team</span></div>
+            <span class="bg-card-read" style="color:var(--text-dim);cursor:default;">Coming Soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Empty state -->
+      <div id="bg-empty" class="bg-empty">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p style="font-size:1rem;font-weight:600;color:var(--navy-deep);margin-bottom:.4rem;">No articles found</p>
+        <p>Try a different keyword or category filter.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer><div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a></div>
+      <p class="footer-brand-desc">Redefining Media, Education, and Events in Dubai. Your trusted partner for building global connections and delivering extraordinary results.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Blog</h4>
+      <ul class="footer-links">
+        <li><a href="blog.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> All Articles</a></li>
+        <li><a href="blog-canada.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Study in Canada 2025</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Our Services</h4>
+      <ul class="footer-links">
+        <li><a href="education.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Education</a></li>
+        <li><a href="events.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Events</a></li>
+        <li><a href="media.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-col-title">Get in Touch</h4>
+      <div class="footer-address">
+        <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor, Dubai, UAE</p>
+        <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@nexgendubai.ae">contact@nexgendubai.ae</a></p>
+      </div>
+      <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="Your email" required />
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div></footer>
+<script src="blog.js"></script>
+</body>
+</html>
