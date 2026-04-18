@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexGen Dubai Portfolio — Digital Marketing, Web Development, Content Creation & Graphic Design projects. See our work across the UAE and beyond." />
+  <title>Portfolio — NexGen Dubai</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971581720668?text=Hello%20NexGen%20Dubai!" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" onclick="window.closeMobileNav()"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
+        <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
+        <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw"></i> Web Development</a>
+        <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw"></i> Content Creation</a>
+        <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link no-dropdown">Portfolio</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:contact@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> contact@nexgendubai.ae</a>
+      <a href="tel:+971581720668"><i class="fa-solid fa-phone"></i> +971 58 172 0668</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <span class="nav-link">Services <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw" style="color:var(--blue-light);opacity:.75;"></i> All Services</a>
+          <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue-light);opacity:.75;"></i> Digital Marketing</a>
+          <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw" style="color:var(--blue-light);opacity:.75;"></i> Web Development</a>
+          <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw" style="color:var(--blue-light);opacity:.75;"></i> Content Creation</a>
+          <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw" style="color:var(--blue-light);opacity:.75;"></i> Graphic Design</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue-light);opacity:.75;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue-light);opacity:.75;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue-light);opacity:.75;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue-light);opacity:.75;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" onclick="window.openMobileNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="pf-hero">
+  <div class="pf-hero-bg">
+    <div class="pf-hero-bg-left"></div>
+    <div class="pf-hero-bg-right"></div>
+  </div>
+  <div class="pf-hero-mesh"></div>
+  <div class="pf-hero-grid"></div>
+  <div class="pf-hero-slant"></div>
+
+  <div class="pf-hero-inner">
+    <!-- Left: headline -->
+    <div class="pf-hero-left">
+      <div class="pf-hero-eyebrow">
+        <div class="pf-hero-eyebrow-line"></div>
+        <span>Our Work · Dubai, UAE</span>
+      </div>
+      <h1 class="pf-hero-title">
+        <span class="line"><span class="word">Work That</span></span>
+        <span class="line"><span class="word w2 accent">Speaks</span></span>
+      </h1>
+      <p class="pf-hero-desc">
+        From scroll-stopping social campaigns and high-converting Google Ads to award-worthy brand identities and world-class digital products — explore what NexGen Dubai delivers for clients across the UAE and beyond.
+      </p>
+      <div class="pf-hero-btns">
+        <a href="#pf-grid" class="btn btn-blue"><i class="fa-solid fa-eye"></i> Browse Projects</a>
+        <a href="request-quote.html" class="btn-ghost-light"><i class="fa-solid fa-paper-plane"></i> Start a Project</a>
+      </div>
+    </div>
+    <!-- Right: stat cards -->
+    <div class="pf-hero-right">
+      <div class="pf-stat-card">
+        <div class="pf-stat-num" data-counter="50">0</div>+
+        <div class="pf-stat-label">Projects Delivered</div>
+      </div>
+      <div class="pf-stat-card">
+        <div class="pf-stat-num" data-counter="30">0</div>+
+        <div class="pf-stat-label">Happy Clients</div>
+      </div>
+      <div class="pf-stat-card">
+        <div class="pf-stat-num" data-counter="4">0</div>
+        <div class="pf-stat-label">Service Categories</div>
+      </div>
+      <div class="pf-stat-card">
+        <div class="pf-stat-num" data-counter="12">0</div>+
+        <div class="pf-stat-label">Countries Reached</div>
+      </div>
+      <div class="pf-stat-card wide">
+        <div class="pf-stat-icon"><i class="fa-solid fa-trophy"></i></div>
+        <div>
+          <div class="pf-stat-num" style="font-size:1.6rem;">100%</div>
+          <div class="pf-stat-label">Client Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>Portfolio</span>
+  </div>
+</div>
+
+<!-- ══ FILTER BAR ══════════════════════════════════════════════ -->
+<div class="pf-filters-section">
+  <div class="container">
+    <div class="pf-filters-inner">
+      <div class="pf-filters">
+        <button class="pf-filter-btn active" data-filter="all">
+          <i class="fa-solid fa-border-all"></i> All Work
+        </button>
+        <button class="pf-filter-btn" data-filter="mkt">
+          <i class="fa-solid fa-chart-line"></i> Digital Marketing
+        </button>
+        <button class="pf-filter-btn" data-filter="web">
+          <i class="fa-solid fa-laptop-code"></i> Web &amp; App Dev
+        </button>
+        <button class="pf-filter-btn" data-filter="cnt">
+          <i class="fa-solid fa-clapperboard"></i> Content Creation
+        </button>
+        <button class="pf-filter-btn" data-filter="dsn">
+          <i class="fa-solid fa-pen-ruler"></i> Graphic Design
+        </button>
+      </div>
+      <div class="pf-result-count" id="pf-count">18 projects</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PORTFOLIO BENTO GRID ═══════════════════════════════════ -->
+<section class="pf-grid-section" id="pf-grid">
+  <div class="container">
+    <div class="pf-grid">
+
+      <!-- ── ROW 1: XL + MD ── -->
+
+      <!-- 1. Meta Ads Campaign — XL -->
+      <div class="pf-card pf-card--xl" data-cat="mkt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1665799871677-f1fd17338b43?q=80&w=814&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meta Ads Campaign" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
+            <h3 class="pf-card-title">Meta & Instagram Ads Campaign</h3>
+            <div class="pf-card-sub">E-Commerce Brand · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Meta & Instagram Ads Campaign</h3>
+            <p class="pf-card-hover-desc">Full-funnel Meta campaign for a UAE e-commerce brand. Awareness to conversion across Facebook &amp; Instagram with custom audiences, retargeting, and lookalike segments. Achieved 3.8× ROAS in 60 days.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Meta Ads</span>
+              <span class="pf-card-hover-tag">Retargeting</span>
+              <span class="pf-card-hover-tag">ROAS 3.8×</span>
+              <span class="pf-card-hover-tag">E-Commerce</span>
+            </div>
+            <a href="request-quote.html?service=meta-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Get Similar Results</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Logo & Brand Identity — MD -->
+      <div class="pf-card pf-card--md" data-cat="dsn">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1713616147761-c126f8009c6f?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo Design" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
+            <h3 class="pf-card-title">Logo Design &amp; Brand Identity</h3>
+            <div class="pf-card-sub">F&amp;B Startup · Dubai</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Logo Design &amp; Brand Identity</h3>
+            <p class="pf-card-hover-desc">Complete brand identity package for a new Dubai F&amp;B concept — logo, colour palette, typography, brand guidelines, packaging design, and all social media templates.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Logo Design</span>
+              <span class="pf-card-hover-tag">Brand Identity</span>
+              <span class="pf-card-hover-tag">Packaging</span>
+            </div>
+            <a href="request-quote.html?service=logo-design" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Start Your Brand</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 2: MD + MD + MD ── -->
+
+      <!-- 3. Corporate Website — MD -->
+      <div class="pf-card pf-card--md" data-cat="web">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&auto=format&fit=crop&q=80" alt="Web Development" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--web">Web Development</span>
+            <h3 class="pf-card-title">Corporate Website Redesign</h3>
+            <div class="pf-card-sub">Real Estate Group · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Corporate Website Redesign</h3>
+            <p class="pf-card-hover-desc">Full redesign and rebuild of a UAE real estate group's corporate site. Mobile-first, SEO-optimised, with interactive property listings, lead capture, and CRM integration. Organic traffic up 215%.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Web Dev</span>
+              <span class="pf-card-hover-tag">UI/UX</span>
+              <span class="pf-card-hover-tag">SEO</span>
+              <span class="pf-card-hover-tag">CRM</span>
+            </div>
+            <a href="request-quote.html?service=web-dev" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Your Site</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. CGI Product Video — MD -->
+      <div class="pf-card pf-card--md" data-cat="cnt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=700&auto=format&fit=crop&q=80" alt="CGI Content" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
+            <h3 class="pf-card-title">CGI Product Launch Video</h3>
+            <div class="pf-card-sub">Luxury Brand · GCC</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">CGI Product Launch Video</h3>
+            <p class="pf-card-hover-desc">Photorealistic CGI production for a luxury GCC brand's product launch. 30-second hero video and 6 social cut-downs — generated 2.4M impressions in the first week on Instagram and TikTok.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">CGI</span>
+              <span class="pf-card-hover-tag">Product Video</span>
+              <span class="pf-card-hover-tag">Social Media</span>
+            </div>
+            <a href="request-quote.html?service=cgi" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Create CGI Content</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Google Ads — MD -->
+      <div class="pf-card pf-card--md" data-cat="mkt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=700&auto=format&fit=crop&q=80" alt="Google Ads" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
+            <h3 class="pf-card-title">Google Ads — Lead Generation</h3>
+            <div class="pf-card-sub">Healthcare Clinic · Dubai</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Google Ads — Lead Generation</h3>
+            <p class="pf-card-hover-desc">Search &amp; Display PPC campaign for a Dubai healthcare clinic. Keyword strategy, ad copy, landing page optimisation, and call tracking. Reduced cost per lead by 58% within 45 days.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Google Ads</span>
+              <span class="pf-card-hover-tag">PPC</span>
+              <span class="pf-card-hover-tag">Lead Gen</span>
+              <span class="pf-card-hover-tag">-58% CPL</span>
+            </div>
+            <a href="request-quote.html?service=google-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Run Google Ads</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 3: LG + LG ── -->
+
+      <!-- 6. iOS App — LG -->
+      <div class="pf-card pf-card--lg" data-cat="web">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1762769198239-fee17b640d39?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="iOS App" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--web">App Development</span>
+            <h3 class="pf-card-title">iOS Delivery App — Full Build</h3>
+            <div class="pf-card-sub">Logistics Startup · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">iOS Delivery App — Full Build</h3>
+            <p class="pf-card-hover-desc">End-to-end iOS application for a UAE logistics startup — real-time tracking, driver assignment, customer dashboard, push notifications, and payment gateway integration. Launched on App Store in 14 weeks.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">iOS</span>
+              <span class="pf-card-hover-tag">Swift</span>
+              <span class="pf-card-hover-tag">Real-Time</span>
+              <span class="pf-card-hover-tag">Payments</span>
+            </div>
+            <a href="request-quote.html?service=ios-app" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Your App</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Social Media Posters — LG -->
+      <div class="pf-card pf-card--lg" data-cat="dsn">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop&q=80" alt="Poster Design" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
+            <h3 class="pf-card-title">Social Media Design Suite</h3>
+            <div class="pf-card-sub">Fashion Brand · Dubai</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Social Media Design Suite</h3>
+            <p class="pf-card-hover-desc">60-piece social media design suite for a Dubai fashion brand — Instagram posts, stories, reel covers, highlights, and an editable Canva template library. Consistent visual identity across all platforms.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Posters</span>
+              <span class="pf-card-hover-tag">Stories</span>
+              <span class="pf-card-hover-tag">Reels</span>
+              <span class="pf-card-hover-tag">Templates</span>
+            </div>
+            <a href="request-quote.html?service=posters" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Design My Feed</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 4: WIDE FEATURE ── -->
+
+      <!-- 8. LinkedIn B2B Campaign — WIDE -->
+      <div class="pf-card pf-card--wide" data-cat="mkt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="LinkedIn Campaign" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
+            <h3 class="pf-card-title">LinkedIn B2B Lead Generation — 120+ Qualified Leads in 30 Days</h3>
+            <div class="pf-card-sub">SaaS Company · UAE &amp; GCC</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">LinkedIn B2B Lead Generation</h3>
+            <p class="pf-card-hover-desc">Comprehensive LinkedIn advertising strategy for a UAE SaaS company targeting C-suite decision makers across GCC. Sponsored Content, InMail sequences, and Lead Gen Forms. Generated 120+ qualified leads in first 30 days at a cost per lead 40% below industry average.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">LinkedIn Ads</span>
+              <span class="pf-card-hover-tag">B2B</span>
+              <span class="pf-card-hover-tag">Lead Gen Forms</span>
+              <span class="pf-card-hover-tag">120+ Leads/mo</span>
+              <span class="pf-card-hover-tag">SaaS</span>
+            </div>
+            <a href="request-quote.html?service=linkedin-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Launch LinkedIn Ads</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 5: THIRD + THIRD + THIRD ── -->
+
+      <!-- 9. UGC Content -->
+      <div class="pf-card pf-card--third" data-cat="cnt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=80" alt="UGC Content" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
+            <h3 class="pf-card-title">UGC Video Series</h3>
+            <div class="pf-card-sub">Beauty Brand · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">UGC Video Series</h3>
+            <p class="pf-card-hover-desc">12-video UGC series for a UAE beauty brand — authentic product reviews, tutorials, and unboxings in three languages. Outperformed branded content by 4.2× on engagement.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">UGC</span>
+              <span class="pf-card-hover-tag">Video Series</span>
+              <span class="pf-card-hover-tag">Beauty</span>
+            </div>
+            <a href="request-quote.html?service=ugc" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Create UGC</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Android App -->
+      <div class="pf-card pf-card--third" data-cat="web">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=80" alt="Android App" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--web">App Development</span>
+            <h3 class="pf-card-title">Android Booking App</h3>
+            <div class="pf-card-sub">Hospitality Group · Dubai</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Android Booking App</h3>
+            <p class="pf-card-hover-desc">Native Android booking application for a Dubai hospitality group — multilingual (EN/AR), real-time availability, Stripe payments, loyalty points system. 4.8★ on Google Play.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Android</span>
+              <span class="pf-card-hover-tag">Multilingual</span>
+              <span class="pf-card-hover-tag">Payments</span>
+            </div>
+            <a href="request-quote.html?service=android-app" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Android App</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. 3D Design -->
+      <div class="pf-card pf-card--third" data-cat="dsn">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80" alt="3D Design" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
+            <h3 class="pf-card-title">3D Product Visualisation</h3>
+            <div class="pf-card-sub">Luxury Goods · GCC</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">3D Product Visualisation</h3>
+            <p class="pf-card-hover-desc">Photorealistic 3D renders for a luxury goods company — 360° product views, lifestyle scenes, and animated turntables for web and social. Eliminated need for full photo shoot, saving 65% in production costs.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">3D Design</span>
+              <span class="pf-card-hover-tag">Product Viz</span>
+              <span class="pf-card-hover-tag">Animation</span>
+            </div>
+            <a href="request-quote.html?service=3d-design" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Get 3D Designs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 6: LG + LG ── -->
+
+      <!-- 12. SEO & Content Strategy — LG -->
+      <div class="pf-card pf-card--lg" data-cat="mkt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&auto=format&fit=crop&q=80" alt="SEO" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
+            <h3 class="pf-card-title">SEO — From 0 to 8K Monthly Visits</h3>
+            <div class="pf-card-sub">Legal Firm · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">SEO — From 0 to 8K Monthly Visits</h3>
+            <p class="pf-card-hover-desc">Complete SEO overhaul for a UAE legal firm — technical audit, 40+ pages of optimised content, backlink building, and local SEO. Grew from 0 to 8,000 monthly organic visitors in 6 months. Now ranking #1 for 18 target keywords.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">SEO</span>
+              <span class="pf-card-hover-tag">Content</span>
+              <span class="pf-card-hover-tag">Link Building</span>
+              <span class="pf-card-hover-tag">8K Visits/mo</span>
+            </div>
+            <a href="request-quote.html?service=seo" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Grow Organically</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13. Video Production — LG -->
+      <div class="pf-card pf-card--lg" data-cat="cnt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&auto=format&fit=crop&q=80" alt="Video Production" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
+            <h3 class="pf-card-title">Brand Film &amp; TVC Production</h3>
+            <div class="pf-card-sub">Automotive Brand · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Brand Film &amp; TVC Production</h3>
+            <p class="pf-card-hover-desc">Full-production brand film and 30-second TVC for a UAE automotive brand. Concept, scripting, 2-day shoot, grade, and post-production. Broadcast-ready and cut for social — 1.8M YouTube views in 2 weeks.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Video Production</span>
+              <span class="pf-card-hover-tag">TVC</span>
+              <span class="pf-card-hover-tag">1.8M Views</span>
+              <span class="pf-card-hover-tag">Automotive</span>
+            </div>
+            <a href="request-quote.html?service=video-creation" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Produce My Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 7: SM + SM + SM ── -->
+
+      <!-- 14. Chatbot Dev -->
+      <div class="pf-card pf-card--sm" data-cat="web">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&auto=format&fit=crop&q=80" alt="Chatbot" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--web">Web Development</span>
+            <h3 class="pf-card-title">AI Customer Support Chatbot</h3>
+            <div class="pf-card-sub">Retail Chain · GCC</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">AI Customer Support Chatbot</h3>
+            <p class="pf-card-hover-desc">GPT-powered chatbot for a GCC retail chain — handling 70% of support queries automatically on WhatsApp and web. Reduced support costs by 45% and response time from 4 hours to under 2 minutes.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Chatbot</span>
+              <span class="pf-card-hover-tag">WhatsApp</span>
+              <span class="pf-card-hover-tag">AI/GPT</span>
+            </div>
+            <a href="request-quote.html?service=chatbot" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Chatbot</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15. AI Content -->
+      <div class="pf-card pf-card--sm" data-cat="cnt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=600&auto=format&fit=crop&q=80" alt="AI Content" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--cnt">Content Creation</span>
+            <h3 class="pf-card-title">AI-Powered Content at Scale</h3>
+            <div class="pf-card-sub">Media Company · MENA</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">AI-Powered Content at Scale</h3>
+            <p class="pf-card-hover-desc">AI-assisted content strategy for a MENA media company — 50 SEO articles, 200 social captions, and 12 email newsletters per month. Consistent brand voice, 10× faster production, measurable organic growth.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">AI Content</span>
+              <span class="pf-card-hover-tag">SEO Articles</span>
+              <span class="pf-card-hover-tag">Scale</span>
+            </div>
+            <a href="request-quote.html?service=ai-content" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Scale My Content</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 16. Snapchat Ads -->
+      <div class="pf-card pf-card--sm" data-cat="mkt">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611162617263-4ec3060a058e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="Snapchat Ads" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--mkt">Digital Marketing</span>
+            <h3 class="pf-card-title">Snapchat Awareness Campaign</h3>
+            <div class="pf-card-sub">QSR Brand · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Snapchat Awareness Campaign</h3>
+            <p class="pf-card-hover-desc">National Snapchat AR Lens + Story Ads campaign for a UAE QSR brand during Ramadan. Reached 2.1M unique UAE users, 4.7M impressions, and drove 38% uplift in-store visits during the campaign period.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Snapchat Ads</span>
+              <span class="pf-card-hover-tag">AR Lens</span>
+              <span class="pf-card-hover-tag">2.1M Reach</span>
+            </div>
+            <a href="request-quote.html?service=snapchat-ads" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Run Snap Campaign</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── ROW 8: MD + MD + MD ── -->
+
+      <!-- 17. Software Dev — MD -->
+      <div class="pf-card pf-card--md" data-cat="web">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&auto=format&fit=crop&q=80" alt="Software Development" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--web">Software Development</span>
+            <h3 class="pf-card-title">Custom CRM &amp; Dashboard</h3>
+            <div class="pf-card-sub">Finance Firm · UAE</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Custom CRM &amp; Dashboard</h3>
+            <p class="pf-card-hover-desc">Bespoke CRM and analytics dashboard for a UAE financial advisory firm — client pipeline management, automated follow-up workflows, reporting suite, and role-based access control. Replaced 3 separate tools with one unified platform.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">CRM</span>
+              <span class="pf-card-hover-tag">Dashboard</span>
+              <span class="pf-card-hover-tag">Automation</span>
+            </div>
+            <a href="request-quote.html?service=software-dev" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build Custom Software</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18. Image Retouching / Branding — MD -->
+      <div class="pf-card pf-card--md" data-cat="dsn">
+        <div class="pf-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" alt="Brand Identity" class="pf-card-img" />
+          <div class="pf-card-overlay">
+            <span class="pf-card-cat pf-card-cat--dsn">Graphic Design</span>
+            <h3 class="pf-card-title">Full Brand Identity System</h3>
+            <div class="pf-card-sub">Tech Startup · Dubai</div>
+            <div class="pf-card-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+          <div class="pf-card-hover-info">
+            <h3 class="pf-card-hover-title">Full Brand Identity System</h3>
+            <p class="pf-card-hover-desc">Complete brand creation for a Dubai tech startup — naming, logo, visual identity, tone of voice guide, pitch deck design, business cards, email signature, and full digital asset kit. Launch-ready in 3 weeks.</p>
+            <div class="pf-card-hover-tags">
+              <span class="pf-card-hover-tag">Brand Identity</span>
+              <span class="pf-card-hover-tag">Naming</span>
+              <span class="pf-card-hover-tag">Pitch Deck</span>
+            </div>
+            <a href="request-quote.html?service=brand-identity" class="pf-card-hover-cta"><i class="fa-solid fa-paper-plane"></i> Build My Brand</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty state -->
+      <div class="pf-empty" id="pf-empty">
+        <i class="fa-solid fa-layer-group"></i>
+        <p>No projects found in this category yet.<br/>
+        <a href="contact.html" style="color:var(--blue-light);text-decoration:underline;">Talk to us about your project →</a></p>
+      </div>
+
+    </div><!-- /pf-grid -->
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section id="pf-cta">
+  <div class="container">
+    <div class="pf-cta-box reveal">
+      <div class="pf-cta-inner">
+        <div class="pf-cta-tag">Ready to Join Our Portfolio?</div>
+        <h2 class="pf-cta-title">Your Project Could Be <em>Next</em></h2>
+        <p class="pf-cta-desc">Tell us what you need — a campaign, a website, a brand, a video, or a full digital strategy. We'll respond with a customised proposal within 24 hours. No fluff, no commitment.</p>
+        <div class="pf-cta-actions">
+          <a href="request-quote.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get a Free Proposal</a>
+          <a href="services.html" class="btn-ghost-light"><i class="fa-solid fa-sparkles"></i> See Our Services</a>
+          <a href="contact.html" class="btn-ghost-light"><i class="fa-solid fa-headset"></i> Talk to Our Team</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a></div>
+        <p class="footer-brand-desc">NexGen Dubai — a full-service digital agency delivering marketing, development, content, and design that drives real growth for brands across the UAE and beyond.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Work</h4>
+        <ul class="footer-links">
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> All Portfolio</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Web &amp; App Dev</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#digital-marketing"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="services.html#web-dev"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Web &amp; App Dev</a></li>
+          <li><a href="services.html#content"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="services.html#design"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+          <li><a href="request-quote.html"><i class="fa-solid fa-chevron-right" style="font-size:.52rem;color:var(--blue-light);"></i> Get a Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971581720668">+971 58 172 0668</a></p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@nexgendubai.ae">contact@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>

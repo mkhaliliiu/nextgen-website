@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexGen Dubai Services — Digital Marketing, Web & App Development, Content Creation, and Graphic Design. Full-service digital agency in Dubai, UAE." />
+  <title>Our Services — NexGen Dubai</title>
+  <link rel="stylesheet" href="services.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971581720668?text=Hello%20NexGen%20Dubai!" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" onclick="window.closeMobileNav()"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
+        <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
+        <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw"></i> Web Development</a>
+        <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw"></i> Content Creation</a>
+        <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link no-dropdown">Portfolio</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:contact@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> contact@nexgendubai.ae</a>
+      <a href="tel:+971581720668"><i class="fa-solid fa-phone"></i> +971 58 172 0668</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <span class="nav-link active">Services <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw" style="color:var(--blue);opacity:.7;"></i> All Services</a>
+          <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue);opacity:.7;"></i> Digital Marketing</a>
+          <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw" style="color:var(--blue);opacity:.7;"></i> Web Development</a>
+          <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw" style="color:var(--blue);opacity:.7;"></i> Content Creation</a>
+          <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw" style="color:var(--blue);opacity:.7;"></i> Graphic Design</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" onclick="window.openMobileNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="sv-hero">
+  <div class="sv-hero-glow-1"></div>
+  <div class="sv-hero-glow-2"></div>
+  <div class="sv-hero-grid"></div>
+  <div class="sv-hero-content">
+    <div class="sv-hero-label">
+      <div class="sv-hero-label-line"></div>
+      <span>NexGen Dubai — Full-Service Digital Agency</span>
+      <div class="sv-hero-label-line"></div>
+    </div>
+    <h1 class="sv-hero-title">
+      <span class="line"><span class="word">What We</span></span>
+      <span class="line"><span class="word w2 accent">Deliver</span></span>
+    </h1>
+    <p class="sv-hero-sub">Four powerful service pillars — each built to grow your brand, reach your audience, and drive real results in the UAE and beyond.</p>
+    <div class="sv-hero-pills">
+      <span class="sv-hero-pill active" data-target="#digital-marketing">
+        <i class="fa-solid fa-chart-line"></i> Digital Marketing
+      </span>
+      <span class="sv-hero-pill" data-target="#web-dev">
+        <i class="fa-solid fa-laptop-code"></i> Web &amp; App Dev
+      </span>
+      <span class="sv-hero-pill" data-target="#content">
+        <i class="fa-solid fa-clapperboard"></i> Content Creation
+      </span>
+      <span class="sv-hero-pill" data-target="#design">
+        <i class="fa-solid fa-pen-ruler"></i> Graphic Design
+      </span>
+    </div>
+  </div>
+  <!-- Tab strip at bottom of hero -->
+  <div class="sv-hero-tabs">
+    <button class="sv-hero-tab active" data-target="#digital-marketing">
+      <i class="fa-solid fa-chart-line"></i> Digital Marketing
+    </button>
+    <button class="sv-hero-tab" data-target="#web-dev">
+      <i class="fa-solid fa-laptop-code"></i> Web &amp; App Dev
+    </button>
+    <button class="sv-hero-tab" data-target="#content">
+      <i class="fa-solid fa-clapperboard"></i> Content Creation
+    </button>
+    <button class="sv-hero-tab" data-target="#design">
+      <i class="fa-solid fa-pen-ruler"></i> Graphic Design
+    </button>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="container">
+    <a href="index.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    <span>Services</span>
+  </div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>Google Ads</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>SEO</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Meta Ads</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>LinkedIn Ads</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Snapchat Ads</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Web Development</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Software Dev</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Android &amp; iOS Apps</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Chatbot Development</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>CGI Content</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>UGC Content</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>AI Content</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Video Editing</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Posters &amp; 3D Designs</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Logo Design</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Dubai, UAE</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PILLAR 1 — DIGITAL MARKETING
+══════════════════════════════════════════════════════ -->
+<section class="sv-pillar" id="digital-marketing">
+  <div class="container">
+
+    <!-- Pillar header: image + text -->
+    <div class="sv-pillar-header">
+      <!-- Image -->
+      <div class="sv-pillar-img-wrap reveal-left">
+        <img
+          src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Digital Marketing"
+          class="sv-pillar-img"
+        />
+        <div class="sv-pillar-img-overlay"></div>
+        <div class="sv-pillar-img-badge">
+          <div class="sv-pillar-img-badge-icon" style="background:linear-gradient(135deg,var(--c-mkt-1),var(--c-mkt-2));">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div>
+            <div class="sv-pillar-img-badge-text">Avg. ROI</div>
+            <div class="sv-pillar-img-badge-num">3×</div>
+          </div>
+        </div>
+      </div>
+      <!-- Text -->
+      <div class="reveal-right">
+        <div class="sv-pillar-kicker">
+          <div class="sv-pillar-kicker-line" style="background:linear-gradient(90deg,var(--c-mkt-1),var(--c-mkt-2));"></div>
+          <span style="color:var(--c-mkt-1);">01 / Digital Marketing</span>
+        </div>
+        <div class="sv-pillar-title-wrap">
+          <div class="sv-pillar-num">01</div>
+          <h2 class="sv-pillar-title">
+            Reach More. <br/>
+            <span class="accent" style="background:linear-gradient(135deg,var(--c-mkt-1),var(--c-mkt-2));">Convert Better.</span>
+          </h2>
+        </div>
+        <p class="sv-pillar-desc">
+          We build data-driven digital marketing campaigns that put your brand in front of the right people — on every platform that matters. From dominating Google search results to precision-targeted social ads and organic SEO growth, NexGen's marketing team turns your budget into measurable business results.
+        </p>
+        <a href="request-quote.html" class="sv-pillar-link" style="background:linear-gradient(135deg,var(--c-mkt-1),var(--c-mkt-2));">
+          <i class="fa-solid fa-paper-plane"></i> Get a Free Marketing Audit
+        </a>
+      </div>
+    </div>
+
+    <!-- 5 Sub-service cards -->
+    <div class="sv-cards-grid">
+
+      <!-- Google Ads -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#ea4335,#fbbc04);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=600&auto=format&fit=crop&q=80" alt="Google Ads" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(234,67,53,.75);">01</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(234,67,53,.1);"><i class="fa-brands fa-google" style="color:#ea4335;font-size:1.3rem;"></i></div>
+          <h3 class="sv-card-title">Google Ads &amp; PPC</h3>
+          <p class="sv-card-desc">Search, Display, Shopping &amp; YouTube campaigns. We handle keyword research, bid management, ad copy, and continuous optimisation for maximum ROI on every dirham spent.</p>
+          <a href="request-quote.html?service=google-ads" class="sv-card-cta" style="color:#ea4335;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- SEO -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#059669,#34d399);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1674027001834-719c347d1eca?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SEO" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(5,150,105,.75);">02</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(5,150,105,.1);"><i class="fa-solid fa-magnifying-glass-chart" style="color:#059669;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">SEO Optimisation</h3>
+          <p class="sv-card-desc">Technical SEO, on-page optimisation, content strategy, and link building — everything needed to rank on page one and drive sustainable organic traffic that converts.</p>
+          <a href="request-quote.html?service=seo" class="sv-card-cta" style="color:#059669;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Meta Ads -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#1877f2,#42a5f5);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1665799871677-f1fd17338b43?q=80&w=814&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meta Ads" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(24,119,242,.75);">03</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(24,119,242,.1);"><i class="fa-brands fa-meta" style="color:#1877f2;font-size:1.3rem;"></i></div>
+          <h3 class="sv-card-title">Meta &amp; Facebook Ads</h3>
+          <p class="sv-card-desc">Full-funnel Meta campaigns across Facebook and Instagram — from awareness to conversion. Precision audience targeting, retargeting, creative testing, and ROAS optimisation.</p>
+          <a href="request-quote.html?service=meta-ads" class="sv-card-cta" style="color:#1877f2;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- LinkedIn Ads -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#0077b5,#00a0dc);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="LinkedIn Ads" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(0,119,181,.75);">04</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(0,119,181,.1);"><i class="fa-brands fa-linkedin-in" style="color:#0077b5;font-size:1.3rem;"></i></div>
+          <h3 class="sv-card-title">LinkedIn Advertising</h3>
+          <p class="sv-card-desc">B2B lead generation and brand authority on LinkedIn. Sponsored Content, InMail, Lead Gen Forms, and Conversation Ads targeting decision-makers across the UAE and GCC.</p>
+          <a href="request-quote.html?service=linkedin-ads" class="sv-card-cta" style="color:#0077b5;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Snapchat Ads -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#fffc00,#ffd700);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611162617263-4ec3060a058e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Snapchat Ads" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(255,252,0,.35);color:#111;">05</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(255,252,0,.12);"><i class="fa-brands fa-snapchat" style="color:#d4b800;font-size:1.3rem;"></i></div>
+          <h3 class="sv-card-title">Snapchat Ads</h3>
+          <p class="sv-card-desc">Reach GCC's highly engaged younger demographic through Snap Ads, Story Ads, and AR Lens campaigns. One of the most cost-effective platforms for brand awareness in the UAE.</p>
+          <a href="request-quote.html?service=snapchat-ads" class="sv-card-cta" style="color:#b8a000;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /sv-cards-grid -->
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PILLAR 2 — WEB & APP DEVELOPMENT
+══════════════════════════════════════════════════════ -->
+<section class="sv-pillar" id="web-dev">
+  <div class="container">
+
+    <div class="sv-pillar-header sv-pillar-header--reverse">
+      <!-- Text (right, displayed left due to reverse) -->
+      <div class="reveal-left">
+        <div class="sv-pillar-kicker">
+          <div class="sv-pillar-kicker-line" style="background:linear-gradient(90deg,var(--c-dev-1),var(--c-dev-2));"></div>
+          <span style="color:var(--c-dev-1);">02 / Web &amp; App Development</span>
+        </div>
+        <div class="sv-pillar-title-wrap">
+          <div class="sv-pillar-num">02</div>
+          <h2 class="sv-pillar-title">
+            Build Fast. <br/>
+            <span class="accent" style="background:linear-gradient(135deg,var(--c-dev-1),var(--c-dev-2));">Launch Smarter.</span>
+          </h2>
+        </div>
+        <p class="sv-pillar-desc">
+          From sleek corporate websites to full-stack mobile apps and AI-powered chatbots, NexGen's development team builds digital products that perform. We deliver clean code, stunning UI/UX, and rock-solid infrastructure — on time and on budget.
+        </p>
+        <a href="request-quote.html" class="sv-pillar-link" style="background:linear-gradient(135deg,var(--c-dev-1),var(--c-dev-2));">
+          <i class="fa-solid fa-rocket"></i> Start Your Project
+        </a>
+      </div>
+      <!-- Image -->
+      <div class="sv-pillar-img-wrap reveal-right">
+        <img
+          src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&auto=format&fit=crop&q=80"
+          alt="Web Development"
+          class="sv-pillar-img"
+        />
+        <div class="sv-pillar-img-overlay"></div>
+        <div class="sv-pillar-img-badge">
+          <div class="sv-pillar-img-badge-icon" style="background:linear-gradient(135deg,var(--c-dev-1),var(--c-dev-2));">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div>
+            <div class="sv-pillar-img-badge-text">Projects Delivered</div>
+            <div class="sv-pillar-img-badge-num">50+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sv-cards-grid">
+
+      <!-- Web Development -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#059669,#34d399);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop&q=80" alt="Web Development" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(5,150,105,.75);">01</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(5,150,105,.1);"><i class="fa-solid fa-globe" style="color:#059669;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Web Development</h3>
+          <p class="sv-card-desc">Custom websites built for speed, SEO, and conversions — from corporate sites and landing pages to full e-commerce platforms. Mobile-first, pixel-perfect, and built to last.</p>
+          <a href="request-quote.html?service=web-dev" class="sv-card-cta" style="color:#059669;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Software Development -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#0891b2,#22d3ee);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80" alt="Software Development" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(8,145,178,.75);">02</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(8,145,178,.1);"><i class="fa-solid fa-code" style="color:#0891b2;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Software Development</h3>
+          <p class="sv-card-desc">Bespoke software solutions tailored to your business — CRMs, dashboards, automation tools, SaaS platforms, and internal management systems built with modern tech stacks.</p>
+          <a href="request-quote.html?service=software-dev" class="sv-card-cta" style="color:#0891b2;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Android App -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#16a34a,#4ade80);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=80" alt="Android App Development" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(22,163,74,.75);">03</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(22,163,74,.1);"><i class="fa-brands fa-android" style="color:#16a34a;font-size:1.3rem;"></i></div>
+          <h3 class="sv-card-title">Android App Development</h3>
+          <p class="sv-card-desc">Native and cross-platform Android applications with intuitive UX, high performance, and seamless backend integrations. From MVP to full production launch — we build apps users love.</p>
+          <a href="request-quote.html?service=android-app" class="sv-card-cta" style="color:#16a34a;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- iOS App -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#475569,#94a3b8);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&auto=format&fit=crop&q=80" alt="iOS App Development" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(71,85,105,.75);">04</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(71,85,105,.1);"><i class="fa-brands fa-apple" style="color:#475569;font-size:1.3rem;"></i></div>
+          <h3 class="sv-card-title">iOS App Development</h3>
+          <p class="sv-card-desc">Beautifully crafted iOS applications using Swift and React Native. We design and develop App Store-ready apps with polished UI, smooth performance, and full lifecycle support.</p>
+          <a href="request-quote.html?service=ios-app" class="sv-card-cta" style="color:#475569;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Chatbot Development -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#7c3aed,#a78bfa);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&auto=format&fit=crop&q=80" alt="Chatbot Development" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(124,58,237,.75);">05</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(124,58,237,.1);"><i class="fa-solid fa-robot" style="color:#7c3aed;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Chatbot Development</h3>
+          <p class="sv-card-desc">AI-powered chatbots for customer support, lead generation, and sales automation — deployed on your website, WhatsApp, Instagram, and Messenger. Available 24/7, zero wait time.</p>
+          <a href="request-quote.html?service=chatbot" class="sv-card-cta" style="color:#7c3aed;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PILLAR 3 — CONTENT CREATION
+══════════════════════════════════════════════════════ -->
+<section class="sv-pillar" id="content">
+  <div class="container">
+
+    <div class="sv-pillar-header">
+      <div class="sv-pillar-img-wrap reveal-left">
+        <img
+          src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=900&auto=format&fit=crop&q=80"
+          alt="Content Creation"
+          class="sv-pillar-img"
+        />
+        <div class="sv-pillar-img-overlay"></div>
+        <div class="sv-pillar-img-badge">
+          <div class="sv-pillar-img-badge-icon" style="background:linear-gradient(135deg,var(--c-cnt-1),var(--c-cnt-2));">
+            <i class="fa-solid fa-clapperboard"></i>
+          </div>
+          <div>
+            <div class="sv-pillar-img-badge-text">Avg. Engagement</div>
+            <div class="sv-pillar-img-badge-num">3×</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="sv-pillar-kicker">
+          <div class="sv-pillar-kicker-line" style="background:linear-gradient(90deg,var(--c-cnt-1),var(--c-cnt-2));"></div>
+          <span style="color:var(--c-cnt-1);">03 / Content Creation</span>
+        </div>
+        <div class="sv-pillar-title-wrap">
+          <div class="sv-pillar-num">03</div>
+          <h2 class="sv-pillar-title">
+            Stop the Scroll. <br/>
+            <span class="accent" style="background:linear-gradient(135deg,var(--c-cnt-1),var(--c-cnt-2));">Own the Feed.</span>
+          </h2>
+        </div>
+        <p class="sv-pillar-desc">
+          In a world of endless content, standing out requires exceptional creativity. NexGen's content team produces scroll-stopping visuals and videos — from cutting-edge CGI and authentic UGC to AI-generated content and high-quality video production. Every piece is crafted to captivate your audience and grow your brand.
+        </p>
+        <a href="request-quote.html" class="sv-pillar-link" style="background:linear-gradient(135deg,var(--c-cnt-1),var(--c-cnt-2));">
+          <i class="fa-solid fa-film"></i> Plan Your Content Strategy
+        </a>
+      </div>
+    </div>
+
+    <div class="sv-cards-grid">
+
+      <!-- CGI Content -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#7c3aed,#a78bfa);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=600&auto=format&fit=crop&q=80" alt="CGI Content" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(124,58,237,.75);">01</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(124,58,237,.1);"><i class="fa-solid fa-cube" style="color:#7c3aed;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">CGI Content</h3>
+          <p class="sv-card-desc">Photorealistic computer-generated imagery for product launches, brand campaigns, and social media — creating visuals that are impossible to shoot in real life, at a fraction of the cost.</p>
+          <a href="request-quote.html?service=cgi" class="sv-card-cta" style="color:#7c3aed;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- UGC Content -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#be185d,#f472b6);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=80" alt="UGC Content" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(190,24,93,.75);">02</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(190,24,93,.1);"><i class="fa-solid fa-users" style="color:#be185d;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">UGC Content</h3>
+          <p class="sv-card-desc">Authentic user-generated style content that builds trust and drives conversions. We produce organic-feeling reviews, unboxings, and testimonial videos that outperform polished ads.</p>
+          <a href="request-quote.html?service=ugc" class="sv-card-cta" style="color:#be185d;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- AI Content -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#0891b2,#22d3ee);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=600&auto=format&fit=crop&q=80" alt="AI Content" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(8,145,178,.75);">03</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(8,145,178,.1);"><i class="fa-solid fa-wand-magic-sparkles" style="color:#0891b2;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">AI Content</h3>
+          <p class="sv-card-desc">AI-assisted content creation at scale — blog posts, ad copy, social captions, email sequences, and visual content. Produced faster and smarter without sacrificing quality or brand voice.</p>
+          <a href="request-quote.html?service=ai-content" class="sv-card-cta" style="color:#0891b2;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Editing -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#dc2626,#f87171);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Video Editing" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(220,38,38,.75);">04</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(220,38,38,.1);"><i class="fa-solid fa-scissors" style="color:#dc2626;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Video Editing</h3>
+          <p class="sv-card-desc">Professional post-production editing — reels, YouTube videos, brand films, corporate content, and social media cuts. Motion graphics, colour grading, sound design, and subtitles included.</p>
+          <a href="request-quote.html?service=video-editing" class="sv-card-cta" style="color:#dc2626;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Creation -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#7c3aed,#a78bfa);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&auto=format&fit=crop&q=80" alt="Video Creation" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(124,58,237,.75);">05</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(124,58,237,.1);"><i class="fa-solid fa-video" style="color:#7c3aed;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Video Creation</h3>
+          <p class="sv-card-desc">End-to-end video production — concept, scripting, filming, editing, and delivery. TV commercials, brand films, product launches, event coverage, and social media content at every scale.</p>
+          <a href="request-quote.html?service=video-creation" class="sv-card-cta" style="color:#7c3aed;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PILLAR 4 — GRAPHIC DESIGN
+══════════════════════════════════════════════════════ -->
+<section class="sv-pillar" id="design">
+  <div class="container">
+
+    <div class="sv-pillar-header sv-pillar-header--reverse">
+      <div class="reveal-left">
+        <div class="sv-pillar-kicker">
+          <div class="sv-pillar-kicker-line" style="background:linear-gradient(90deg,var(--c-dsn-1),var(--c-dsn-2));"></div>
+          <span style="color:var(--c-dsn-1);">04 / Graphic Design</span>
+        </div>
+        <div class="sv-pillar-title-wrap">
+          <div class="sv-pillar-num">04</div>
+          <h2 class="sv-pillar-title">
+            Look Brilliant. <br/>
+            <span class="accent" style="background:linear-gradient(135deg,var(--c-dsn-1),var(--c-dsn-2));">Be Remembered.</span>
+          </h2>
+        </div>
+        <p class="sv-pillar-desc">
+          Great design is the silent salesperson working for your brand 24/7. NexGen's design team creates visually powerful assets that communicate your identity, build trust, and make your brand impossible to ignore — from a compelling logo to immersive 3D visuals and every social post in between.
+        </p>
+        <a href="request-quote.html" class="sv-pillar-link" style="background:linear-gradient(135deg,var(--c-dsn-1),var(--c-dsn-2));">
+          <i class="fa-solid fa-palette"></i> Start Designing with Us
+        </a>
+      </div>
+      <div class="sv-pillar-img-wrap reveal-right">
+        <img
+          src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=900&auto=format&fit=crop&q=80"
+          alt="Graphic Design"
+          class="sv-pillar-img"
+        />
+        <div class="sv-pillar-img-overlay"></div>
+        <div class="sv-pillar-img-badge">
+          <div class="sv-pillar-img-badge-icon" style="background:linear-gradient(135deg,var(--c-dsn-1),var(--c-dsn-2));">
+            <i class="fa-solid fa-pen-ruler"></i>
+          </div>
+          <div>
+            <div class="sv-pillar-img-badge-text">Designs Delivered</div>
+            <div class="sv-pillar-img-badge-num">500+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sv-cards-grid">
+
+      <!-- Posters -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#ea580c,#fb923c);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&auto=format&fit=crop&q=80" alt="Poster Design" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(234,88,12,.75);">01</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(234,88,12,.1);"><i class="fa-solid fa-image" style="color:#ea580c;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Posters &amp; Social Media Designs</h3>
+          <p class="sv-card-desc">Eye-catching posters, banners, stories, reels covers, and social media templates — designed to represent your brand perfectly across every platform and format.</p>
+          <a href="request-quote.html?service=posters" class="sv-card-cta" style="color:#ea580c;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3D Designs -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#d97706,#fbbf24);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80" alt="3D Design" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(217,119,6,.75);">02</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(217,119,6,.1);"><i class="fa-solid fa-cube" style="color:#d97706;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">3D Designs</h3>
+          <p class="sv-card-desc">Stunning three-dimensional product visualisations, architectural renders, abstract brand art, and motion-ready 3D assets — making your brand look cutting-edge and premium.</p>
+          <a href="request-quote.html?service=3d-design" class="sv-card-cta" style="color:#d97706;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Image Design -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#0891b2,#22d3ee);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format&fit=crop&q=80" alt="Image Design" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(8,145,178,.75);">03</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(8,145,178,.1);"><i class="fa-solid fa-wand-sparkles" style="color:#0891b2;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Image Design &amp; Retouching</h3>
+          <p class="sv-card-desc">Professional photo editing, compositing, background removal, product retouching, and creative image manipulation. Polished visuals that represent your brand at the highest standard.</p>
+          <a href="request-quote.html?service=image-design" class="sv-card-cta" style="color:#0891b2;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Logo Design -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#ea580c,#fb923c);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop&q=80" alt="Logo Design" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(234,88,12,.75);">04</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(234,88,12,.1);"><i class="fa-solid fa-star" style="color:#ea580c;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Logo Design &amp; Branding</h3>
+          <p class="sv-card-desc">Complete brand identity packages — logo design, brand guidelines, colour palettes, typography systems, and all collateral. We build brands that are distinctive, memorable, and timeless.</p>
+          <a href="request-quote.html?service=logo-design" class="sv-card-cta" style="color:#ea580c;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Brand Identity (bonus card — fills the 5th slot) -->
+      <div class="sv-card" style="--card-accent:linear-gradient(90deg,#be185d,#f472b6);">
+        <div class="sv-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1633533452148-a9657d2c9a5f?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Brand Identity" class="sv-card-img" />
+          <div class="sv-card-img-overlay"></div>
+          <span class="sv-card-num" style="background:rgba(190,24,93,.75);">05</span>
+        </div>
+        <div class="sv-card-body">
+          <div class="sv-card-icon" style="background:rgba(190,24,93,.1);"><i class="fa-solid fa-layer-group" style="color:#be185d;font-size:1.2rem;"></i></div>
+          <h3 class="sv-card-title">Full Brand Identity</h3>
+          <p class="sv-card-desc">End-to-end brand creation — naming, positioning, logo, visual identity, tone of voice, and brand guidelines. Everything a new or rebranding business needs to launch with impact.</p>
+          <a href="request-quote.html?service=brand-identity" class="sv-card-cta" style="color:#be185d;">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ WHY NEXGEN ══════════════════════════════════════════════ -->
+<section id="sv-why">
+  <div class="container">
+    <div class="sv-why-header">
+      <div class="sv-why-tag">Why NexGen Dubai</div>
+      <h2>Why Businesses Choose<br/>NexGen Dubai</h2>
+      <p>We combine the strategic thinking of a consultancy, the creative output of a studio, and the precision of a data team — all under one roof in Dubai.</p>
+    </div>
+    <div class="sv-why-grid">
+      <div class="sv-why-card">
+        <div class="sv-why-num">01</div>
+        <div class="sv-why-icon">&#127758;</div>
+        <h3 class="sv-why-title">UAE-Based, GCC-Savvy</h3>
+        <p class="sv-why-desc">Deep knowledge of UAE consumer behaviour, cultural nuances, regional platforms, and market dynamics — we understand what resonates here and what drives action.</p>
+      </div>
+      <div class="sv-why-card">
+        <div class="sv-why-num">02</div>
+        <div class="sv-why-icon">&#127919;</div>
+        <h3 class="sv-why-title">Strategy Before Execution</h3>
+        <p class="sv-why-desc">Every campaign starts with a clear objective and data-backed strategy. No guesswork — just structured plans with measurable KPIs and full accountability from day one.</p>
+      </div>
+      <div class="sv-why-card">
+        <div class="sv-why-num">03</div>
+        <div class="sv-why-icon">&#9889;</div>
+        <h3 class="sv-why-title">Fast, Agile Delivery</h3>
+        <p class="sv-why-desc">We move at startup speed. Same-day campaign setup, 24-hour proposal turnaround, rapid creative sprints. Speed is a competitive advantage we pass directly to you.</p>
+      </div>
+      <div class="sv-why-card">
+        <div class="sv-why-num">04</div>
+        <div class="sv-why-icon">&#128202;</div>
+        <h3 class="sv-why-title">Transparent Reporting</h3>
+        <p class="sv-why-desc">Real-time dashboards, weekly performance updates, and monthly strategy reviews. You always know exactly what we're doing, why, and what results it's delivering.</p>
+      </div>
+      <div class="sv-why-card">
+        <div class="sv-why-num">05</div>
+        <div class="sv-why-icon">&#129309;</div>
+        <h3 class="sv-why-title">One Partner, Full Stack</h3>
+        <p class="sv-why-desc">Ads, development, content, design — all under one roof. No juggling multiple agencies or losing brand consistency. NexGen handles every digital touchpoint seamlessly.</p>
+      </div>
+      <div class="sv-why-card">
+        <div class="sv-why-num">06</div>
+        <div class="sv-why-icon">&#127941;</div>
+        <h3 class="sv-why-title">ROI-Obsessed</h3>
+        <p class="sv-why-desc">We measure success by your revenue growth, not vanity metrics. Every decision we make is evaluated through the lens of return on investment for your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section id="sv-cta">
+  <div class="container">
+    <div class="sv-cta-box reveal">
+      <div class="sv-cta-inner">
+        <div class="sv-cta-tag">Ready to Grow?</div>
+        <h2 class="sv-cta-title">Let's Build Something<br/><span>Extraordinary Together</span></h2>
+        <p class="sv-cta-desc">Tell us about your project. Our team will prepare a customised strategy and proposal — completely free, no commitment required.</p>
+        <div class="sv-cta-actions">
+          <a href="request-quote.html" class="btn btn-white"><i class="fa-solid fa-paper-plane"></i> Get Free Proposal</a>
+          <a href="contact.html" class="btn-cta-outline"><i class="fa-solid fa-headset"></i> Talk to Our Team</a>
+          <a href="portfolio.html" class="btn-cta-outline"><i class="fa-solid fa-eye"></i> View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a></div>
+        <p class="footer-brand-desc">NexGen Dubai — a full-service digital agency delivering marketing, development, content, and design that drives real growth for brands across the UAE and beyond.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#digital-marketing"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="#web-dev"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Web &amp; App Development</a></li>
+          <li><a href="#content"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="#design"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+          <li><a href="request-quote.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Get a Free Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Home</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Portfolio</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> About Us</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Our Team</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Blog</a></li>
+          <li><a href="careers.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971581720668">+971 58 172 0668</a></p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@nexgendubai.ae">contact@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="services.js"></script>
+</body>
+</html>
