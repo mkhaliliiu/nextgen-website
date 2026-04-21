@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexGen Dubai Media & PR Services — Social media management, press releases, newspaper coverage, online PR, influencer outreach, and brand storytelling across the UAE and GCC." />
+  <title>Media &amp; PR Services — NexGen Dubai</title>
+  <link rel="stylesheet" href="mediapr.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+<div id="scroll-progress"></div>
+
+<a id="whatsapp-btn" href="https://wa.me/971581720668?text=Hello%20NexGen%20Dubai%2C%20I%27m%20interested%20in%20your%20Media%20%26%20PR%20services!" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ══ MOBILE NAV ══════════════════════════════════════════════ -->
+<nav id="mobile-nav" class="mobile-nav">
+  <div class="mobile-nav-header">
+    <a href="index.html" class="mobile-nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <button class="mobile-nav-close" id="mobile-nav-close" onclick="window.closeMobileNav()"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="mobile-nav-body">
+    <div class="mobile-nav-item"><a href="index.html" class="mobile-nav-link no-dropdown">Home</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Services <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw"></i> All Services</a>
+        <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw"></i> Digital Marketing</a>
+        <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw"></i> Web Development</a>
+        <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw"></i> Content Creation</a>
+        <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw"></i> Graphic Design</a>
+        <a href="mediapr.html"><i class="fa-solid fa-newspaper fa-fw"></i> Media &amp; PR</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link no-dropdown">Portfolio</a></div>
+    <div class="mobile-nav-item" data-dropdown>
+      <div class="mobile-nav-link">Company <i class="fa-solid fa-chevron-down mobile-chevron"></i></div>
+      <div class="mobile-dropdown">
+        <a href="about.html"><i class="fa-solid fa-building fa-fw"></i> About Us</a>
+        <a href="team.html"><i class="fa-solid fa-users fa-fw"></i> Our Team</a>
+        <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw"></i> Join Our Team</a>
+        <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw"></i> FAQ</a>
+      </div>
+    </div>
+    <div class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link no-dropdown">Blog</a></div>
+  </div>
+  <div class="mobile-nav-footer">
+    <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+  </div>
+</nav>
+
+<!-- ══ TOP BAR ════════════════════════════════════════════════ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <a href="mailto:contact@nexgendubai.ae"><i class="fa-solid fa-envelope"></i> contact@nexgendubai.ae</a>
+      <a href="tel:+971581720668"><i class="fa-solid fa-phone"></i> +971 58 172 0668</a>
+      <span><i class="fa-solid fa-location-dot"></i> Meydan Grandstand, 6th Floor, Dubai, UAE</span>
+    </div>
+    <div class="top-bar-right">
+      <a href="https://www.facebook.com/nexgendubai" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nexgen_dubai" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com/NexGenDubai" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nexgen-dubai/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/@NexGenDubai" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ═════════════════════════════════════════════════ -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" /></a>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="nav-item">
+        <span class="nav-link active">Services <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="services.html"><i class="fa-solid fa-grid-2 fa-fw" style="color:var(--blue);opacity:.7;"></i> All Services</a>
+          <a href="services.html#digital-marketing"><i class="fa-solid fa-chart-line fa-fw" style="color:var(--blue);opacity:.7;"></i> Digital Marketing</a>
+          <a href="services.html#web-dev"><i class="fa-solid fa-laptop-code fa-fw" style="color:var(--blue);opacity:.7;"></i> Web Development</a>
+          <a href="services.html#content"><i class="fa-solid fa-clapperboard fa-fw" style="color:var(--blue);opacity:.7;"></i> Content Creation</a>
+          <a href="services.html#design"><i class="fa-solid fa-pen-ruler fa-fw" style="color:var(--blue);opacity:.7;"></i> Graphic Design</a>
+          <a href="mediapr.html" style="color:var(--blue);font-weight:600;"><i class="fa-solid fa-newspaper fa-fw" style="color:var(--blue);opacity:.7;"></i> Media &amp; PR</a>
+        </div>
+      </div>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <div class="nav-item">
+        <span class="nav-link">Company <i class="fa-solid fa-chevron-down chevron"></i></span>
+        <div class="dropdown">
+          <a href="about.html"><i class="fa-solid fa-building fa-fw" style="color:var(--blue);opacity:.7;"></i> About Us</a>
+          <a href="team.html"><i class="fa-solid fa-users fa-fw" style="color:var(--blue);opacity:.7;"></i> Our Team</a>
+          <a href="careers.html"><i class="fa-solid fa-briefcase fa-fw" style="color:var(--blue);opacity:.7;"></i> Join Our Team</a>
+          <a href="faq.html"><i class="fa-solid fa-circle-question fa-fw" style="color:var(--blue);opacity:.7;"></i> FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html" class="nav-link">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      <button id="hamburger" class="hamburger" onclick="window.openMobileNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ HERO ════════════════════════════════════════════════════ -->
+<section class="mp-hero">
+  <div class="mp-hero-glow-1"></div>
+  <div class="mp-hero-glow-2"></div>
+  <div class="mp-hero-grid"></div>
+  <div class="container mp-hero-inner">
+
+    <!-- Left -->
+    <div>
+      <div class="mp-hero-eyebrow">
+        <div class="mp-hero-eyebrow-line"></div>
+        <span>NexGen Dubai — Media &amp; Public Relations</span>
+      </div>
+      <h1 class="mp-hero-title">
+        <span class="line"><span class="word">Your Story.</span></span>
+        <span class="line"><span class="word w2 accent">Every</span>&nbsp;<span class="word w3">Platform.</span></span>
+      </h1>
+      <p class="mp-hero-sub">
+        NexGen Dubai amplifies your brand across social media, online news outlets, newspapers, digital PR channels, and strategic media partnerships — ensuring your message reaches the right audience, at the right time, on every platform that matters.
+      </p>
+      <div class="mp-hero-btns">
+        <a href="request-quote.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get a Media Plan</a>
+        <a href="#mp-services" class="btn-cta-outline"><i class="fa-solid fa-eye"></i> Our Services</a>
+      </div>
+      <div class="mp-hero-trust">
+        <span class="mp-trust-badge"><i class="fa-solid fa-newspaper"></i> Press &amp; News Coverage</span>
+        <span class="mp-trust-badge"><i class="fa-brands fa-instagram"></i> Social Media</span>
+        <span class="mp-trust-badge"><i class="fa-solid fa-globe"></i> Online Portals</span>
+        <span class="mp-trust-badge"><i class="fa-solid fa-handshake"></i> Media Partnerships</span>
+      </div>
+    </div>
+
+    <!-- Right: floating media channel cards -->
+    <div class="mp-hero-channels">
+      <div class="mp-hcard">
+        <div class="mp-hcard-icon" style="background:linear-gradient(135deg,#1877f2,#42a5f5);"><i class="fa-brands fa-instagram"></i></div>
+        <div>
+          <div class="mp-hcard-title">Social Media PR</div>
+          <div class="mp-hcard-desc">Instagram, Facebook, LinkedIn &amp; X — organic + sponsored campaigns</div>
+        </div>
+      </div>
+      <div class="mp-hcard">
+        <div class="mp-hcard-icon" style="background:linear-gradient(135deg,#dc2626,#f87171);"><i class="fa-solid fa-newspaper"></i></div>
+        <div>
+          <div class="mp-hcard-title">Press &amp; News Coverage</div>
+          <div class="mp-hcard-desc">Feature placements in UAE &amp; GCC newspapers, magazines &amp; portals</div>
+        </div>
+      </div>
+      <div class="mp-hcard">
+        <div class="mp-hcard-icon" style="background:linear-gradient(135deg,#059669,#34d399);"><i class="fa-solid fa-globe"></i></div>
+        <div>
+          <div class="mp-hcard-title">Online News Portals</div>
+          <div class="mp-hcard-desc">Partnerships with TravelsDubai.com &amp; major digital publications</div>
+        </div>
+      </div>
+      <div class="mp-hcard">
+        <div class="mp-hcard-icon" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);"><i class="fa-solid fa-bullhorn"></i></div>
+        <div>
+          <div class="mp-hcard-title">Press Release Distribution</div>
+          <div class="mp-hcard-desc">Professional press releases distributed to targeted media networks</div>
+        </div>
+      </div>
+      <div class="mp-hcard">
+        <div class="mp-hcard-icon" style="background:linear-gradient(135deg,#d97706,#fbbf24);"><i class="fa-solid fa-star"></i></div>
+        <div>
+          <div class="mp-hcard-title">Influencer &amp; Media Outreach</div>
+          <div class="mp-hcard-desc">Connecting brands with verified UAE influencers &amp; media personalities</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb"><div class="container">
+  <a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>
+  <a href="services.html">Services</a><i class="fa-solid fa-chevron-right"></i>
+  <span>Media &amp; PR</span>
+</div></div>
+
+<!-- ══ TRAVELSDUBAI COLLABORATION DETAIL ══════════════════════ -->
+<section id="mp-collab-detail">
+  <div class="container">
+    <div class="mp-collab-detail-grid">
+
+      <!-- Left: text -->
+      <div class="reveal-left">
+        <div class="tag-pill">Featured Media Partnership</div>
+
+        <!-- TravelsDubai logo box -->
+        <div class="mp-collab-detail-logo-box" style="margin-top:1.2rem;">
+          <img
+            src="https://www.travelsdubai.com/uploads/theme/logo-1706512745.png"
+            alt="TravelsDubai Logo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          />
+          <div class="td-text" style="display:none;">Travels<span>Dubai</span></div>
+          <div class="mp-collab-info">
+            <div class="mp-collab-info-name" style="font-size:.9rem;">TravelsDubai.com</div>
+            <div class="mp-collab-info-tag">Official Media Partner</div>
+          </div>
+        </div>
+
+        <h2 class="mp-collab-detail-title">
+          Amplify Your Brand Through<br/>
+          <span>TravelsDubai.com</span>
+        </h2>
+        <p class="mp-collab-detail-body">
+          NexGen Dubai is an official content and media partner of <strong>TravelsDubai.com</strong> — one of the UAE's most-read digital news portals covering UAE news, business, lifestyle, travel, education, events, and technology. Reaching hundreds of thousands of engaged UAE and international readers every month, TravelsDubai provides our clients with direct access to an audience that is highly relevant to businesses operating in or entering the UAE market.
+        </p>
+        <p class="mp-collab-detail-body">
+          Through this partnership, NexGen clients gain the opportunity to have their brand stories, product launches, announcements, and thought leadership pieces published as editorial features on TravelsDubai.com — complete with SEO-optimised articles, social media amplification, and newsletter distribution to TravelsDubai's subscriber base.
+        </p>
+
+        <div class="mp-collab-what-grid">
+          <div class="mp-collab-what-item">
+            <i class="fa-solid fa-circle-check mp-collab-what-icon"></i>
+            <span class="mp-collab-what-text">Editorial feature articles on TravelsDubai.com</span>
+          </div>
+          <div class="mp-collab-what-item">
+            <i class="fa-solid fa-circle-check mp-collab-what-icon"></i>
+            <span class="mp-collab-what-text">SEO-optimised brand stories that rank on Google</span>
+          </div>
+          <div class="mp-collab-what-item">
+            <i class="fa-solid fa-circle-check mp-collab-what-icon"></i>
+            <span class="mp-collab-what-text">Social media amplification across their channels</span>
+          </div>
+          <div class="mp-collab-what-item">
+            <i class="fa-solid fa-circle-check mp-collab-what-icon"></i>
+            <span class="mp-collab-what-text">UAE, Business, Lifestyle &amp; Events sections</span>
+          </div>
+          <div class="mp-collab-what-item">
+            <i class="fa-solid fa-circle-check mp-collab-what-icon"></i>
+            <span class="mp-collab-what-text">Press release distribution to their newsroom</span>
+          </div>
+          <div class="mp-collab-what-item">
+            <i class="fa-solid fa-circle-check mp-collab-what-icon"></i>
+            <span class="mp-collab-what-text">Newsletter coverage to subscriber base</span>
+          </div>
+        </div>
+
+        <a href="request-quote.html?service=media-pr" class="btn btn-blue" style="margin-top:.5rem;">
+          <i class="fa-solid fa-paper-plane"></i> Get Your Brand on TravelsDubai
+        </a>
+      </div>
+
+      <!-- Right: stats + website preview -->
+      <div class="reveal-right">
+        <div class="mp-collab-stats">
+          <div class="mp-collab-stat">
+            <div class="mp-collab-stat-num" data-counter="500">0</div>K+
+            <div class="mp-collab-stat-label">Monthly<br/>Readers</div>
+          </div>
+          <div class="mp-collab-stat">
+            <div class="mp-collab-stat-num" data-counter="12">0</div>+
+            <div class="mp-collab-stat-label">Content<br/>Categories</div>
+          </div>
+          <div class="mp-collab-stat">
+            <div class="mp-collab-stat-num" data-counter="2021">0</div>
+            <div class="mp-collab-stat-label">Year<br/>Founded</div>
+          </div>
+          <div class="mp-collab-stat">
+            <div class="mp-collab-stat-num" data-counter="100">0</div>%
+            <div class="mp-collab-stat-label">UAE &amp; GCC<br/>Audience</div>
+          </div>
+        </div>
+
+        <!-- Browser mockup -->
+        <div class="mp-collab-website-card">
+          <div class="mp-collab-website-bar">
+            <div class="mp-collab-website-dot" style="background:#f87171;"></div>
+            <div class="mp-collab-website-dot" style="background:#fbbf24;"></div>
+            <div class="mp-collab-website-dot" style="background:#34d399;"></div>
+            <div class="mp-collab-website-url">travelsdubai.com</div>
+          </div>
+          <div class="mp-collab-website-preview">
+            <img
+              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=700&auto=format&fit=crop&q=80"
+              alt="Dubai cityscape — TravelsDubai media partnership"
+            />
+            <div style="padding:1rem 0 .4rem;">
+              <div style="font-family:var(--font-display);font-size:.95rem;font-weight:700;color:var(--navy-deep);margin-bottom:.4rem;">TravelsDubai.com — Latest UAE News, Business &amp; Lifestyle</div>
+              <p style="font-size:.78rem;color:var(--text-dim);line-height:1.6;">Covering UAE News, Saudi Arabia, Canada, Travel, Business, Education, Events, Health, Lifestyle and Science &amp; Tech — serving hundreds of thousands of readers monthly across the UAE and GCC.</p>
+              <a href="https://www.travelsdubai.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.78rem;font-weight:600;color:var(--blue);margin-top:.7rem;">Visit TravelsDubai.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7rem;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ MEDIA PARTNER STRIP — TRAVELSDUBAI ═════════════════════ -->
+<div class="mp-collab-section">
+  <div class="container">
+    <div class="mp-collab-inner">
+      <span class="mp-collab-label">Media &amp; Publishing Partners</span>
+      <div class="mp-collab-divider"></div>
+      <div class="mp-collab-partners">
+
+        <!-- TravelsDubai -->
+        <a href="https://www.travelsdubai.com/" target="_blank" rel="noopener" class="mp-collab-partner">
+          <div class="mp-collab-logo-wrap">
+            <img
+              src="https://www.travelsdubai.com/uploads/theme/logo-1706512745.png"
+              alt="TravelsDubai"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <div class="mp-collab-logo-text" style="display:none;">Travels<span>Dubai</span></div>
+          </div>
+          <div class="mp-collab-info">
+            <div class="mp-collab-info-name">TravelsDubai.com</div>
+            <div class="mp-collab-info-tag">UAE News &amp; Media</div>
+            <div class="mp-collab-badge"><i class="fa-solid fa-circle-check"></i> Official Partner</div>
+          </div>
+        </a>
+
+        <!-- UAE News (placeholder for more partners) -->
+        <div class="mp-collab-partner" style="cursor:default;">
+          <div class="mp-collab-logo-wrap">
+            <div class="mp-collab-logo-text">UAE<span>News</span></div>
+          </div>
+          <div class="mp-collab-info">
+            <div class="mp-collab-info-name">UAE Press Network</div>
+            <div class="mp-collab-info-tag">Print &amp; Digital</div>
+            <div class="mp-collab-badge"><i class="fa-solid fa-circle-check"></i> Media Partner</div>
+          </div>
+        </div>
+
+        <div class="mp-collab-partner" style="cursor:default;opacity:.6;">
+          <div class="mp-collab-logo-wrap">
+            <div class="mp-collab-logo-text" style="font-size:.9rem;color:var(--text-dim);">+ More<br/>Partners</div>
+          </div>
+          <div class="mp-collab-info">
+            <div class="mp-collab-info-name">Growing Network</div>
+            <div class="mp-collab-info-tag">GCC &amp; International</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ INTRO SPLIT ═════════════════════════════════════════════ -->
+<section id="mp-intro">
+  <div class="container">
+    <div class="mp-intro-grid">
+      <div class="mp-intro-img-wrap reveal-left">
+        <span class="mp-intro-tag-float">&#128227; Dubai-Based PR Agency</span>
+        <img
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=900&auto=format&fit=crop&q=80"
+          alt="NexGen Dubai Media & PR"
+          class="mp-intro-img"
+        />
+        <div class="mp-intro-overlay"></div>
+        <div class="mp-intro-badge">
+          <span style="font-size:1.8rem;">&#128240;</span>
+          <div>
+            <div class="mp-intro-badge-num">50+</div>
+            <div class="mp-intro-badge-label">Media<br/>Placements</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="tag-pill">About Our Media &amp; PR</div>
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.9rem,3.8vw,3rem);font-weight:700;color:var(--navy-deep);line-height:1.1;margin:1rem 0 1.2rem;">
+          Tell Your Story Where<br/><span style="background:linear-gradient(135deg,var(--blue),var(--blue-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">It Gets Noticed</span>
+        </h2>
+        <p class="mp-intro-body">
+          In today's fragmented media landscape, being seen isn't enough — you need to be seen by the right people, through the right channels, with a message that resonates. NexGen Dubai's Media &amp; PR team builds strategic communications that place your brand at the heart of the conversations that matter most.
+        </p>
+        <p class="mp-intro-body">
+          From crafting compelling press releases and securing placements in UAE newspapers and major online portals like <strong>TravelsDubai.com</strong>, to managing your entire social media presence and running targeted influencer campaigns — we handle every dimension of your public narrative with precision and creativity.
+        </p>
+        <div class="mp-intro-checks">
+          <div class="mp-intro-check"><i class="fa-solid fa-circle-check"></i> Placements in print newspapers, digital news portals, and lifestyle magazines</div>
+          <div class="mp-intro-check"><i class="fa-solid fa-circle-check"></i> Social media PR campaigns across Instagram, Facebook, LinkedIn, X, and TikTok</div>
+          <div class="mp-intro-check"><i class="fa-solid fa-circle-check"></i> Press release writing, distribution, and media follow-up</div>
+          <div class="mp-intro-check"><i class="fa-solid fa-circle-check"></i> Brand reputation management and crisis communications</div>
+          <div class="mp-intro-check"><i class="fa-solid fa-circle-check"></i> Influencer partnerships with verified UAE content creators</div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="request-quote.html" class="btn btn-blue"><i class="fa-solid fa-paper-plane"></i> Get a PR Proposal</a>
+          <a href="#mp-services" class="btn btn-outline"><i class="fa-solid fa-eye"></i> View Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES GRID ═══════════════════════════════════════════ -->
+<section id="mp-services">
+  <div class="container">
+    <div class="mp-services-hdr">
+      <div class="tag-pill reveal">Our Media &amp; PR Services</div>
+      <h2 class="reveal delay-1">Everything Your Brand Needs<br/><span>to Get Heard</span></h2>
+      <p class="reveal delay-2">A complete media and public relations suite — from social platforms and digital news to print coverage and influencer campaigns. All strategy, all execution, one team.</p>
+    </div>
+    <div class="mp-services-grid">
+
+      <!-- 1 Social Media Management & PR -->
+      <div class="mp-scard reveal">
+        <div class="mp-scard-num">01</div>
+        <div class="mp-scard-icon"><i class="fa-brands fa-instagram" style="color:#e1306c;font-size:1.4rem;"></i></div>
+        <h3 class="mp-scard-title">Social Media PR &amp; Management</h3>
+        <p class="mp-scard-desc">Full management of your brand's social presence across Instagram, Facebook, LinkedIn, X, and TikTok. We create PR-led content calendars, handle community management, run organic growth campaigns, and build genuine audience relationships that convert followers into customers.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Instagram</span><span class="mp-scard-tag">Facebook</span>
+          <span class="mp-scard-tag">LinkedIn</span><span class="mp-scard-tag">TikTok</span>
+        </div>
+      </div>
+
+      <!-- 2 Press Coverage -->
+      <div class="mp-scard reveal delay-1">
+        <div class="mp-scard-num">02</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-newspaper" style="color:#0077b5;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Newspaper &amp; Print Coverage</h3>
+        <p class="mp-scard-desc">Strategic placements in UAE and GCC print publications — from national newspapers to niche trade magazines. We manage the full editorial process: media briefings, journalist relationships, article pitching, and placement confirmation, ensuring your brand story reaches print audiences that trust traditional media.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Gulf News</span><span class="mp-scard-tag">Khaleej Times</span>
+          <span class="mp-scard-tag">Trade Mags</span>
+        </div>
+      </div>
+
+      <!-- 3 Online News Portals -->
+      <div class="mp-scard reveal delay-2">
+        <div class="mp-scard-num">03</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-globe" style="color:#1877f2;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Online Portal &amp; Digital News Coverage</h3>
+        <p class="mp-scard-desc">Published content across major UAE and regional digital news portals — including our official partner <strong>TravelsDubai.com</strong>. We write, place, and promote feature articles, press announcements, and brand stories on high-traffic online publications that rank on Google and reach millions of monthly readers across the GCC.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">TravelsDubai</span><span class="mp-scard-tag">UAE Portals</span>
+          <span class="mp-scard-tag">SEO Coverage</span>
+        </div>
+      </div>
+
+      <!-- 4 Press Release Writing -->
+      <div class="mp-scard reveal delay-3">
+        <div class="mp-scard-num">04</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-pen-nib" style="color:#e1306c;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Press Release Writing &amp; Distribution</h3>
+        <p class="mp-scard-desc">Professionally written press releases that communicate your news with clarity, credibility, and editorial quality. We distribute to our curated media contact list covering national journalists, sector editors, online portals, and newswires — backed by active media follow-up to maximise pick-up and coverage.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Writing</span><span class="mp-scard-tag">Distribution</span>
+          <span class="mp-scard-tag">Follow-up</span>
+        </div>
+      </div>
+
+      <!-- 5 Influencer Marketing -->
+      <div class="mp-scard reveal">
+        <div class="mp-scard-num">05</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-star" style="color:#059669;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Influencer &amp; Creator Partnerships</h3>
+        <p class="mp-scard-desc">Identifying, briefing, and managing authentic UAE-based influencer partnerships that align with your brand values and target audience. From nano-influencers with 10K followers to macro creators with millions, we negotiate, manage briefings, content approval, and post-campaign reporting — ensuring measurable ROI from every collaboration.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Nano–Macro</span><span class="mp-scard-tag">UAE Creators</span>
+          <span class="mp-scard-tag">Campaign Mgmt</span>
+        </div>
+      </div>
+
+      <!-- 6 Brand Reputation -->
+      <div class="mp-scard reveal delay-1">
+        <div class="mp-scard-num">06</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-shield-halved" style="color:#7c3aed;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Brand Reputation Management</h3>
+        <p class="mp-scard-desc">Proactive monitoring and management of your brand's online reputation across news portals, social platforms, review sites, and search results. We develop response strategies for sensitive coverage, manage narrative during challenging periods, and consistently work to build a positive, credible brand presence across all channels.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Monitoring</span><span class="mp-scard-tag">Crisis Comms</span>
+          <span class="mp-scard-tag">ORM</span>
+        </div>
+      </div>
+
+      <!-- 7 Event PR -->
+      <div class="mp-scard reveal delay-2">
+        <div class="mp-scard-num">07</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-calendar-check" style="color:#dc2626;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Event PR &amp; Media Coverage</h3>
+        <p class="mp-scard-desc">End-to-end media coverage for launches, conferences, galas, and brand activations. We coordinate press invitations, on-site photographer and videographer management, live social media coverage, post-event news distribution, and editorial write-ups — ensuring your event is documented and amplified across every channel.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Press Invites</span><span class="mp-scard-tag">Live Coverage</span>
+          <span class="mp-scard-tag">Post-Event PR</span>
+        </div>
+      </div>
+
+      <!-- 8 Media Strategy -->
+      <div class="mp-scard reveal delay-3">
+        <div class="mp-scard-num">08</div>
+        <div class="mp-scard-icon"><i class="fa-solid fa-chess" style="color:#d97706;font-size:1.3rem;"></i></div>
+        <h3 class="mp-scard-title">Media Strategy &amp; Consulting</h3>
+        <p class="mp-scard-desc">A tailored media strategy that maps out exactly which channels, formats, and messaging will move the needle for your brand. We conduct a full media audit, identify gaps and opportunities, define your key messages and spokespeople, and build a 3–12 month communications roadmap aligned with your business objectives.</p>
+        <div class="mp-scard-tags">
+          <span class="mp-scard-tag">Audit</span><span class="mp-scard-tag">Roadmap</span>
+          <span class="mp-scard-tag">Consulting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PLATFORMS ══════════════════════════════════════════════ -->
+<section id="mp-platforms">
+  <div class="container">
+    <div class="mp-platforms-hdr">
+      <div class="tag-pill reveal">Where We Place You</div>
+      <h2 class="reveal delay-1">Every Platform.<br/><span>Maximum Reach.</span></h2>
+    </div>
+
+    <!-- Social media platforms -->
+    <div class="mp-platforms-grid">
+      <div class="mp-platform-card reveal">
+        <div class="mp-platform-icon">&#128247;</div>
+        <div class="mp-platform-name">Instagram</div>
+      </div>
+      <div class="mp-platform-card reveal delay-1">
+        <div class="mp-platform-icon">&#128230;</div>
+        <div class="mp-platform-name">Facebook</div>
+      </div>
+      <div class="mp-platform-card reveal delay-2">
+        <div class="mp-platform-icon">&#128188;</div>
+        <div class="mp-platform-name">LinkedIn</div>
+      </div>
+      <div class="mp-platform-card reveal delay-1">
+        <div class="mp-platform-icon">&#127925;</div>
+        <div class="mp-platform-name">TikTok</div>
+      </div>
+      <div class="mp-platform-card reveal delay-2">
+        <div class="mp-platform-icon">&#128051;</div>
+        <div class="mp-platform-name">X / Twitter</div>
+      </div>
+      <div class="mp-platform-card reveal delay-3">
+        <div class="mp-platform-icon">&#127916;</div>
+        <div class="mp-platform-name">YouTube</div>
+      </div>
+    </div>
+
+    <!-- News & publication strip -->
+    <div class="mp-news-section">
+      <div class="mp-news-label">News &amp; Publication Channels</div>
+      <div class="mp-news-grid">
+        <a href="https://www.travelsdubai.com/" target="_blank" rel="noopener" class="mp-news-card">
+          <div class="mp-news-icon"><i class="fa-solid fa-globe" style="color:var(--blue);"></i></div>
+          <div>
+            <div class="mp-news-name">TravelsDubai.com</div>
+            <div class="mp-news-type">Official Partner · UAE News Portal</div>
+          </div>
+        </a>
+        <div class="mp-news-card">
+          <div class="mp-news-icon"><i class="fa-solid fa-newspaper" style="color:var(--blue);"></i></div>
+          <div>
+            <div class="mp-news-name">National Newspapers</div>
+            <div class="mp-news-type">Gulf News · Khaleej Times · The National</div>
+          </div>
+        </div>
+        <div class="mp-news-card">
+          <div class="mp-news-icon"><i class="fa-solid fa-laptop" style="color:var(--blue);"></i></div>
+          <div>
+            <div class="mp-news-name">Digital Portals</div>
+            <div class="mp-news-type">GCC News Sites · Industry Publications</div>
+          </div>
+        </div>
+        <div class="mp-news-card">
+          <div class="mp-news-icon"><i class="fa-solid fa-broadcast-tower" style="color:var(--blue);"></i></div>
+          <div>
+            <div class="mp-news-name">Press Wire Services</div>
+            <div class="mp-news-type">UAE Newswire · PR Distributors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ PROCESS ═════════════════════════════════════════════════ -->
+<section id="mp-process">
+  <div class="container">
+    <div class="mp-process-hdr">
+      <div class="mp-process-tag">How We Work</div>
+      <h2>Our Media &amp; PR<br/><span style="background:linear-gradient(135deg,var(--blue-light),#93c5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">5-Step Process</span></h2>
+      <p>A proven communications process from initial brief to live coverage and performance measurement — executed with precision every time.</p>
+    </div>
+    <div class="mp-process-steps">
+      <div class="mp-pstep reveal">
+        <div class="mp-pstep-circle"><span class="mp-pstep-num">01</span><span class="mp-pstep-icon">&#128172;</span></div>
+        <h3 class="mp-pstep-title">Brief &amp; Discovery</h3>
+        <!-- <p class="mp-pstep-desc">Deep dive into your brand, target audience, key messages, and media goals. We audit your current coverage and identify the opportunities that matter most.</p> -->
+      </div>
+      <div class="mp-pstep reveal delay-1">
+        <div class="mp-pstep-circle"><span class="mp-pstep-num">02</span><span class="mp-pstep-icon">&#128161;</span></div>
+        <h3 class="mp-pstep-title">Strategy &amp; Planning</h3>
+        <!-- <p class="mp-pstep-desc">A tailored media plan — channel selection, messaging framework, content calendar, media target list, and success KPIs clearly defined upfront.</p> -->
+      </div>
+      <div class="mp-pstep reveal delay-2">
+        <div class="mp-pstep-circle"><span class="mp-pstep-num">03</span><span class="mp-pstep-icon">&#9999;</span></div>
+        <h3 class="mp-pstep-title">Content Creation</h3>
+        <!-- <p class="mp-pstep-desc">Press releases, feature articles, social media content, and media materials — all crafted with editorial quality and approved by you before distribution.</p> -->
+      </div>
+      <div class="mp-pstep reveal delay-3">
+        <div class="mp-pstep-circle"><span class="mp-pstep-num">04</span><span class="mp-pstep-icon">&#128640;</span></div>
+        <h3 class="mp-pstep-title">Distribution &amp; Outreach</h3>
+        <!-- <p class="mp-pstep-desc">Active distribution to media contacts, online portals, social channels, and influencer networks — with direct follow-up to maximise pick-up and placement.</p> -->
+      </div>
+      <div class="mp-pstep reveal delay-4">
+        <div class="mp-pstep-circle"><span class="mp-pstep-num">05</span><span class="mp-pstep-icon">&#128200;</span></div>
+        <h3 class="mp-pstep-title">Report &amp; Optimise</h3>
+        <!-- <p class="mp-pstep-desc">Full coverage report with links, reach estimates, impressions, and engagement data — plus strategic recommendations for the next campaign cycle.</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section id="mp-cta">
+  <div class="container">
+    <div class="mp-cta-box reveal">
+      <div class="mp-cta-inner">
+        <div class="mp-cta-tag">Ready to Get Coverage?</div>
+        <h2 class="mp-cta-title">Put Your Brand in the<br/><em>Spotlight</em></h2>
+        <p class="mp-cta-desc">Tell us about your brand and what you want to communicate. Our team will prepare a tailored Media &amp; PR proposal — including potential placements on TravelsDubai.com and across our media partner network — within 24 hours.</p>
+        <div class="mp-cta-actions">
+          <a href="request-quote.html" class="btn btn-white"><i class="fa-solid fa-paper-plane"></i> Get a PR Proposal</a>
+          <a href="contact.html" class="btn-cta-outline"><i class="fa-solid fa-headset"></i> Talk to Our Team</a>
+          <a href="https://www.travelsdubai.com/" target="_blank" rel="noopener" class="btn-cta-outline"><i class="fa-solid fa-globe"></i> Visit TravelsDubai</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><a href="index.html"><img src="assets/Nexgen-Logo.webp" alt="NexGen Dubai" style="filter:brightness(0) invert(1);" /></a></div>
+        <p class="footer-brand-desc">NexGen Dubai — a full-service digital agency and media partner delivering marketing, PR, web development, content creation, and design that drives real growth for brands across the UAE and beyond.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/nexgendubai" class="footer-social" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nexgen_dubai" class="footer-social" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/nexgen-dubai/" class="footer-social" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@NexGenDubai" class="footer-social" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Media &amp; PR</h4>
+        <ul class="footer-links">
+          <li><a href="#mp-services"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> All PR Services</a></li>
+          <li><a href="#mp-collab-detail"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> TravelsDubai Partnership</a></li>
+          <li><a href="#mp-platforms"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Media Platforms</a></li>
+          <li><a href="request-quote.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Get a PR Proposal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#digital-marketing"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Digital Marketing</a></li>
+          <li><a href="services.html#web-dev"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Web &amp; App Development</a></li>
+          <li><a href="services.html#content"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Content Creation</a></li>
+          <li><a href="services.html#design"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Graphic Design</a></li>
+          <li><a href="portfolio.html"><i class="fa-solid fa-chevron-right" style="font-size:.55rem;color:var(--blue-light);"></i> Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Get in Touch</h4>
+        <div class="footer-address">
+          <p style="margin-bottom:.7rem;"><i class="fa-solid fa-location-dot" style="color:var(--blue-light);margin-right:.5rem;"></i>Meydan Grandstand, 6th Floor,<br/>Meydan Rd, Nad Al Sheba, Dubai, UAE</p>
+          <p style="margin-bottom:.5rem;"><i class="fa-solid fa-phone" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="tel:+971581720668">+971 58 172 0668</a></p>
+          <p><i class="fa-solid fa-envelope" style="color:var(--blue-light);margin-right:.5rem;"></i><a href="mailto:contact@nexgendubai.ae">contact@nexgendubai.ae</a></p>
+        </div>
+        <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email" required />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NexGen LLC. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="mediapr.js"></script>
+</body>
+</html>
